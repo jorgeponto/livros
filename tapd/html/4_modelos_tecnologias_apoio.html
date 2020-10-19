@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tecnologias de Apoio para Pessoas com Deficiência">
+    <meta name="author" content="Unidade ACESSO da FCT">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Capítulo 4 - Modelos em tecnologias de apoio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="boot/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="boot/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="boot/js/ie-emulation-modes-warning.js"></script>
+    
+<!--Script para controlar show/hide dos gráficos -->
+<script src="boot/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.toggle').each(function(){
+		$(this).click(function(e) {
+			var $clas = $(this).attr('id');
+			$('.'+$clas).toggle();
+			$(this).text(function(i,v){
+				return v === 'Ver tabela de dados' ? 'Ver gráfico' : 'Ver tabela de dados'
+			})
+		});
+	});
+});
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="container">
+<p id="top"></p>
+          
+  <ol class="breadcrumb">
+  <li><a href="http://www.acessibilidade.gov.pt/">ACESSO</a></li>
+  <li>Tecnologias de apoio para pessoas com deficiência</li>
+    <li><a href="/livros/tapd/html/indice.html">Indice</a></li>
+    <li class="active">4. Modelos em tecnologias de apoio</li>   
+	  </ol>
+
+<h1>4. Modelos em tecnologias de apoio</h1>
+
+<p>Muitos modelos têm sido propostos na literatura para enquadrar as tecnologias de apoio na vida
+das pessoas com deficiência. Esses modelos pretendem servir de guia às intervenções, à
+formação e à investigação em Engenharia de Reabilitação. Têm evoluído a par com a evolução
+das sociedades, estão muitas vezes ligados ao contexto cultural em que são propostos, e não
+devem por isso ser considerados melhores ou piores que outros, são apenas diferentes. Em
+comum a quase todos está o facto de se centrarem na atividade que uma dada pessoa pretende
+realizar, incluírem o produto de apoio necessário à realização da atividade, e levarem em conta
+o contexto em que essa atividade tem lugar. Todos assumem uma perspetiva holística da
+Engenharia de Reabilitação, considerando-a uma área multidisciplinar que cruza conceitos da
+psicologia, das ciências da vida, da engenharia, etc.</p>
+
+<p>O projeto HEART – Horizontal European Activities in Rehabilitation Technology (1993-1995), em
+que estiveram envolvidas 21 organizações de 12 países europeus, incluindo Portugal, definiu um
+modelo para enquadrar o desenvolvimento de programas de formação para profissionais na área
+das tecnologias de apoio (Azevedo, Féria, Nunes da Ponte,Wann, & Recellado, 1994). Entendeu-se
+que as tecnologias de apoio não deveriam ser vistas isoladamente, mas sim como uma parte de
+uma abordagem integrada às necessidades das pessoas com deficiência. As tecnologias de apoio
+foram encaradas como uma forma de ultrapassar as limitações funcionais de pessoas com
+deficiência, em diversos contextos, aumentando as capacidades funcionais da pessoa ou
+reduzindo as barreiras físicas e/ou sociais dos contextos. O modelo tem três componentes: a
+humana, incluindo a pessoa com deficiência, as suas características e as suas preferências; a
+socioeconómica, englobando as barreiras sociais e económicas colocadas pelos diversos
+contextos, e a técnica, com as tecnologias de apoio e as suas características técnicas. De acordo
+com o projeto HEART, qualquer modelo de formação em tecnologias de apoio deverá cobrir estas
+três componentes. A Figura 4.1 ilustra o modelo apresentado e, também, a definição de tecnologia
+de apoio como uma tecnologia que permite reduzir o hiato entre as capacidades da pessoa e as
+exigências colocadas pelo ambiente.</p>
+
+<figure>
+    <img class="img-responsive"src="images/figura4_1.png" alt=""/>
+    <figcaption>
+        Figura 4.1: Modelo HEART 
+    </figcaption>
+</figure>
+
+<p>Deste projeto resultou também uma classificação para as diversas áreas de atividade de uma
+pessoa, áreas essas que devem ser abrangidas numa formação em tecnologias de apoio:
+<span id="page53" epub:type="pagenumber">53</span>
+Mobilidade,Manipulação, Comunicação e Orientação. Uma quinta área – Cognição – foi considerada
+como influenciando todas as anteriores. Definições de cada uma destas áreas serão apresentadas
+neste livro no início de cada capítulo dedicado às tecnologias de apoio para essas mesmas áreas.</p>
+
+<p>Cook e Hussey, em 1995, propuseram o modelo HAAT – Human Activity Assistive Technology –
+com o objetivo de estudar o desempenho de uma pessoa na realização de uma atividade, num dado
+contexto, utilizando uma dada tecnologia de apoio (Cook & Polgar, 2008). Nestemodelo estão assim
+envolvidas quatro componentes: a <em>Pessoa</em>, a <em>Atividade</em>, a <em>Tecnologia de Apoio</em> e
+o <em>Contexto</em> em que aqueles três fatores integrados existem (Figura 4.2). As Atividades 
+são realizadas como parte do
+nosso quotidiano, são necessárias à nossa existência, podem ser aprendidas e são reguladas pela
+sociedade e cultura emque cada umestá inserido (Canadian Association of Occupational Therapists,
+2002). Podem ser classificadas em cuidado pessoal, produtividade e lazer. A Pessoa é quem está
+a realizar a atividade. Possui capacidades físicas (força, destreza, equilíbrio, etc.) e cognitivas
+(atenção, julgamento, capacidade de resolução de problemas, concentração, por exemplo), ambas
+influenciando as suas emoções. O <em>Contexto</em> em que é realizada a atividade inclui quatro fatores
+principais: contexto físico (ambiente construído e natural e parâmetros físicos, como luminosidade,
+som ambiente), contexto social, contexto cultural e contexto institucional. A Tecnologia de Apoio,
+comas diversas componentes listadas na Figura 4.2, é qualquer dispositivo, equipamento ou sistema
+usado pela pessoa para realizar a atividade desejada, num determinado contexto. É na interação
+complexa e dinâmica entre estas quatro componentes que se deve enquadrar a utilização de
+tecnologias de apoio. Uma vez que a adesão ou não a uma tecnologia de apoio depende, emgrande
+parte, da avaliação subjetiva que o utilizador final faz damesma, <strong>é a pessoa (que quer realizar uma
+dada atividade, num dado contexto, necessitando para tal de uma tecnologia de apoio) que
+deve ser o centro de toda a intervenção</strong>.</p>
+
+<figure>
+    <img class="img-responsive"src="images/figura4_2.png" alt=""/>
+    <figcaption>
+        Figura 4.2: Modelo HAAT (Cook & Polgar, 2008)
+    </figcaption>
+</figure>
+
+<p>Os conceitos desenvolvidos no projeto HEART serviram de base para o projeto TELEMATE –
+Telematic Multidisciplinary Assistive Technology Education (1998-2001), que se focou nas
+necessidades de formação dos profissionais na área das tecnologias de apoio (Turner-Smith &
+Blake, 1999). Defendendo-se equipas multidisciplinares para as intervenções, argumenta-se que
+<span id="page54" epub:type="pagenumber">54</span>
+a formação específica deve ter em conta as diferentes formações de base, proporcionando
+previamente os conceitos necessários nas áreas com que os formandos não estejam
+familiarizados. Por exemplo, no âmbito da formação em tecnologias de apoio, um engenheiro
+poderá necessitar de adquirir conhecimentos de anatomia e fisiologia humanas, enquanto um
+terapeuta poderá necessitar de adquirir conhecimentos em mecânica ou processamento de sinais.
+A Figura 4.3 ilustra estas ideias.</p>
+
+<figure>
+    <img class="img-responsive"src="images/figura4_3.png" alt=""/>
+    <figcaption>
+        Figura 4.3: Modelo TELEMATE
+    </figcaption>
+</figure>
+
+<p>Enders (1999) propôs um modelo que representou graficamente como um triângulo no interior de
+outro (ver Figura 4.4). O triângulo mais pequeno simboliza um <em>sistema de suporte especializado</em>
+cujas componentes <em>assistência pessoal</em> (AP), <em>estratégias adaptativas</em> (EA) e produto de apoio
+(PA) são os lados do triângulo. A área deste triângulo traduz a <em>capacidade funcional</em> do indivíduo.
+Representam-se assim as três formas de fazer face às dificuldades impostas por uma atividade
+num dado contexto: ou se procura uma assistência pessoal, ou se usam formas alternativas de
+realizar a tarefa, ou se recorre ao auxílio de um produto de apoio. O triângulo maior, que contém
+o anterior, simboliza um sistema de suporte generalizado com as dimensões <em>ferramentas,
+estratégias e cooperação</em>. A sua área representa as realizações humanas potenciadas por aquelas
+três dimensões. O facto mais interessante deste modelo é a possibilidade de dar uma perspetiva
+dinâmica aos sistemas de apoio variando as dimensões dos dois triângulos. De facto, as
+tecnologias de apoio devem ser capazes de se adaptar aos contextos dinâmicos em que vivem
+os seus utilizadores. Um ponto fraco deste modelo é não descrever apropriadamente as
+características do ambiente em que as atividades se pretendem realizar.</p>
+
+<span id="page55" epub:type="pagenumber">55</span>
+
+<figure>
+    <img class="img-responsive"src="images/figura4_4.png" alt=""/>
+    <figcaption>
+        Figura 4.4: Modelo de Enders (1999)
+    </figcaption>
+</figure>
+
+<p>Azevedo (2006), considerando que os modelos existentes eram demasiado centrados na tecnologia
+de apoio e que não forneciamuma imagemdinâmica das atividades que o utilizador pretende realizar
+nos mais diversos contextos, propôs o “modelo dos círculos dinâmicos das atividades humanas”,
+com base no modelo de Enders e no modelo HAAT. O novo modelo foi construído tendo como ponto
+de partida as diferentes áreas de atividade que qualquer ser humano (com ou sem deficiência)
+pretende realizar: comunicação,mobilidade,manipulação e orientação, sendo que a área da cognição
+está intimamente ligada a todas as outras uma vez que, sem“cognição”, quaisquer atividades deixam
+de ter significado. As diferentes áreas de atividade foram representadas por círculos dentro de um
+retângulo que simboliza o contexto (Figura 4.5). A área desses círculos varia de acordo com o nível
+da atividade e diferentes retângulos podemser usados para representar contextos diversos, também
+eles dinâmicos.As tecnologias de apoio (àmobilidade, comunicação, etc.) podemser incluídas dentro
+dos círculos de atividade, ao aumentarem as capacidades funcionais da pessoa, ou também dentro
+do contexto, ao reduzirem as barreiras colocadas por este.</p>
+
+<span id="page56" epub:type="pagenumber">56</span>
+
+<figure>
+    <img class="img-responsive"src="images/figura4_5.png" alt=""/>
+    <figcaption>
+        Figura 4.5: Modelo dos círculos dinâmicos das atividades humanas
+    </figcaption>
+</figure>
+
+<p>Da interação entre a atividade e o contexto resulta que nem todas as áreas de atividade assumem
+a mesma dimensão em todos os instantes de tempo. Considere-se o exemplo de uma pessoa que
+se desloca em cadeira de rodas e que pretende ir de sua casa para uma loja perto mas cuja
+localização exata desconhece, pelo que terá de procurar ajuda. Neste exemplo, a atividade
+principal a realizar é deslocar-se à loja (mobilidade), usando um produto de apoio (a cadeira de
+rodas), num contexto físico e social não conhecido com exatidão (há incerteza em relação à
+localização da loja). Mas todas as áreas de atividade estão envolvidas: a pessoa necessita de
+<strong>manipular</strong> o <em>joystick</em> para comandar a cadeira de rodas, necessita de se <strong>orientar</strong> espacialmente,
+e necessita de <strong>comunicar</strong> para obter informações da localização da loja. É a <strong>cognição</strong> que
+permite a correta integração de todas estas atividades para produzir o efeito desejado. Para captar
+a dimensão de cada área de atividade ao longo do tempo, poderá recorrer-se a uma
+representação gráfica como a da Figura 4.6. Na figura, o período entre os instantes 1 e 2
+corresponde à deslocação entre a casa e uma passadeira, em que todas as áreas de atividade
+estão envolvidas mas com predominância para a mobilidade; entre os instantes 2 e 3 a pessoa
+atravessa a passadeira, continuando a área de atividade da mobilidade a ser predominante,
+embora com um nível inferior ao do período anterior, traduzindo-se assim a menor velocidade de
+deslocação imposta pelo contexto; no instante 3 a pessoa pede indicações sobre a localização
+da loja e a área de atividade predominante é assim a comunicação; finalmente, entre os instantes
+3 e 4, volta a ser a área da mobilidade a principal, mas seguida de perto pela orientação e pela
+manipulação, uma vez que a deslocação agora é efetuada num ambiente que não se conhece e
+com base nas indicações recebidas.</p>
+
+<span id="page57" epub:type="pagenumber">57</span>
+
+<figure>
+    <img class="img-responsive"src="images/figura4_6.png" alt=""/>
+    <figcaption>
+        Figura 4.6: Representação dinâmica das áreas de atividade na realização de uma tarefa
+    </figcaption>
+</figure>
+
+<p>Note-se que este modelo se aplica a qualquer pessoa, com ou sem deficiência. O foco do modelo
+são as atividades e os contextos em que essas atividades se desenvolvem.</p>
+
+<p>Em (Azevedo, 2006) propõe-se também que as áreas de atividade sirvam de base a uma
+classificação das tecnologias de apoio, isto é, propõe-se a divisão das tecnologias de apoio em
+<em>tecnologias de apoio à comunicação, à mobilidade, à orientação, à manipulação</em> e, em casos
+específicos, à <em>cognição</em>. Em Portugal, usa-se a classificação definida pela International Standards
+Organization (ISO) para a prescrição de produtos de apoio (ver Tabela 4.1).</p>
+
+<p>Neste livro segue-se a classificação sugerida em (Azevedo, 2006) para descrever as tecnologias
+de apoio (capítulos 6, 7, 8 e 9).</p>
+
+<div class="alert alert-warning" role="alert">
+<div class="table-responsive">
+<table class="table table-striped">
+<caption>Tabela 4.1: Classificação de Produtos de Apoio (ISO 9999 / EN 29999)</caption>
+<thead>
+<tr>
+<th align="left">Classes de produtos de apoio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>04 – Produtos de apoio para tratamento clínico individual</td>
+</tr>
+<tr>
+<td>05 – Produtos de apoio para treino de competências</td>
+</tr>
+<tr>
+<td>06 – Ortóteses e próteses</td>
+</tr>
+<tr>
+<td>09 – Produtos de apoio para cuidados pessoais e proteção</td>
+</tr>
+<tr>
+<td>12 – Produtos de apoio para mobilidade pessoal</td>
+</tr>
+<tr>
+<td>15 – Produtos de apoio para atividades domésticas</td>
+</tr>
+<tr>
+<td>18 – Mobiliário e adaptações para habitação e outros edifícios</td>
+</tr>
+<tr>
+<td>22 – Produtos de apoio para comunicação e informação</td>
+</tr>
+<tr>
+<td>24 – Produtos de apoio para manuseamento de objetos e dispositivos</td>
+</tr>
+<tr>
+<td>27 – Produtos de apoio para melhoria do ambiente, máquinas e ferramentas</td>
+</tr>
+<tr>
+<td>30 – Produtos de apoio para atividades recreativas</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<span id="page58" epub:type="pagenumber">58</span>
+
+<nav>        
+  <ul class="pager">
+    <li class="previous"><a href="/livros/tapd/html/3_pessoas_com_necessidades_especiais.html"><span aria-hidden="true">&larr;</span> Capítulo anterior</a></li>
+	<li class="top"><a href="#top"><span aria-hidden="true">&uarr;</span> Início da página</a></li>
+	<li class="next"><a href="/livros/tapd/html/5_interface_pessoa_produto_apoio.html">Próximo capítulo <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+  </nav>
+
+
+</div>
+</body>
+</html>

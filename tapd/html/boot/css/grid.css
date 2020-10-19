@@ -1,0 +1,87 @@
+/*!
+ * Folha de estilo personalizada para Tecnologias de Apoio e Pessoas com Deficiência
+ * 
+ */
+
+	body {
+		font-size:16px;
+		line-height:1.5em;
+	}
+	
+	p {
+		margin:0 0 14px;
+	}
+	
+	figcaption {
+		text-align:center;
+		color:#777;
+	}
+
+	figure {
+		text-align: center;
+		margin:1em;
+	}
+
+	figure img {
+		display:block;
+		margin:1em auto;
+	}
+	
+	.grafico {
+		padding:1em; 
+		margin:auto auto; 
+	}
+
+	.grafico table {
+		caption-side:bottom;
+	}
+	
+	.grafico table caption {
+		text-align: center;
+	}
+	
+	.grafico table th, .grafico table td {
+		padding:0.5em;
+	}
+	
+	.grafico table th {
+		border-bottom: 1px solid #000;
+	}
+	
+	span[id] {
+		display:none;
+	}
+
+	table.table-book th {
+		background-color: #EAEAEA;
+		text-align:center;
+		vertical-align: middle !Important;
+		border:1px solid #FFF;
+	}
+	
+	table.table-book td {
+		border:1px solid #969696;
+	}
+
+	dl.definicao {
+		margin-left:2em;
+	}
+	
+	dl.definicao dt {
+		border-right:1px solid #969696;
+		float: left;
+		padding-right:2em;
+		margin-right:2em;
+	}
+	
+/* Estilo para listas ol do tipo 2.1.1 */
+
+.indice ol {
+	counter-reset: section;                
+	list-style-type: none;
+}
+
+.indice ol li::before {
+	counter-increment: section;            
+	content: counters(section,".") " ";    
+ }

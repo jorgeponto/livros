@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tecnologias de Apoio para Pessoas com Deficiência">
+    <meta name="author" content="Unidade ACESSO da FCT">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Capítulo 2 - Enquadramento</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="boot/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="boot/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="boot/js/ie-emulation-modes-warning.js"></script>
+    
+<!--Script para controlar show/hide dos gráficos -->
+<script src="boot/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.toggle').each(function(){
+		$(this).click(function(e) {
+			var $clas = $(this).attr('id');
+			$('.'+$clas).toggle();
+			$(this).text(function(i,v){
+				return v === 'Ver tabela de dados' ? 'Ver gráfico' : 'Ver tabela de dados'
+			})
+		});
+	});
+});
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="container">
+<p id="top"></p>
+          
+  <ol class="breadcrumb">
+  <li><a href="http://www.acessibilidade.gov.pt/">ACESSO</a></li>
+  <li>Tecnologias de apoio para pessoas com deficiência</li>
+    <li><a href="/livros/tapd/html/indice.html">Indice</a></li>
+    <li class="active">2. Enquadramento e definições</li>   
+	  </ol>
+
+
+<h1>2. Enquadramento e definições</h1>
+<a name="n21" id="n21"></a><h2>2.1 Reabilitação</h2>
+<p><em>Reabilitação</em>, no contexto da Saúde, pode ser definida como o conjunto de terapias para o
+restabelecimento da saúde ou da funcionalidade de um indivíduo (Direcção-Geral da Saúde,
+2003). Algumas destas terapias envolvem uma intervenção médica direta (por exemplo, a
+colocação de um implante coclear para melhoria da audição), outras não (como a fisioterapia
+após uma lesão muscular). Quando a “cura” do ponto de vista clínico não é possível, o objetivo
+da <em>Reabilitação</em> é o de promover a funcionalidade do indivíduo, proporcionando uma melhoria na
+sua qualidade de vida.</p>
+<p>Seguidamente referem-se alguns profissionais com atividade principal na área da Reabilitação,
+usando-se as definições das suas organizações profissionais como base para a descrição das
+atividades que exercem em contexto clínico:</p>
+
+<ul>
+<li>Os <em>Médicos Fisiatras</em> (especialidade médica de Medicina Física e Reabilitação) são
+responsáveis <em>“pela prevenção, diagnóstico, tratamentos e organização do programa de
+Reabilitação dos indivíduos com patologias médicas incapacitantes e co-morbilidades em
+todos os grupos etários”</em> (Sociedade Portuguesa de Medicina Física e de Reabilitação,
+2009, p. 18). São ainda os responsáveis pela prescrição de produtos de apoio de
+prescrição médica obrigatória;</li>
+<li>Os <em>Terapeutas Ocupacionais</em> têm como objetivo tornar possível a um indivíduo a
+participação em ocupações do quotidiano. Define-se ocupação como o grupo de atividades
+que têm um significado pessoal, embebidas numa dada cultura, e que suportam a
+participação na sociedade, promovendo a identidade pessoal, a saúde e o bem-estar
+(European Network of Occupacional Therapy in Higher Education, 2006);</li>
+<li>Os <em>Terapeutas da Fala</em> intervêm em todas as situações de patologia da fala, da voz e da
+linguagem oral e escrita, qualquer que seja a etiologia, na criança, no adolescente, no adulto
+e na pessoa idosa. São profissionais a quemcompete a prevenção, a avaliação, o tratamento
+e o estudo científico da comunicação humana e das perturbações associadas.Acomunicação
+aqui referida engloba todas as funções associadas à compreensão e à expressão da
+linguagem oral e escrita, assim como todas as formas de comunicação não-verbal (Comité
+Permanent de Liaison des Orthophonistes / Logopedes de l’Union Européenne, 1997);</li>
+<li>Os <em>Fisioterapeutas</em> colaboram “na análise e avaliação do movimento e da postura [c] com
+a finalidade de promoção da saúde e prevenção da doença, da deficiência, de
+incapacidade e da inadaptação e de tratar, habilitar ou reabilitar indivíduos com disfunções
+de natureza física, mental, de desenvolvimento ou outras [c], com o objetivo de os ajudar
+a atingir a máxima funcionalidade e qualidade de vida (Associação Portuguesa de
+Fisioterapeutas, 2013);</li>
+<li>Os <em>Ortoprotésicos</em> concebem, fabricam, ajustam e reparam aparelhos necessários à
+correção do aparelho locomotor, incluindo as próteses (membros artificiais) e as ortóteses
+(aparelhos ortopédicos de suporte para o movimento) (Instituto do Emprego e Formação
+Profissional, 1994); e</li>
+<span id="page15" epub:type="pagenumber">15</span>
+<li>Os <em>Engenheiros de Reabilitação</em> dão suporte a todos os profissionais referidos anteriormente
+através da aplicação sistemática de tecnologias de apoio e outras tecnologias disponíveis
+no mercado, e métodos de engenharia ou princípios científicos para satisfazer as
+necessidades e combater as barreiras com que se confrontam as pessoas com deficiência,
+em áreas que incluem as terapias de reabilitação, a educação, o emprego, o transporte,
+a vida independente e o lazer (PL 99-506, 1992).</li>
+</ul>
+
+<p>Outros profissionais podem especializar-se em áreas afins da <em>Reabilitação</em>, como são os casos
+dos Enfermeiros, Assistentes Sociais, Psicólogos ou dos Professores do Ensino Especial, para
+nomear apenas alguns exemplos.</p>
+<p>Consequência de um modelo médico da deficiência e da própria etimologia da palavra, associa-se
+muitas vezes a <em>Reabilitação</em> às pessoas com necessidades especiais, fruto de uma qualquer
+patologia. No entanto, hoje o enquadramento da <em>Reabilitação</em> é muito mais geral. As necessidades
+especiais podem ser causadas por uma incapacidade da pessoa ou pelo contexto em que se quer
+realizar uma atividade. Por exemplo, uma pessoa pode ser capaz de falar e ser compreendida por
+um interlocutor num contexto usual de comunicação, mas necessitar de formação em projeção de
+voz ou de uma tecnologia auxiliar para poder ser ator numa peça de teatro.</p>
+
+<a name="n22" id="n22"></a><h2><em>2.2 Design for All e Small N(umber) Design</em></h2>
+
+<p>Existem essencialmente duas correntes de pensamento quando se encaram as questões da
+Reabilitação e das Tecnologias de Apoio. Na filosofia <em>Design for All (Desenho Universal)</em> defende-se
+que todo o produto ou serviço deve ter em conta as necessidades de todos os possíveis
+utilizadores. Por exemplo, um edifício deve ser projetado de forma a não colocar barreiras
+arquitetónicas a uma pessoa com mobilidade reduzida, que tanto pode ser alguém com uma
+deficiência motora que se desloca em cadeira de rodas, uma pessoa idosa com dificuldade em
+subir degraus ou um adulto que empurra um carrinho de bebé. As necessidades especiais de
+uma população cada vez mais envelhecida dão atualmente muita força ao conceito de Desenho
+Universal (ou Desenho Inclusivo), intimamente ligado à ideia de acessibilidade universal. Em
+<a href="http://www.designforall.org">www.designforall.org</a>, sítio da <em>Design for All Foundation</em>, pode encontrar-se informação detalhada
+sobre este princípio.</p>
+<p>No entanto, as necessidades específicas de alguns utilizadores só podem ser satisfeitas através do
+desenvolvimento de produtos, técnicas ou serviços “à medida”, recorrendo a métodos de <em>Small
+N(umber) Design</em> (Graham, Karmarkar, & Ottenbacher, 2012). O conceito de <em>Small N Design</em> é de
+grande importância na área da <em>Reabilitação</em> dado que cada utilizador ou grupo de utilizadores tem
+necessidades, por vezes muito específicas, que não podem ser satisfeitas por um produto projetado
+para todos. Por exemplo, pessoas com paralisia dos membros superiores não podem usar o rato e
+o teclado para aceder ao computador, logo terão de utilizar interfaces de acesso alternativas.
+Os métodos baseados em <em>Small N Design</em> levantam, no entanto, questões quanto à demonstração
+da eficácia de um novo produto, técnica ou serviço, em particular na área da Saúde em que os
+<span id="page16" epub:type="pagenumber">16</span>
+métodos convencionais se baseiam, por regra, em ensaios clínicos aleatórios com um elevado
+número de participantes. Diversos autores têm abordado esta questão (ver por exemplo
+(Ottenbacher & Hinderer, 2001; Olive & Smith, 2005)). Outra dificuldade levantada por esta filosofia
+de projeto é que, sendo para um público-alvo reduzido, os produtos ou serviços tornam-se mais
+caros por não beneficiarem de economias de escala.</p>
+
+<a name="n23" id="n23"></a><h2>2.3 Acessibilidade</h2>
+<p>A Acessibilidade é um conceito amplamente estudado para definir a possibilidade de qualquer
+pessoa, independentemente das suas características e contexto, poder aceder a espaços,
+produtos e serviços disponíveis à restante população. Segundo o Conceito Europeu de
+Acessibilidade (Aragall, 2005, p. 23): <em>“acessibilidade é a característica de um meio físico ou de
+um objeto que permite a interação de todas as pessoas com esse meio físico ou objeto e a
+utilização destes de uma forma equilibrada/amigável, respeitadora e segura. Isto significa
+igualdade de oportunidades para todos os utilizadores ou utentes, quaisquer que sejam as suas
+capacidades, antecedentes culturais ou lugar de residência no âmbito do exercício de todas as
+atividades que integram o seu desenvolvimento social ou individual. Portanto, a acessibilidade
+promove a igualdade de oportunidades, não a uniformização da população (em termos de cultura,
+costumes ou hábitos).”</em> A Acessibilidade está ligada ao conceito de Desenho Universal. Baseia-se
+em políticas de defesa dos direitos das pessoas com deficiência e traduz-se em regulamentos,
+linhas de orientação e ações de sensibilização da sociedade. O conceito de Acessibilidade deve
+ser considerado desde a fase de projeto de um produto (por exemplo, um projeto de arquitetura
+deve prever a utilização de cadeiras de rodas na definição da largura das portas), mas pode
+também intervir nos trabalhos de adaptação dos espaços ou serviços existentes. As suas
+principais áreas de atuação são:</p>
+
+<p><strong>Acessibilidade aos espaços físicos</strong> – Um exemplo amplamente conhecido é o das rampas ou
+elevadores que tornam acessíveis espaços públicos a pessoas que, por mobilidade reduzida ou
+por utilização de cadeira de rodas, não podem subir escadas. A disponibilização de informação
+em Braille (para pessoas com deficiência visual) ou em texto (para pessoas com deficiência
+auditiva) é ainda outro exemplo de acessibilidade a espaços físicos. Além da acessibilidade a
+espaços e edifícios, esta área inclui também a acessibilidade aos transportes e serviços públicos.</p>
+
+<p><strong>Acessibilidade informática ou digital</strong> – Refere-se ao acesso a tecnologias digitais tais como
+computador, televisão, telemóvel ou videojogos. Por exemplo, na conceção de software deve
+prever-se a utilização de diferentes tipos de interfaces de acesso ao computador. Os próprios
+sistemas operativos dos computadores pessoais incluem algumas opções de acessibilidade. Uma
+destas opções destina-se a pessoas que não podem utilizar o rato (por limitações motoras dos
+membros superiores ou por dificuldade de coordenação oculomotora, entre outras razões): os
+sistemas operativos podem ser configurados de forma a substituir a seleção através do rato por
+teclas de atalho para acesso a todas as funções. Dada a importância dos conteúdos e serviços
+disponibilizados hoje na Internet para todos os cidadãos (refira-se como exemplo as declarações
+eletrónicas de rendimentos para efeitos fiscais), é essencial que os conteúdos sejam acessíveis
+para todos. O World Wide Web Consortium (W3C) desenvolveu <em>Diretrizes de Acessibilidade para
+<span id="page17" epub:type="pagenumber">17</span>
+o Conteúdo da Web</em> para orientar o desenvolvimento de conteúdos para a Internet acessíveis. Por
+exemplo, considere-se uma página na Internet que contém informação importante numa imagem.
+Se esta imagem não tiver uma legenda de texto alternativa, contendo a informação relevante ao
+utilizador, os leitores de ecrã (ver Secção 8.4.3) não poderão transmiti-la aos utilizadores cegos.
+Da mesma forma, uma página infantil na Internet com interação complexa, contendo demasiados
+elementos gráficos, pode ser inacessível a crianças com dificuldades de aprendizagem específica
+(ver Secção 3.3.9). As diretrizes de acessibilidade acima referidas, ferramentas de avaliação e
+outras informações e recursos na Acessibilidade à Internet podem ser encontradas em
+<a href="http://www.acessibilidade.gov.pt">www.acessibilidade.gov.pt</a>. Recomenda-se também a 
+consulta dos sítios <a href="http://www.webaim.org">www.webaim.org</a> e <a href="http://www.w3.org">www.w3.org</a>.</p>
+
+<a name="n24" id="n24"></a><h2>2.4 Tecnologias de apoio e produtos de apoio</h2>
+<a name="n241" id="n241"></a><h3>2.4.1 Definição</h3>
+<p>Muitas definições têm sido propostas para <em>Tecnologias de Apoio</em>. Todas elas têm subjacentes as
+noções de proporcionar (mais) funcionalidade e (melhor) participação aos seus utilizadores. De
+acordo com (PL 108-364, 2004), uma <em>Tecnologia de Apoio</em> (TA) é qualquer dispositivo, equipamento
+ou sistema – adquirido comercialmente, modificado ou personalizado – usado para aumentar, manter
+ou melhorar as capacidades funcionais de um indivíduo com deficiência. Alternativamente, uma TA
+é qualquer tecnologia que ajude a diminuir o hiato entre as capacidades de um indivíduo com
+deficiência e as exigências colocadas por uma atividade e pelo contexto em que esta se pretende
+realizar (Azevedo, Féria, Nunes da Ponte,Wann, & Recellado, 1994). Cowan e Turner-Smith (1999)
+definem <em>Tecnologia de Apoio</em> como um termo que abrange qualquer dispositivo (produto de apoio)
+ou sistema que permite a um indivíduo realizar uma tarefa que não conseguiria realizar de outra
+forma, ou que aumenta a facilidade ou segurança com que a tarefa pode ser realizada.</p>
+
+<p>Nestas definições é colocada uma ênfase nas capacidades funcionais dos indivíduos com
+deficiência e na importância da utilização de estratégias e habilidades adequadas que levem ao
+sucesso nos mais diversos contextos das atividades dinâmicas que esses indivíduos pretendem
+exercer. É neste sentido que os dispositivos (<em>Produtos de Apoio</em>) integrados nas referidas
+estratégias se podem definir mais globalmente como <em>Tecnologias de Apoio</em>, termo que usaremos
+preferencialmente na maior parte deste texto. Note-se que é a atividade a realizar que deve
+motivar a utilização de uma TA e é a eficácia no desempenho de uma determinada função a única
+medida de sucesso pela qual as tecnologias de apoio devem ser avaliadas. Por outro lado, a
+referência aos indivíduos com deficiência nas duas primeiras definições acima tem por detrás a
+noção de que cada forma de utilização/integração de uma tecnologia de apoio no domínio da
+<em>Reabilitação</em> é única. Não há duas aplicações iguais pois cada utilizador é único nas suas
+necessidades e capacidades, nas atividades que pretende realizar e no contexto em que a
+aplicação das tecnologias de apoio é feita (Cook & Polgar, 2008).</p>
+
+<p>Parece-nos importante deixar uma breve nota sobre a relação das TA com o conceito de
+Acessibilidade, descrito na Secção 2.3. Como referido acima, o conceito de Acessibilidade
+<span id="page18" epub:type="pagenumber">18</span>
+condiciona ou transforma o meio para torná-lo acessível a pessoas com deficiência, isto é, para
+que todas as pessoas possam realizar as atividades pretendidas, independentemente das suas
+características físicas. Por outro lado, cada pessoa, individualmente, pode precisar de utilizar
+tecnologias de apoio para realizar as atividades que pretende, de acordo com as suas
+necessidades e contexto. Embora representem duas abordagens diferentes para reduzir o hiato
+entre a pessoa e a atividade que esta quer realizar, em várias circunstâncias as tecnologias de
+apoio só podem ser eficazes se o meio estiver adaptado (acessível). Por exemplo, as normas de
+acessibilidade a edifícios públicos podem impor a construção de rampas como alternativa às
+escadas, tendo em conta as pessoas com mobilidade reduzida. A escolha do produto de apoio
+para subir/descer a rampa (cadeira de rodas, andarilho ou outros) é individual, depende de cada
+utilizador. Estes PA, porém, de nada servem ao seu utilizador no acesso a um edifício se não
+houver rampas ou elevador (acessibilidade) como alternativa às escadas.</p>
+
+<a name="n242" id="n242"></a><h3>2.4.2 Características das tecnologias de apoio</h3>
+
+<p>As tecnologias de apoio, em termos genéricos e independentemente dos seus objetivos, podem
+ser caracterizadas sob diversos pontos de vista (Cook & Polgar, 2008):</p>
+
+<p><strong>Tecnologias de apoio <em>versus</em> Tecnologias de reabilitação ou educação</strong>: as tecnologias de apoio
+auxiliam um indivíduo a realizar uma determinada tarefa funcional. As tecnologias de reabilitação ou
+educação são tecnologias usadas para facilitar um processo de reabilitação ou educação, não
+fazendo parte do dia a dia das pessoas ou das suas atividades funcionais. Note-se, no entanto, que
+alguns programas educativos ou de reabilitação são usados para o desenvolvimento de capacidades
+para a utilização de produtos de apoio, esbatendo esta distinção;</p>
+
+<p><strong>Reduzido grau de desenvolvimento tecnológico <em>versus</em> Elevado grau de desenvolvimento
+tecnológico</strong>: embora esta distinção seja algo imprecisa, muitas vezes designam-se as tecnologias
+de apoio de baixo custo, fáceis de fabricar e de obter, de reduzido desenvolvimento tecnológico
+(<em>low-tech</em>). Diz-se que as tecnologias de apoio de custo elevado, difíceis de produzir e de obter são
+de elevado desenvolvimento tecnológico (<em>high-tech</em>). São exemplos de TA <em>low-tech</em> as lupas ou as
+bengalas tradicionais, e de TA <em>high-tech</em> as cadeiras de rodas elétricas ou os computadores;</p>
+
+<p><strong>Tangíveis <em>versus</em> Intangíveis</strong>: as tecnologias de apoio tangíveis são aquelas que estão disponíveis
+para aquisição imediata, incluindo uma cadeira de rodas, um computador ou um programa de
+computador. Correspondem aos produtos de apoio. Mas subjacente à aquisição destes produtos
+está a sua escolha adequada, a sua adaptação às necessidades particulares do utilizador, a
+formação e treino na sua utilização e a definição de estratégias de correta utilização. As
+tecnologias de apoio intangíveis englobam estas áreas humanas da tomada de decisão,
+estratégia, treino, formação de conceitos e prestação de serviços. Incluem-se assim nas
+tecnologias de apoio não só os produtos em si mas também tudo aquilo que é necessário para
+que esses produtos possam de facto ser colocados ao uso das pessoas com deficiência. Note-se
+que estes aspetos, inerentes à utilização dos produtos de apoio, são tipicamente mais difíceis de
+conseguir, pois exigem formação explícita e experiência profissional, e são muitas vezes
+negligenciados no processo de financiamento e aquisição dos produtos de apoio;</p>
+
+<p><strong>Dispositivos <em>versus</em> Ferramentas</strong>: um dispositivo é algo que providencia benefícios ao utilizador
+independentemente das suas habilidades. Por seu lado, as ferramentas requerem o desenvolvimento
+<span id="page19" epub:type="pagenumber">19</span>
+de habilidades pelo seu utilizador. Por exemplo, um botão de alarme é um dispositivo que não
+necessita de qualquer habilidade para a sua utilização, mas um computador é uma ferramenta, pois
+requer o desenvolvimento de habilidades particulares da parte do seu utilizador;</p>
+
+<p><strong>Minimalistas <em>versus</em> Maximalistas</strong>: as tecnologias de apoio minimalistas dão assistência ou
+aumentam as capacidades de uma pessoa (e.g., um amplificador de som auxilia a comunicação
+a quem tem dificuldade em produzir fala com um volume suficiente para ser inteligível pelo(s)
+seu(s) interlocutor(es)). As tecnologias de apoio maximalistas substituem-se em grande parte ou
+na totalidade às capacidades da pessoa (é o caso de uma cadeira de rodas quando a pessoa é
+totalmente dependente dela para se deslocar). Sucintamente, as TA minimalistas <em>aumentam ou
+potenciam</em> em vez de substituir a função. Os termos ortótese e prótese, originalmente aplicados
+em ortopedia para dispositivos que <em>apoiavam</em> o movimento e para dispositivos que <em>substituíam</em>
+um membro, respetivamente, são agora também aplicados num sentido mais lato para designar
+tecnologias de apoio minimalistas e maximalistas;</p>
+
+<p><strong>Transversais <em>versus</em> Específicas</strong>: as tecnologias de apoio transversais são utilizadas em
+diversas atividades. É o caso, por exemplo, dos sistemas de assento e posicionamento,
+necessários para que uma pessoa consiga realizar diversas atividades, como usar um computador
+ou mover-se com o auxílio de uma cadeira de rodas. As TA específicas dão apoio à realização de
+uma atividade particular (<em>e.g.</em>, próteses auditivas);</p>
+
+<p><strong>Comerciais <em>versus</em> Feitas à medida</strong>: as tecnologias de apoio comerciais são aquelas que são
+produzidas em massa e podem facilmente ser adquiridas. Incluem produtos para a população
+em geral (<em>e.g.</em>, um computador) ou para pessoas com necessidades especiais (<em>e.g.</em>, uma cadeira
+de rodas). As tecnologias de apoio feitas à medida são fabricadas para satisfazer as necessidades
+de uma pessoa particular, como é exemplo um assento moldado para uma pessoa com uma
+deficiência motora grave. Estas tecnologias têm em regra preços por unidade muito mais elevados
+do que no caso das tecnologias comerciais que podem tirar partido de economias de escala pela
+produção em massa. Entre estes dois extremos estão os <em>produtos modificados</em> que resultam da
+adaptação de uma tecnologia comercial às necessidades especiais de um utilizador. Por exemplo,
+um computador pode ser dotado de <em>software</em> e <em>hardware</em> adequados que facilitem o acesso a
+quem tem dificuldades em utilizar o teclado convencional, ou um sistema de comunicação pode
+ser adaptado para ser instalado numa cadeira de rodas.</p>
+
+<p>Enquadrado no tema das tecnologias de apoio, o papel do Engenheiro de Reabilitação surge aqui
+com especial destaque, por ser quem desenvolve e promove a utilização destas tecnologias junto
+dos outros profissionais de <em>Reabilitação</em>.</p>
+
+<div class="alert alert-warning" role="alert">
+<p>A função do Engenheiro de Reabilitação é, muitas vezes, encontrar uma tecnologia de apoio
+que satisfaça as necessidades específicas de um indivíduo com deficiência, seja consistente
+com as suas capacidades, e que permita realizar determinadas funções no contexto da vida
+quotidiana dessa pessoa. O propósito da intervenção do Engenheiro de Reabilitação não é
+“curar” o indivíduo nem “remediar” a sua disfunção; é antes, em conjunto com outros
+profissionais, a avaliação da pessoa, da atividade funcional que se pretende realizar e dos seus
+diferentes contextos, e a seleção de tecnologias de apoio que capacitem o indivíduo para a
+realização dessa atividade.</p>
+</div>
+<span id="page20" epub:type="pagenumber">20</span>
+
+<a name="n243" id="n243"></a><h3>2.4.3 Seleção de uma tecnologia de apoio</h3>
+<p>A seleção de uma tecnologia de apoio deverá ter em conta as seguintes fases (Cook & Polgar,
+2008):</p>
+<ol type="i">
+<li><strong>Identificação da(s) atividade(s) que se pretende(m) realizar</strong>; esta(s) atividade(s)
+poderá(ão) ser realizada(s) pelo utilizador com total autonomia, com o auxílio de alguém,
+recorrendo a tecnologia, ou uma combinação destas hipóteses. É necessário perceber a
+importância que a atividade tem e quais as estratégias que são aceitáveis para o utilizador
+(<em>e.g.</em>, admite ou não recorrer ao auxílio de um cuidador para uma atividade de higiene
+pessoal). Deve ser o utilizador a tomar a decisão final sobre quais as atividades que
+pretende realizar e em que condições;</li>
+<li><strong>Aferir as capacidades</strong> funcionais físicas, sensoriais e cognitivas do utilizador, assim como
+as capacidades requeridas pela atividade, no(s) contexto(s) em que vai ser realizada;</li>
+<li><strong>Avaliar o contexto</strong> (por exemplo, onde é que o produto de apoio vai ser utilizado, se o
+produto vai ser usado apenas num contexto ou em vários, se o utilizador vai necessitar de
+transportar o produto de apoio de um contexto para outro);</li>
+<li><strong>Informar e aconselhar</strong> o utilizador, o cuidador ou os profissionais de reabilitação sobre as
+tecnologias de apoio disponíveis para o contexto do utilizador. Apoiar a seleção da
+tecnologia de apoio que satisfaça as necessidades do utilizador. Uma TA será mais eficaz
+se for flexível e adaptável, no sentido de acomodar os diversos contextos e a natural
+evolução das necessidades do utilizador. A prescrição de uma TA que não seja apropriada
+ao utilizador, que não tenha em conta a sua perspetiva, tanto objetiva como subjetiva, ou
+que seja de difícil utilização, levará certamente ao seu abandono por parte do utilizador
+(Phillips & Zhao, 1993).</li>
+</ol>
+
+<div class="alert alert-warning" role="alert">
+<p>Para uma correta avaliação da pessoa com deficiência e para a seleção de uma TA
+capaz de atingir os seus objetivos, é necessário que o Engenheiro de Reabilitação,
+integrado numa equipa de avaliação transdisciplinar, possua:</p>
+<ul>
+<li>Um conhecimento aplicado de fisiologia e patologia humanas;</li>
+<li>Um conhecimento profundo das tecnologias de apoio disponíveis no mercado;</li>
+<li>Uma sólida formação de base em Engenharia que lhe permita adaptar as
+tecnologias existentes às necessidades particulares do utilizador ou desenvolver
+novas TA;</li>
+<li>Um conhecimento da legislação, das entidades financiadoras e dos programas de
+financiamento disponíveis para custear as tecnologias de apoio. O Engenheiro de
+Reabilitação deve conhecer a linguagem correta, as definições que estão na
+legislação em vigor e as melhores abordagens para ser capaz de redigir um
+relatório que possibilite ao utilizador a obtenção de fundos públicos ou privados
+que cubram os custos inerentes à aquisição e utilização da tecnologia de apoio.</li>
+</ul>
+</div>
+<p>O Engenheiro de Reabilitação deverá fazer a ponte entre as tecnologias de apoio, especialmente
+as de base tecnológica, a pessoa que deles faz uso e a equipa multidisciplinar de apoio em que
+<span id="page21" epub:type="pagenumber">21</span>
+
+se insere. A sua intervenção faz-se no contacto direto com os utilizadores finais, distinguindo-se
+assim de muitas outras áreas da Engenharia Biomédica, em que os profissionais de engenharia
+não têm contacto com os utilizadores da tecnologia. Naturalmente que este aspeto de relação com
+os utilizadores finais traz uma complexidade acrescida, obrigando a um conhecimento
+multidisciplinar e ao trabalho de equipa com outros profissionais de <em>Reabilitação</em>. Um Engenheiro
+de Reabilitação poderá ter uma formação de base nas áreas de engenharia relacionadas com as
+ciências biomédicas, informática, eletrotecnia <sup id="cite_ref-1" class="reference"><a epub:type="noteref" href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> 
+ou mecânica. A sua especialização na área da Reabilitação resultará então da aplicação 
+dos seus conhecimentos e métodos à satisfação das necessidades das pessoas com deficiência.</p>
+
+<p>Para melhor se ilustrarem estas ideias, apresentam-se de seguida exemplos de solicitações
+colocadas a Engenheiros de Reabilitação, muitas vezes redigidas por médicos ou outros
+profissionais de saúde:</p>
+
+<ul>
+<li>X tem 12 anos e sofreu há 2 anos um traumatismo cranioencefálico num acidente de
+viação. Está totalmente dependente para os cuidados de higiene diária. Os seus pais
+precisam de ajuda para as transferências e deslocação.</li>
+<li>Y, 27 anos, é tetraplégico em consequência de uma lesão vértebro-medular. Mora com os
+pais e gostaria de ter autonomia plena em tarefas simples, como seja mudar os canais da
+televisão.</li>
+<li>W, 60 anos, tem esclerose lateral amiotrófica. Mora numa residência de saúde. Apesar de
+manter boa mobilidade, não quer sair do quarto porque a incomoda o facto de, ao falar,
+ninguém a entender.</li>
+<li>Z, 55 anos, tem tetraparésia espástica de predomínio nos membros esquerdos. As grandes
+dificuldades nos membros superiores são de predomínio distal, dificultando o acesso ao
+computador e a autonomia na alimentação, vestuário e escrita. Grande parte da sua
+atividade intelectual poderia desenvolver-se com maior vantagem com melhor acesso ao
+computador e voz sintetizada.</li>
+</ul>
+
+<p>Pretende-se que este livro ajude o leitor a interpretar e dar resposta a solicitações deste tipo. No
+final do Capítulo 11 são apresentados exemplos de relatórios de avaliação para tecnologias de
+apoio que podem ajudar as pessoas acima descritas.</p>
+
+<nav>        
+  <ul class="pager">
+    <li class="previous"><a href="/livros/tapd/html/1_introducao_apoio.html"><span aria-hidden="true">&larr;</span> Capítulo anterior</a></li>
+	<li class="top"><a href="#top"><span aria-hidden="true">&uarr;</span> Início da página</a></li>
+	<li class="next"><a href="/livros/tapd/html/3_pessoas_com_necessidades_especiais.html">Próximo capítulo <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+  </nav>
+
+
+<aside epub:type="footnote">
+<h2>Notas do capítulo 2</h2>
+<ol start="1">
+<li id="cite_note-1"><span class="reference-text">Como é o caso dos autores deste livro.</span><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span></li>
+</ol>
+</aside>
+
+<span id="page22" epub:type="pagenumber">22</span>
+</div>
+</body>
+</html>

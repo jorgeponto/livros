@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tecnologias de Apoio para Pessoas com Deficiência">
+    <meta name="author" content="Unidade ACESSO da FCT">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Ficha Técnica</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="boot/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="boot/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="boot/js/ie-emulation-modes-warning.js"></script>
+    
+<!--Script para controlar show/hide dos gráficos -->
+<script src="boot/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.toggle').each(function(){
+		$(this).click(function(e) {
+			var $clas = $(this).attr('id');
+			$('.'+$clas).toggle();
+			$(this).text(function(i,v){
+				return v === 'Ver tabela de dados' ? 'Ver gráfico' : 'Ver tabela de dados'
+			})
+		});
+	});
+});
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+<body>
+<div class="container">
+<p id="top"></p>
+          
+  <ol class="breadcrumb">
+  <li><a href="http://www.acessibilidade.gov.pt/">ACESSO</a></li>
+  <li>Tecnologias de apoio para pessoas com deficiência</li>
+    <li><a href="/livros/tapd/html/indice.html">Indice</a></li>
+    <li class="active">Ficha Técnica</li>   
+	  </ol>
+
+
+<h1>Ficha Técnica</h1>
+
+<h2>Autores</h2>
+<ul style="list-style-type:none">
+<li>Pedro Encarnação</li>
+<li>Luís Azevedo</li>
+<li>Ana Rita Londral</li>
+</ul>
+
+<h2>Editor</h2>
+<ul style="list-style-type:none">
+<li>Fundação para a Ciência e a Tecnologia (FCT)</li>
+<li>Departamento da Sociedade de Informação</li>
+<li>Unidade ACESSO</li>
+<li>Av. D. Carlos I – 126, 1249-074 Lisboa</li>
+</ul>
+
+<p>Capa: Unidade ACESSO da FCT</p>
+
+<h2>1.ª edição</h2>
+<ul style="list-style-type:none">
+<li>Edição impressa: EMEC – Editorial do Ministério da Educação e Ciência </li>
+<li>500 exemplares</li>
+<li>Março 2015</li>
+<li>Edição eBook: Unidade ACESSO da FCT</li>
+</ul>
+
+<p><dc:source><strong>ISBN</strong>: 978-972-667-345-3</dc:source></p>
+<p><strong>Depósito legal</strong>: 388 339/15</p>
+
+
+
+
+<nav>        
+  <ul class="pager">
+    <li class="previous"><a href="/livros/tapd/html/indice.html"><span aria-hidden="true">&larr;</span> Capítulo anterior</a></li>
+	<li class="top"><a href="#top"><span aria-hidden="true">&uarr;</span> Início da página</a></li>
+	<li class="next"><a href="/livros/tapd/html/notas_biograficas_autores.html">Próximo capítulo <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+  </nav>
+</body>
+</html>

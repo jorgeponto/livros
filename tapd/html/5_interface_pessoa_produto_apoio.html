@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tecnologias de Apoio para Pessoas com Deficiência">
+    <meta name="author" content="Unidade ACESSO da FCT">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Capítulo 5 - Interface pessoa/produto de apoio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="boot/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="boot/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="boot/js/ie-emulation-modes-warning.js"></script>
+    
+<!--Script para controlar show/hide dos gráficos -->
+<script src="boot/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.toggle').each(function(){
+		$(this).click(function(e) {
+			var $clas = $(this).attr('id');
+			$('.'+$clas).toggle();
+			$(this).text(function(i,v){
+				return v === 'Ver tabela de dados' ? 'Ver gráfico' : 'Ver tabela de dados'
+			})
+		});
+	});
+});
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="container">
+<p id="top"></p>
+          
+  <ol class="breadcrumb">
+  <li><a href="http://www.acessibilidade.gov.pt/">ACESSO</a></li>
+  <li>Tecnologias de apoio para pessoas com deficiência</li>
+    <li><a href="/livros/tapd/html/indice.html">Indice</a></li>
+    <li class="active">5. Interface pessoa/produto de apoio</li>   
+	  </ol>
+
+
+<h1>5. Interface pessoa/produto de apoio</h1>
+
+<p>A interface pessoa/produto de apoio é a fronteira entre o ser humano e o produto, através da qual
+é trocada informação (Cook & Polgar, 2008). Esta troca de informação é bidirecional, da pessoa
+para o produto de apoio e vice-versa. A troca de informação do utilizador para o produto de apoio
+com vista ao seu acionamento tem lugar através de uma interface de controlo. A informação do
+produto para o utilizador é normalmente visual, auditiva, ou táctil. Neste capítulo descrevem-se
+diversas interfaces de controlo, as suas características e os métodos de controlo. Dão-se
+exemplos de vários dispositivos de controlo para seleção direta e para seleção indireta. Embora
+o exemplo de aplicação mais imediata destes dispositivos de controlo seja o acesso a um
+computador, até porque muitos dos produtos de apoio estão hoje implementados em sistemas
+informáticos, os dispositivos de controlo apresentados são genéricos e podem dar acesso a
+qualquer produto de apoio que os suporte.</p>
+
+<a name="n51" id="n51"></a><h2>5.1 Interfaces de controlo</h2>
+<p>A interface de controlo é constituída pelo dispositivo de controlo, o conjunto de seleções e o
+método de seleção (Figura 5.1).</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_1.png" alt=""/>
+    <figcaption>
+        Figura 5.1: Interface de controlo
+    </figcaption>
+</figure>
+
+<a name="n511" id="n511"></a><h3>5.1.1 Dispositivo de controlo</h3>
+
+<p>O <em>dispositivo</em> de controlo é o dispositivo físico através do qual a pessoa opera ou controla o
+produto de apoio. Por exemplo, o ecrã táctil de um telemóvel é um dispositivo de controlo.</p>
+
+<p>Estes dispositivos podem gerar sinais de controlo discretos, que assumem apenas um número
+finito de valores (<em>e.g.</em>, um teclado de computador gera um sinal de controlo binário – pressionada/não
+pressionada – por cada tecla), ou sinais de controlo contínuos, que assumem uma infinidade de
+valores (<em>e.g.</em>, o rato de um computador pode gerar sinais que indicam a posição do ponteiro num
+dado intervalo de valores correspondente às posições possíveis no ecrã).</p>
+
+<a name="n512" id="n512"></a><h3>5.1.2 Conjunto de seleções</h3>
+
+<p>O <em>conjunto</em> de seleções é o conjunto de elementos que são apresentados ao utilizador para
+escolha. Podem ser letras, palavras, frases, imagens, comandos, etc.</p>
+<span id="page59" epub:type="pagenumber">59</span>
+
+<a name="n513" id="n513"></a><h3>5.1.3 Métodos de seleção</h3>
+
+<p>Os <em>métodos</em> de seleção referem-se à forma como o utilizador escolhe um de entre os elementos
+do conjunto de seleções. Existem dois métodos de seleção: seleção direta e seleção indireta.</p>
+
+<p>Na <em>seleção direta</em> o utilizador escolhe diretamente qualquer um dos elementos do conjunto de
+seleções, estando todas as opções disponíveis em cada instante. Para tal poderá utilizar, por
+exemplo, a voz, um segmento corporal, o olhar ou um dispositivo apontador. O rato, o teclado do
+computador e os sistemas de seguimento do olhar (<em>eye tracking</em>) são exemplos de interfaces de
+controlo por seleção direta (ver Secção 5.2). Tradicionalmente, a seleção direta era apenas
+indicada para utilizadores com boa coordenação motora. No entanto, atualmente há interfaces que
+podem ser controladas por pessoas com movimentos involuntários (<em>e.g.</em>, ratos que incluem
+algoritmos de compensação de tremor para utilizadores com patologias que afetem o controlo do
+movimento, ou sistemas de seguimento do olhar robustos aos movimentos involuntários de
+utilizadores com paralisia cerebral).</p>
+
+<p>Na <em>seleção indireta</em> são necessários passos intermédios até se efetuar a seleção. Pode ser
+efetuada por <em>varrimento</em> ou por <em>codificação</em>.</p>
+
+<p>A <em>seleção indireta por varrimento</em> é a mais usual: os elementos do conjunto de seleção vão sendo
+destacados sucessivamente (destaque visual ou auditivo) e a ritmo constante (definido como
+<em>velocidade de varrimento</em>). O utilizador gera então um sinal de controlo quando pretende
+selecionar o elemento destacado. O varrimento requer uma reduzida coordenação motora,
+estando acessível a qualquer utilizador que consiga efetuar pelo menos um movimento controlado.
+No entanto, é necessário que o utilizador consiga seguir visualmente (ou auditivamente) o
+varrimento e tenha boas capacidades de atenção, sequenciação e coordenação oculomotora (ou
+audiomotora). A seleção por varrimento é mais exigente em termos cognitivos, pois há mais
+passos entre a ação do utilizador e o resultado dessa ação. É, inerentemente, um método mais
+lento do que a seleção direta, sendo esta uma das suas principais desvantagens. Formas de
+acelerar este método de seleção incluem: aumentar a velocidade de varrimento, alterar a ordem
+com que as opções são apresentadas ao utilizador de acordo com o contexto, ou efetuar o
+<em>varrimento por blocos</em> (Figura 5.2). Nesta última opção apresentam-se primeiro ao utilizador
+diversos blocos de elementos, para depois se efetuar a seleção dentro desse bloco (por exemplo,
+num programa de processamento de texto, escolhe-se primeiro entre os comandos de formatação
+de texto, os comandos de controlo do ficheiro ou o teclado para escrita, para depois escolher a
+opção dentro do bloco selecionado). A estratégia mais comum de varrimento é o <em>varrimento
+linha/coluna</em>, em que as diversas opções estão dispostas numa matriz (tabela). Primeiro são
+percorridas as linhas até o utilizador selecionar a linha pretendida, percorrendo-se em seguida a
+linha escolhida, coluna a coluna, até finalmente o utilizador assinalar a opção pretendida (ver
+Figura 5.2 (B)).</p>
+<span id="page60" epub:type="pagenumber">60</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_2.png" alt=""/>
+    <figcaption>
+        Figura 5.2: Exemplos de estratégias de varrimento (A) varrimento normal (B) varrimento linha/coluna
+(C) varrimento bidirecional (D) varrimento por blocos
+    </figcaption>
+</figure>
+
+<p>Outra estratégia é a do <em>varrimento radial</em>, em que uma semirreta gira até que o utilizador gere um
+sinal de controlo (uma seleção), indicando a interseção da semirreta com a opção pretendida. De
+seguida, um marcador percorre a semirreta a partir da sua origem até que o utilizador gere novo
+sinal de controlo para fazer a seleção do elemento pretendido (Figura 5.3). Existem outras
+estratégias de varrimento, sempre com o objetivo de tornar o acesso mais rápido e eficaz. É de
+notar que, em regra, as estratégias de aceleração dos processos de varrimento estão associadas
+a um maior esforço cognitivo.</p>
+
+<p>O <em>varrimento direcionado</em> é um método de seleção híbrido, no sentido de que o utilizador seleciona
+diretamente a direção do varrimento (vertical ou horizontal) e o sistema inicia depois o varrimento
+automático na direção selecionada. Tal pode ser implementado, por exemplo, com o recurso a um
+<em>joystick</em>. O utilizador mantém o <em>joystick</em> acionado numa dada direção e a seleção é efetivada ao
+longo dessa direção quando este liberta o <em>joystick</em> sobre um elemento (Figura 5.4). Este método
+requer mais passos do que a seleção direta, mas menos do que a seleção indireta por varrimento
+apenas com um manípulo externo.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_3.png" alt=""/>
+    <figcaption>
+        Figura 5.3: Exemplo de varrimento radial. Neste exemplo, o ponteiro do rato desloca-se ao longo da linha diagonal
+(o raio da circunferência vai aumentando), na direção da cor verde. Quando a circunferência interseta a cor verde,
+o utilizador aciona o seu dispositivo de controlo (por exemplo, premindo um manípulo), selecionando essa cor.
+    </figcaption>
+</figure>
+
+<span id="page61" epub:type="pagenumber">61</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_4.png" alt=""/>
+    <figcaption>
+        Figura 5.4: Exemplo de varrimento direcionado
+    </figcaption>
+</figure>
+
+<p>Uma segunda hipótese de seleção indireta é o <em>acesso codificado</em>. Neste caso o utilizador usa a
+interface para introduzir um código correspondente à seleção pretendida. Por exemplo, usa
+apenas um manípulo para introduzir o código Morse de uma dada letra do alfabeto. O acesso
+codificado exige poucas capacidades físicas do utilizador e a velocidade de interação está apenas
+dependente do utilizador, mas é muito exigente em termos cognitivos (em especial em termos de
+memória e capacidade de sequenciação).</p>
+
+<p>Atualmente, a maioria dos produtos de apoio permite escolher mais do que um tipo de acesso,
+configurável para cada utilizador (aceita diversos dispositivos de controlo, com diferentes conjuntos
+de seleção e diferentes métodos de seleção).</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Na escolha de um dispositivo de controlo deve ter-se em conta (Cook & Polgar, 2008): as suas
+dimensões (<em>características espaciais</em>), como é ativado (<em>características de ativação</em>) e que
+informação é devolvida ao utilizador após a ativação (<em>características sensoriais</em>).</p>
+</div>
+
+<p>As características espaciais de um dispositivo de controlo incluem:</p>
+<ul>
+<li>Dimensão, forma e peso;</li>
+<li>Número de alvos para seleção;</li>
+<li>Dimensão de cada alvo; e</li>
+<li>Espaçamento entre alvos.</li>
+</ul>
+
+<p>As <em>características de ativação</em> de um dispositivo de controlo são:</p>
+<ul>
+<li>Método de ativação – movimento (dos olhos, da cabeça, da língua, de um membro ou de
+um grupo muscular), respiração (inspiração ou expiração), fala ou qualquer sinal fisiológico
+(<em>e.g.</em>, eletromiográfico);</li>
+<li>Esforço necessário para uma ativação (<em>e.g.</em>, a força necessária para premir o botão do
+rato);</li>
+<li>Esforço necessário para uma desativação (<em>e.g.</em>, o esforço associado ao movimento de
+levantar a mão para libertar um manípulo);</li>
+<li>Deslocamento para a ativação, isto é, o espaço percorrido entre a posição de repouso do
+dispositivo e a posição em que se dá a ativação;</li>
+<li>A flexibilidade, referindo-se a diferentes formas de ser ativado (<em>e.g.</em>, um manípulo que pode
+ser acionado com um qualquer segmento corporal é mais flexível que um manípulo ativado
+pela respiração);</li>
+<li>A durabilidade e a facilidade de manutenção.</li>
+</ul>
+
+<span id="page62" epub:type="pagenumber">62</span>
+
+<p>Finalmente, as características sensoriais de um dispositivo de controlo englobam a informação
+auditiva, visual e somatossensorial devolvida ao utilizador pela ativação da interface. Esta
+informação é relevante para que o utilizador saiba que a seleção foi efetivamente realizada,
+permitindo-lhe melhorar a utilização e ter a segurança de estar a executar as ações que pretende.
+Por exemplo, para uma pessoa a iniciar a aprendizagem de um processo de varrimento, poderá
+ser útil um retorno auditivo que assinale cada ativação. Em geral, quanto mais rica for a informação
+sensorial proporcionada pela interface, mais fácil é a sua utilização.</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Note-se que, na seleção de uma interface de controlo, além das características da interface em
+si, enumeradas acima, deve sempre ter-se em conta a atividade que se pretende realizar, em
+que contexto e quais as preferências do utilizador.</p>
+</div>
+
+<a name="n52" id="n52"></a><h2>5.2 Dispositivos de controlo para seleção direta</h2>
+<p>O teclado e o rato são os dispositivos de controlo para seleção direta mais usuais.</p>
+
+<a name="n521" id="n521"></a><h3>5.2.1 Teclados</h3>
+
+<p>Existem diversos tamanhos de teclados, com diferentes disposições das teclas ou com diferentes
+tipos de teclas. Os teclados para escrita podem ter dimensões superiores ao normal (teclados
+expandidos, como o da Figura 5.5) para facilitarem a seleção das diversas teclas por parte de
+pessoas com dificuldades no controlo fino dos movimentos ou de pessoas com deficiência visual;
+ou dimensões inferiores, para utilizadores que tenham pouca amplitude dos movimentos e, por
+isso, não sejam capazes de chegar a todas as teclas de um teclado padrão. Alguns teclados têm
+uma disposição das teclas mais ergonómica para diminuir o risco de lesões por esforço repetitivo
+(Figura 5.6). É também possível colocar uma grelha sobre um teclado para que as teclas fiquem
+em baixo relevo, ajudando a isolar cada tecla, guiando os movimentos da pessoa, e permitindo
+que esta mantenha as mãos apoiadas sobre o teclado sem efetuar qualquer seleção (Figura 5.7).
+No entanto, esta solução de “grelha” sobre o teclado levanta o problema de terem de ser
+desenhadas individualmente para cada teclado, uma vez que estes não são normalizados.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_5.png" alt=""/>
+    <figcaption>
+        Figura 5.5: Teclado expandido (LifeTech®, <a href="http://www.lifetech-world.com">www.lifetech-world.com</a>)
+    </figcaption>
+</figure>
+
+<span id="page63" epub:type="pagenumber">63</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_6.png" alt=""/>
+    <figcaption>
+        Figura 5.6: Teclado ergonómico (<a href="http://www.maltron.com">www.maltron.com</a>)
+    </figcaption>
+</figure>
+
+<p>Os teclados QWERTY são os mais comuns, embora tenham sido desenhados para as máquinas
+de escrever com o objetivo de afastar as letras que são mais frequentemente usadas
+consecutivamente (nas palavras de língua inglesa), minimizando assim o risco de as máquinas
+encravarem. Outros arranjos (e.g., Dvorak, Chubon ou ABC, ver (Cook & Polgar, 2008)) podem
+aumentar a velocidade de escrita, diminuir a fadiga e/ou estar mais apropriados a pessoas que
+usam apenas uma mão ou um dedo (Figura 5.8). Para crianças ou pessoas com défices cognitivos
+poderão ser usados teclados de conceitos, em que as letras são substituídas por imagens,
+símbolos ou palavras representativas de conceitos (Figura 5.9).</p>
+
+<p>Vários sistemas operativos incluem opções de acessibilidade que permitem fazer algumas
+adaptações para utilização do teclado (ver por exemplo (Microsoft, 2013)) tais como: definir um
+tempo de atraso de tecla para evitar ativações indesejadas, próprias de pessoas com tremor (é
+frequente premirem outras teclas antes ou premirem mais que uma vez a tecla pretendida);
+aumentar o tempo de aceitação para que uma ativação mais demorada não tenha como
+consequência a repetição da ação, próprio de pessoas com lentidão do movimento (ao demorar
+a levantar o dedo da tecla, pode desencadear-se a repetição da tecla premida surgindo, por
+exemplo, no processador de texto uma sequência da mesma letra: “olaaaaaaaaa”); ou eliminar a
+necessidade de pressionar simultaneamente uma tecla modificadora (CTRL, SHIFT ou ALT) e
+outra tecla, tornando-as sequenciais, para pessoas que escrevam apenas com um dedo. Estas
+opções estão hoje disponíveis em vários sistemas operativos (por exemplo, no caso do Windows
+7 e 8 estão incluídas no “Centro de Facilidade de Acesso”).</p>
+
+<p>Os teclados também podem ser virtuais, representados num ecrã, sendo a seleção das teclas
+efetuada através de ecrã táctil ou outros dispositivos de controlo. A utilização destes teclados
+está hoje banalizada nos telemóveis com ecrã táctil. Os teclados virtuais constituem uma solução
+em software cada vez mais utilizada como método de acesso ao computador por permitirem
+acesso direto ou por varrimento.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_7.png" alt=""/>
+    <figcaption>
+        Figura 5.7: Proteção de teclas (<a href="http://www.bigkeys.com">www.bigkeys.com</a>)
+    </figcaption>
+</figure>
+
+<span id="page64" epub:type="pagenumber">64</span>
+
+
+<figure>
+    <img class="img-responsive" src="images/figura5_8a.png" alt=""/>
+	<img class="img-responsive" src="images/figura5_8b.png" alt=""/>
+    <figcaption>
+        Figura 5.8: Disposições alternativas de teclas num teclado (<a href="http://www.mwbrooks.com/">www.bigkeys.com</a> e <a href="http://www.bigkeys.com">www.bigkeys.com</a>)
+    </figcaption>
+</figure>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_9.png" alt=""/>
+    <figcaption>
+        Figura 5.9: Teclado de conceitos (<a href="http://www.ablenetic.com">www.ablenetic.com</a>). Ao contrário dos teclados convencionais, que têm um conjunto
+fixo de teclas, este teclado tem uma membrana táctil podendo ser programadas diferentes zonas de ativação.
+É possível então imprimir e colocar uma grelha sobre a membrana táctil com a configuração do teclado programada.
+A figura ilustra o teclado configurado para controlo das funções do rato.
+    </figcaption>
+</figure>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Questões pertinentes para saber se um dado teclado é apropriado para um utilizador particular
+incluem (Cook & Polgar, 2008):</p>
+<ol type="i">
+<li>a pessoa consegue alcançar todas as teclas?</li>
+<li>o tamanho, espaçamento e as características sensoriais das teclas são adequadas?</li>
+<li>a velocidade de seleção das teclas pelo utilizador é adequada para a atividade a realizar?</li>
+<li>o utilizador é capaz de acionar as teclas com, pelo menos, 75% de exatidão?</li>
+<li>o utilizador é capaz de acionar simultaneamente uma tecla modificadora (CTRL, SHIFT
+ou ALT) e outra tecla?</li>
+<li>o utilizador é capaz de controlar a duração de acionamento de uma tecla antes que o seu
+efeito comece a repetir-se?</li>
+<li>a pessoa pode usar eficazmente um teclado convencional?</li>
+</ol>
+</div>
+<span id="page65" epub:type="pagenumber">65</span>
+
+<a name="n522" id="n522"></a><h2>5.2.2 Rato e outros dispositivos apontadores</h2>
+
+<p>O rato é um dispositivo de controlo para seleção direta. Trata-se de um <em>dispositivo apontador</em>
+porque o utilizador controla um ponteiro no ecrã, movendo-o para o colocar sobre o elemento a
+selecionar. Depois de posicionado o ponteiro, a seleção do elemento é feita por um comando,
+habitualmente através do acionamento de um botão. Por <em>software</em> é possível configurar o rato
+para que a seleção seja efetuada quando o ponteiro está sobre o alvo durante um tempo
+determinado (tempo de aceitação<sup id="cite_ref-30" class="reference"><a epub:type="noteref" href="#cite_note-30"><span>[</span>30<span>]</span></a></sup> 30), evitando-se a necessidade de acionar um botão. Os sistemas
+operativos incluem diversas opções relacionadas com a configuração do rato que podem tornar
+mais fácil a sua utilização por pessoas com deficiência, tais como a cor e o tamanho do ponteiro
+e a sua velocidade de deslocação. A opção <em>Teclas do Rato</em> é ainda outra alternativa, em que as
+teclas direcionais do teclado podem ser utilizadas para deslocar o ponteiro do rato (útil, por
+exemplo, para pessoas com movimentos involuntários, que acedem eficazmente a um teclado
+com proteção de teclas, mas têm dificuldade em controlar o rato).</p>
+
+<p>Para pessoas com uma amplitude de movimentos dos membros superiores limitada existem ratos
+de bola (<em>trackball</em>), em que a deslocação do ponteiro é efetuada pela rotação de uma bola
+estacionária. Este tipo de ratos requer apenas que o utilizador tenha controlo sobre movimentos
+de pequena amplitude, na mão ou dedos, para deslocar a bola (Figura 5.10 (A)). Um <em>joystick</em>
+também pode ser utilizado para controlar o ponteiro do rato (na Figura 5.10 (B) ilustra-se um
+<em>joystick</em> acionado pelo movimento do queixo).</p>
+
+<figure>
+<div class="row">
+    <div class="col-md-6"><img class="img-responsive" src="images/figura5_10a.png" alt="A"/><figcaption>(A)</figcaption></div>
+	<div class="col-md-6"><img class="img-responsive" src="images/figura5_10b.png" alt="B"/><figcaption>(B)</figcaption></div>
+	</div>
+    <figcaption>
+        Figura 5.10: Diferentes tipos de rato (A) <em>Trackball</em> (<a href="http://www.clearlysuperiortech.com">www.clearlysuperiortech.com</a>) 
+		(B) <em>Joystick</em> para controlar com o queixo, destinado a pessoas com tetraplegia (<a href="http://www.bj-adaptaciones.com">www.bj-adaptaciones.com</a>) 
+    </figcaption>
+</figure>
+
+<p>Utilizadores cuja funcionalidade motora não permite controlar um rato poderão recorrer a outros
+dispositivos apontadores mais específicos, tais como sistemas que seguem o movimento de um
+segmento corporal (e.g., a cabeça ou os olhos) ou interfaces baseadas em sensores eletrofisiológicos
+(ver Secção 5.4).</p>
+
+<p>Os dispositivos apontadores por deslocação de um segmento corporal baseiam-se normalmente
+numa câmara de alta resolução capaz de seguir esse movimento. Por exemplo, para seguir o
+<span id="page66" epub:type="pagenumber">66</span>
+movimento da cabeça, o utilizador poderá colar um ponto refletor na sua testa, óculos ou na ponta
+de um chapéu (Figura 5.11) que será captado por uma câmara capaz de determinar os
+movimentos desse ponto. Uma vez que, mesmo no caso das patologias mais graves, o controlo
+do olhar é normalmente preservado, os sistemas capazes de seguir o olhar têm recebido cada vez
+mais atenção e estão hoje disponíveis várias soluções comerciais (Figura 5.12). Nestes
+dispositivos apontadores a seleção dos elementos pode ser feita de duas formas: 1) o utilizador
+mantém o ponteiro sobre a opção durante um tempo predefinido (tempo de aceitação), ou 2)
+através de um sinal de controlo adicional (<em>e.g.</em>, usando um manípulo ou, no caso dos dispositivos
+de controlo pelo olhar, piscando os olhos). Estes sistemas requerem uma calibração inicial. Os
+sistemas mais robustos funcionam bem em diferentes condições de iluminação e são capazes de
+seguir o movimento mesmo quando o utilizador tem movimentos involuntários de cabeça de
+grande amplitude (por exemplo, utilizadores com paralisia cerebral espástica).</p>
+
+<figure>
+<div class="row">
+    <div class="col-md-6"><img class="img-responsive" src="images/figura5_11a.png" alt=""/></div>
+	<div class="col-md-6"><img class="img-responsive" src="images/figura5_11b.png" alt=""/></div>
+	</div>
+    <figcaption>
+        Figura 5.11: Sistema de seguimento de um segmento corporal (<a href="http://www.ablenetinc.com">www.ablenetic.com</a>"). Estes sistemas são normalmente
+desenhados para controlo do rato por ligeiros movimentos da cabeça, sendo denominados <i>headmouse</i>
+    </figcaption>
+</figure>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_12.png" alt=""/>
+    <figcaption>
+        Figura 5.12: Sistema de seguimento do olhar (<a href="http://www.tobii.com">www.tobii.com</a>")
+    </figcaption>
+</figure>
+
+<div class="alert alert-warning" role="alert">
+<p>Qualquer que seja a solução adotada para sistema apontador é necessário ter em conta os
+seguintes fatores (Cook & Polgar, 2008):</p>
+<ol type="i">
+<li>o utilizador consegue alcançar todos os elementos usando o dispositivo apontador?</li>
+<li>o tamanho e o espaçamento dos elementos é adequado?</li>
+<li>o utilizador é capaz de completar a ação necessária para efetuar a seleção e realizar
+outras opções requeridas pelo produto de apoio (e.g., arrastar uma seleção)?</li>
+<li>as características sensoriais da interface e do dispositivo apontador são adequadas?</li>
+<li>a disposição dos elementos no dispositivo apontador favorece a utilização do sistema
+apontador?</li>
+</ol>
+</div>
+
+<p>Outros dispositivos de controlo para seleção direta são os sistemas de reconhecimento de fala,
+capazes de reconhecer os comandos que são dados oralmente pelo utilizador. Estes sistemas
+podem ser dependentes do utilizador, necessitando de ser treinados pelo próprio para obter um
+<span id="page67" epub:type="pagenumber">67</span>
+modelo acústico pessoal, ou independentes do utilizador, utilizando um modelo acústico geral
+para reconhecer comandos de voz sem treino específico. Sistemas de reconhecimento de fala são
+hoje usados para acesso a computadores, controlo de cadeiras de rodas, ou controlo do ambiente
+(acender/apagar as luzes, por exemplo).</p>
+
+<a name="n53" id="n53"></a><h2>5.3 Dispositivos de controlo para seleção indireta por varrimento</h2>
+
+<p>Os <em>manípulos</em><sup id="cite_ref-31" class="reference"><a epub:type="noteref" href="#cite_note-31"><span>[</span>31<span>]</span></a></sup> 
+são os dispositivos de controlo usados tipicamente para seleção indireta por
+varrimento (ver Secção 5.1.3). Com eles o utilizador consegue gerar sinais binários (ativado/não
+ativado) permitindo-lhe controlar os processos de varrimento e efetuar a seleção do elemento
+pretendido. Apesar da tradução de <em>switch</em> para <em>manípulo</em> sugerir a sua ativação com as mãos,
+existem diversos tipos de manípulos, com diferentes tipos de ativação (mecânica, eletromagnética,
+elétrica, pneumática ou por som) e com diversas formas e tamanhos, de modo a se adaptarem à
+região anatómica que os aciona<sup id="cite_ref-32" class="reference"><a epub:type="noteref" href="#cite_note-32"><span>[</span>32<span>]</span></a></sup> 
+. Os mais comuns são os manípulos de pressão (ver Figura 5.13).</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Para a escolha de um manípulo adequado para seleção indireta por varrimento há que
+responder às seguintes questões (Cook & Polgar, 2008):</p>
+<ol type="i">
+<li>a pessoa consegue ativar o manípulo?</li>
+<li>a pessoa consegue esperar pela apresentação do elemento a selecionar?</li>
+<li>a pessoa consegue ativar o manípulo no instante necessário?</li>
+<li>a pessoa consegue manter a ativação do manípulo?</li>
+<li>a pessoa consegue libertar o manípulo?</li>
+<li>a pessoa consegue repetidamente realizar os passos necessários para uma seleção?</li>
+</ol>
+</div>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_13.png" alt=""/>
+    <figcaption>
+        Figura 5.13: Exemplo de um manípulo (<em>Jelly Bean®</em>, <a href="http://www.ablenetinc.com">www.ablenetinc.com</a>)
+    </figcaption>
+</figure>
+
+<p>Os manípulos de pressão são, com frequência, montados em braços articulados (Figura 5.14) que
+facilitam o posicionamento do manípulo junto da zona anatómica usada para a sua ativação (por
+exemplo, quando se pretende acioná-lo com movimentos laterais da cabeça). Estes sistemas de
+posicionamento têm a capacidade de se adaptar às necessidades do utilizador, em diferentes
+contextos. Esta flexibilidade, porém, tem a desvantagem de serem necessários reajustes sempre
+que o sistema de posicionamento é utilizado.</p>
+
+<span id="page68" epub:type="pagenumber">68</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura5_14.png" alt=""/>
+    <figcaption>
+        Figura 5.14: Braço articulado para posicionamento adequado de manípulos (<a href="http://www.ablenetinc.com">www.ablenetinc.com</a>)
+    </figcaption>
+</figure>
+
+<div class="alert alert-warning" role="alert"> 
+<p>É importante referir que o desempenho de uma pessoa na utilização de um produto de apoio
+é influenciado sobremaneira pelo seu próprio posicionamento, que deve promover a função, e
+pelo posicionamento do dispositivo de controlo.</p>
+</div>
+
+<a name="n54" id="n54"></a><h2>5.4 Dispositivos de controlo baseados em sinais eletrofisiológicos</h2>
+
+<p>O corpo humano gera sinais elétricos que podem ser captados de forma não-invasiva, à superfície
+da pele, e utilizados como sinais de controlo. São exemplos os sinais provenientes da atividade
+muscular (sinais eletromiográficos – EMG), que permitem captar pequenos movimentos (mesmo
+quando insuficientes para acionar um manípulo) e os sinais provenientes da atividade muscular
+dos olhos (sinais eletrooculográficos – EOG). Também a atividade elétrica do cérebro (sinais
+eletroencefalográficos – EEG) pode ser captada por interfaces cérebro/computador<sup id="cite_ref-33" class="reference"><a epub:type="noteref" href="#cite_note-33"><span>[</span>33<span>]</span></a></sup> 
+, através das quais é possível gerar sinais de controlo, utilizando diferentes métodos. Embora as interfaces
+cérebro/computador se encontrem ainda em fase de investigação, existem já alguns produtos
+comerciais (Figura 5.15). A sua complexidade de utilização (tipicamente recorrem a 10 a 20
+sensores EEG que devem estar rigorosamente posicionados no escalpe), a dependência de
+técnicos especializados para a colocação dos elétrodos e a falta de aplicações que respondam
+às necessidades dos utilizadores, são algumas das barreiras à sua comercialização e
+generalização (Wolpaw & Birbaumer, 2006). No entanto, os resultados da investigação neste
+campo são promissores para o futuro destes produtos de apoio. Para os leitores interessados em
+aprofundar o conhecimento neste tipo de interfaces de controlo, recomenda-se a leitura do artigo
+(Wolpaw J., 2004).</p>
+
+<span id="page69" epub:type="pagenumber">69</span>
+
+
+<figure>
+    <img class="img-responsive" src="images/figura5_15.png" alt=""/>
+    <figcaption>
+        Figura 5.15: Interface cérebro/computador (<a href="http://www.emotiv.com">www.emotiv.com</a>)
+    </figcaption>
+</figure>
+
+<p>As interfaces baseadas em sinais eletrofisiológicos têm como principal alvo as pessoas com graves
+limitações motoras. Estas interfaces estão dependentes do desenvolvimento de sensores biomédicos
+capazes de captar eficazmente os sinais eletrofisiológicos e de técnicas de processamento de
+sinal adequadas para o acesso a produtos de apoio (Londral, Nunes, Silva, Carvalho, & Azevedo,
+2013). Os produtos disponíveis atualmente no mercado requerem normalmente uma fase de
+treino usando técnicas de biofeedback, em que o utilizador vai adaptando a sua ação consoante
+o efeito que lhe é mostrado no ecrã (ver exemplo na Figura 5.16).</p>
+
+
+<figure>
+<div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="images/figura5_16a.png" alt=""/></div>
+	 <div class="col-md-6"><img class="img-responsive" src="images/figura5_16b.png" alt=""/></div>
+	 </div>
+    <figcaption>
+        Figura 5.16: Interface de acesso ao computador baseada em sinais eletrofisiológicos (accessPlux, <a href="http://www.access.plux.info">www.access.plux.info</a>).
+		À esquerda, os sinais elétricos provenientes da atividade muscular (sinal eletromiográfico) correspondente a pequenos
+movimentos (por exemplo, de um dedo) são captados no braço e transmitidos por Bluetooth® para o computador. No
+ecrã do computador (à direita), o utilizador pode visualizar o “seu” sinal. É necessária uma fase de treino para que o
+utilizador aprenda a gerar um sinal acima do limiar representado pela linha verde tracejada, de modo a que esse sinal
+seja interpretado pelo computador como um comando.
+    </figcaption>
+</figure>
+
+<span id="page70" epub:type="pagenumber">70</span>
+
+<nav>        
+  <ul class="pager">
+    <li class="previous"><a href="/livros/tapd/html/4_modelos_tecnologias_apoio.html"><span aria-hidden="true">&larr;</span> Capítulo anterior</a></li>
+	<li class="top"><a href="#top"><span aria-hidden="true">&uarr;</span> Início da página</a></li>
+	<li class="next"><a href="/livros/tapd/html/6_tecnologias_apoio_mobilidade.html">Próximo capítulo <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+  </nav>
+
+<aside epub:type="footnote">
+<h2>Notas do capítulo 5</h2>
+<ol start="30">
+<li id="cite_note-30"><span class="reference-text"> <em>Dwell time</em> na literatura anglo-saxónica.
+</span><span class="mw-cite-backlink"><a href="#cite_ref-30">↑</a></span></li>
+<li id="cite_note-31"><span class="reference-text"> <em>Switches</em> na literatura anglo-saxónica.
+</span><span class="mw-cite-backlink"><a href="#cite_ref-31">↑</a></span></li>
+<li id="cite_note-32"><span class="reference-text"> Ver diferentes exemplos no sítio da empresa <a href="http://www.ablenetinc.com">www.ablenetinc.com</a>.
+</span><span class="mw-cite-backlink"><a href="#cite_ref-32">↑</a></span></li>
+<li id="cite_note-33"><span class="reference-text">BCI - <em>Brain computer interfaces</em> na literatura anglo-saxónica.
+</span><span class="mw-cite-backlink"><a href="#cite_ref-33">↑</a></span></li>
+</ol>
+</aside>
+</div>
+</body>
+</html>

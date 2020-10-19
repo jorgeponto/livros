@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tecnologias de Apoio para Pessoas com Deficiência">
+    <meta name="author" content="Unidade ACESSO da FCT">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Capítulo 3 - Pessoas com necessidades especiais</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="boot/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="boot/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="boot/js/ie-emulation-modes-warning.js"></script>
+    
+<!--Script para controlar show/hide dos gráficos -->
+<script src="boot/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.toggle').each(function(){
+		$(this).click(function(e) {
+			var $clas = $(this).attr('id');
+			$('.'+$clas).toggle();
+			$(this).text(function(i,v){
+				return v === 'Ver tabela de dados' ? 'Ver gráfico' : 'Ver tabela de dados'
+			})
+		});
+	});
+});
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="container">
+<p id="top"></p>
+          
+  <ol class="breadcrumb">
+  <li><a href="http://www.acessibilidade.gov.pt/">ACESSO</a></li>
+  <li>Tecnologias de apoio para pessoas com deficiência</li>
+    <li><a href="/livros/tapd/html/indice.html">Indice</a></li>
+    <li class="active">3. Pessoas com necessidades especiais</li>   
+	  </ol>
+
+
+<h1>3. Pessoas com necessidades especiais</h1>
+<p>Neste capítulo começa-se por referir os dados estatísticos disponíveis relativos a pessoas com
+deficiência residentes em Portugal. Apresenta-se depois, de forma necessariamente breve, a CIF
+– Classificação Internacional de Funcionalidade, Incapacidade e Saúde (Direcção-Geral da Saúde,
+2004). Finalmente, caracterizam-se algumas patologias que tipicamente levam à necessidade de
+utilização de tecnologias de apoio e, como tal, devem ser minimamente familiares a um Engenheiro
+de Reabilitação. Em particular, referem-se as lesões vértebro-medulares, os traumatismos
+cranioencefálicos (TCE<sup id="cite_ref-2" class="reference"><a epub:type="noteref" href="#cite_note-2"><span>[</span>2<span>]</span></a></sup>), 
+os acidentes cerebrais vasculares (AVC<sup id="cite_ref-3" class="reference"><a epub:type="noteref" href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> ), 
+a esclerose lateral amiotrófica (ELA<sup id="cite_ref-4" class="reference"><a epub:type="noteref" href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> ), 
+a demência, a paralisia cerebral (PC), as perturbações da linguagem e da fala, as
+perturbações do espectro do autismo, as dificuldades específicas de aprendizagem e as
+deficiências visuais e auditivas. Do ponto de vista da Engenharia de Reabilitação, o foco deve estar
+nas capacidades e funcionalidades remanescentes da pessoa com deficiência. É aproveitando as
+capacidades que a pessoa mantém que se poderão realizar as atividades desejadas de uma forma
+alternativa ou com o suporte de tecnologias de apoio.</p>
+
+<a name="n31" id="n31"></a><h2>3.1 Informação estatística</h2>
+<p>As estatísticas disponíveis relativas a Deficiência e Reabilitação no contexto português resultam
+do “Inquérito nacional às incapacidades, deficiências e desvantagens” (Secretariado Nacional de
+Reabilitação e Integração de Pessoas com Deficiência, 1996), realizado em 1995 pelo então
+Secretariado Nacional de Reabilitação, abrangendo uma amostra de 142.112 indivíduos, e dos
+dados obtidos pelo Instituto Nacional de Estatística aquando dos Censos 2001 (Instituto Nacional
+de Estatística, 2001) e dos Censos 2011 (Instituto Nacional de Estatística, 2011). Registe-se que
+o inquérito realizado em 1995 é anterior à CIF – Classificação Internacional de Funcionalidade,
+Incapacidade e Saúde (ver Secção 3.2), publicada pela Organização Mundial da Saúde na língua
+inglesa em 2001. O inquérito assume por isso ainda um modelo da deficiência puramente médico
+com as seguintes definições operacionais:</p>
+
+<ul>
+<li><em>Deficiência</em>: representa qualquer perda ou alteração de uma estrutura ou de uma função
+psicológica, fisiológica ou anatómica, de carácter temporário ou permanente, tendo sido
+adotados cinco grandes agrupamentos: deficiências psíquicas, sensoriais, físicas, mistas
+e nenhuma deficiência em especial;</li>
+<li><em>Incapacidade</em>: consiste na restrição ou falta de capacidade para realizar uma atividade
+dentro dos limites considerados normais para um ser humano, podendo ser temporária
+ou permanente, reversível ou irreversível, progressiva ou regressiva. É sempre resultante
+de uma deficiência;</li>
+<li><em>Desvantagem (handicap)</em>: é a condição social de prejuízo sofrido por um dado indivíduo,
+resultante de uma deficiência ou de uma incapacidade que limita ou impede o desempenho
+<span id="page23" epub:type="pagenumber">23</span>
+de uma atividade considerada normal para um ser humano, tendo em atenção a idade, o
+género e os fatores socioculturais.</li>
+</ul>
+
+<p>Já nos Censos 2001 fala-se apenas de deficiência, enquanto nos Censos 2011 o conceito base
+é o de funcionalidade, já mais em linha com a CIF. Os três estudos refletem a perceção dos
+inquiridos sobre a causa das suas incapacidades e não correspondem a uma avaliação direta,
+devendo, por isso, ser usados com cautela enquanto quantificação das pessoas com deficiência
+existentes em Portugal. Tendo os estudos óticas diferentes, não é imediata a comparação dos
+resultados para obter uma análise evolutiva da população com deficiência em Portugal. Por esta
+razão, apresentam-se os resultados dos trabalhos individualmente, evitando-se uma análise
+conjunta.</p>
+
+<p>De acordo com (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência,
+1996), a taxa nacional de pessoas com deficiência estimava-se em 9,16% no ano de 1995, valor
+semelhante aos restantes países da União Europeia. Como se pode observar na Figura 3.1,
+constatou-se uma tendência para o aumento do peso relativo de pessoas com pelo menos uma
+incapacidade com o aumento da idade, sendo a faixa etária dos 45 aos 54 anos o período crítico
+a partir do qual há um acentuado crescimento da taxa de incidência de incapacidade. Esta taxa
+aumenta consideravelmente nas idades de pré-reforma e de reforma. No entanto, é de referir que
+a taxa média de incidência de incapacidade nos grupos etários dos 6 aos 44 anos, correspondentes
+à escolaridade obrigatória, formação profissional e emprego, ronda os 75‰, com especial
+relevância para os sistemas de ensino e colocação profissional. O Censos 2001 revela que a
+percentagem de pessoas com deficiência em 2001 é de 6,1%da população residente em Portugal,
+percentagem esta que é crescente com a faixa etária considerada (ver Figura 3.2). Em 2011, 17,8%
+da população com cinco ou mais anos de idade declarou ter muita dificuldade ou não conseguir
+realizar pelo menos uma das seguintes atividades diárias: ver, ouvir, andar ou subir degraus,
+memória ou concentração, tomar banho ou vestir-se sozinho e compreender os outros ou fazer-se
+compreender (Instituto Nacional de Estatística, 2011). A Figura 3.3 mostra que, também em 2011,
+a taxa de pessoas com pelo menos uma dificuldade aumenta com a idade.</p>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_1">Ver tabela de dados</button></p>
+<figure class="grafico_1">
+    <img class="img-responsive" src="images/figura3_1.png" alt=""/>
+    <figcaption>
+		Figura 3.1: Taxa de incidência de pessoas com alguma incapacidade por faixa etária em 1995 (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_1" style="display:none;">
+<caption>Equivalente da figura 3.1: Taxa de incidência de pessoas com alguma incapacidade por faixa etária em 1995 (Secretariado Nacional de Reabilitação
+e Integração de Pessoas com Deficiência, 1996)</caption>
+<tr>
+<th>Grupo etário [anos]</th>
+<th>Pessoas com alguma incapacidade por cada mil habitantes</th>
+</tr>
+<tr>
+<td>0 - 2</td>
+<td>26,01‰</td>
+</tr>
+<tr>
+<td>3 - 5</td>
+<td>43,75‰</td>
+</tr>
+<tr>
+<td>6 - 15</td>
+<td>68,65‰</td>
+</tr>
+<tr>
+<td>16 - 24</td>
+<td>65,32‰</td>
+</tr>
+<tr>
+<td>25 - 34</td>
+<td>77,73‰</td>
+</tr>
+<tr>
+<td>35 - 44</td>
+<td>88,80‰</td>
+</tr>
+<tr>
+<td>45 - 54</td>
+<td>136,95‰</td>
+</tr>
+<tr>
+<td>55 - 64</td>
+<td>247,95‰</td>
+</tr>
+<tr>
+<td>65 - 74</td>
+<td>367,76‰</td>
+</tr>
+<tr>
+<td>> 75</td>
+<td>762,10‰</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<span id="page24" epub:type="pagenumber">24</span>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_2">Ver tabela de dados</button></p>
+<figure class="grafico_2">
+    <img class="img-responsive" src="images/figura3_2.png" alt=""/>
+    <figcaption>
+        Figura 3.2: Percentagem de pessoas com deficiência por faixa etária em 2001 (Instituto Nacional de Estatística, 2001)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_2" style="display:none">
+<caption>Equivalente da figura 3.2: Percentagem de pessoas com deficiência por faixa etária em 2001 (Instituto Nacional de Estatística, 2001)</caption>
+<tr>
+<th>Grupo etário [anos]</th>
+<th>Pessoas com deficiência por cada mil habitantes</th>
+</tr>
+<tr>
+<td>0 - 4</td>
+<td>9,75%</td>
+</tr>
+<tr>
+<td>5 - 9</td>
+<td>21,59%</td>
+</tr>
+<tr>
+<td>10 - 14</td>
+<td>30,38‰</td>
+</tr>
+<tr>
+<td>15 - 19</td>
+<td>34,84‰</td>
+</tr>
+<tr>
+<td>20 - 24</td>
+<td>35,82‰</td>
+</tr>
+<tr>
+<td>25 - 29</td>
+<td>38,43‰</td>
+</tr>
+<tr>
+<td>30 - 34</td>
+<td>42,01‰</td>
+</tr>
+<tr>
+<td>35 - 39</td>
+<td>46,18‰</td>
+</tr>
+<tr>
+<td>40 - 44</td>
+<td>52,18‰</td>
+</tr>
+<tr>
+<td>45 - 49</td>
+<td>61,97‰</td>
+</tr>
+<tr>
+<td>50 - 54</td>
+<td>78,92‰</td>
+</tr>
+<tr>
+<td>55 - 59</td>
+<td>91,46‰</td>
+</tr>
+<tr>
+<td>60 - 64</td>
+<td>98,61‰</td>
+</tr>
+<tr>
+<td>65 - 69</td>
+<td>100,89‰</td>
+</tr>
+<tr>
+<td>70 - 74</td>
+<td>113,74‰</td>
+</tr>
+<tr>
+<td>75 - 79</td>
+<td>131,39‰</td>
+</tr>
+<tr>
+<td>80 - 84</td>
+<td>157,19‰</td>
+</tr>
+<tr>
+<td>>85</td>
+<td>192,49‰</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_3">Ver tabela de dados</button></p>
+<figure class="grafico_3">
+    <img class="img-responsive" src="images/figura3_3.png" alt=""/>
+    <figcaption>
+        Figura 3.3: Taxas de pessoas com alguma dificuldade por faixa etária em 2011 (Instituto Nacional de Estatística, 2011)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_3" style="display:none">
+<caption>Equivalente da figura 3.3: Taxas de pessoas com alguma dificuldade por faixa etária em 2011 (Instituto Nacional de Estatística, 2011)</caption>
+<tr>
+<th>Grupo etário [anos]</th>
+<th>Pessoas com alguma dificuldade por cada mil habitantes</th>
+</tr>
+<tr>
+<td>0 - 4</td>
+<td>0,00</td>
+</tr>
+<tr>
+<td>5 - 9</td>
+<td>44,79%</td>
+</tr>
+<tr>
+<td>10 - 14</td>
+<td>50,82‰</td>
+</tr>
+<tr>
+<td>15 - 19</td>
+<td>43,72‰</td>
+</tr>
+<tr>
+<td>20 - 24</td>
+<td>42,05‰</td>
+</tr>
+<tr>
+<td>25 - 29</td>
+<td>45,01‰</td>
+</tr>
+<tr>
+<td>30 - 34</td>
+<td>51,40‰</td>
+</tr>
+<tr>
+<td>35 - 39</td>
+<td>61,10‰</td>
+</tr>
+<tr>
+<td>40 - 44</td>
+<td>81,00‰</td>
+</tr>
+<tr>
+<td>45 - 49</td>
+<td>120,71‰</td>
+</tr>
+<tr>
+<td>50 - 54</td>
+<td>166,90%</td>
+</tr>
+<tr>
+<td>55 - 59</td>
+<td>209,95‰</td>
+</tr>
+<tr>
+<td>60 - 64</td>
+<td>248,91‰</td>
+</tr>
+<tr>
+<td>65 - 69</td>
+<td>312,45‰</td>
+</tr>
+<tr>
+<td>70 - 74</td>
+<td>414,98‰</td>
+</tr>
+<tr>
+<td>75 - 79</td>
+<td>534,91‰</td>
+</tr>
+<tr>
+<td>80 - 84</td>
+<td>669,43‰</td>
+</tr>
+<tr>
+<td>85 - 89</td>
+<td>777,16‰</td>
+</tr>
+<tr>
+<td>>90</td>
+<td>854,88‰</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<p>No que diz respeito ao tipo de incapacidade, adotando a classificação da Organização Mundial de
+Saúde (OMS) vigente em 1995 (ver (Secretariado Nacional de Reabilitação e Integração de
+Pessoas com Deficiência, 1996)), as incapacidades “face a situações” e “de locomoção” tinham
+uma maior incidência: 258,81‰ e 220,88‰, respetivamente, face ao número total de incapacidades
+registadas (ver Figura 3.4). A primeira categoria é muito abrangente, englobando incapacidades que
+decorrem da dependência (por exemplo de uma máquina externa de suporte de vida) e da
+resistência física (<em>e.g.</em>, dificuldade em manter-se sentado), e incapacidades face ao ambiente (<em>e.g.</em>,
+intolerância ao pó) e a outras situações físicas (<em>e.g.</em>, incapacidade para acompanhar o ritmo de
+trabalho). Esse facto talvez justifique a taxa de incidência relativamente elevada.</p>
+
+<span id="page25" epub:type="pagenumber">25</span>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_4">Ver tabela de dados</button></p>
+<figure class="grafico_4">
+    <img class="img-responsive" src="images/figura3_4.png" alt=""/>
+    <figcaption>
+		Figura 3.4: Distribuição de pessoas com alguma incapacidade pelo tipo de incapacidade em 1995 (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_4" style="display:none">
+<caption>Equivalente da figura 3.4: Distribuição de pessoas com alguma incapacidade pelo tipo de incapacidade em 1995 (Secretariado
+Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)</caption>
+<tr>
+<th>Tipo de Incapacidade</th>
+<th>‰ face ao número total de incapacidades</th>
+</tr>
+<tr>
+<td>Ver</td>
+<td>83,68%</td>
+</tr>
+<tr>
+<td>Ouvir</td>
+<td>71,09%</td>
+</tr>
+<tr>
+<td>Falar</td>
+<td>41,26%</td>
+</tr>
+<tr>
+<td>Outras incap. de comunicação</td>
+<td>54,16%</td>
+</tr>
+<tr>
+<td>Cuidado pessoal</td>
+<td>80,81%</td>
+</tr>
+<tr>
+<td>Locomução</td>
+<td>220,88%</td>
+</tr>
+<tr>
+<td>Tarefas diárias</td>
+<td>66,03%</td>
+</tr>
+<tr>
+<td>Face a situações</td>
+<td>258,81%</td>
+</tr>
+<tr>
+<td>Comportamento</td>
+<td>123,28%</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<p>Quanto ao tipo de deficiências, verificou-se que em 1995 as deficiências físicas constituíam a
+maioria (52,6%) das deficiências reportadas (Figura 3.5). A Figura 3.6 apresenta a distribuição das
+causas das deficiências apuradas no mesmo ano, verificando-se que a doença comum (40%),
+outras origens (16%) e hereditariedade (12%) constituíam as causas mais frequentes de
+deficiência.</p>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_5">Ver tabela de dados</button></p>
+<figure class="grafico_5">
+    <img class="img-responsive" src="images/figura3_5.png" alt=""/>
+    <figcaption>
+		Figura 3.5: Distribuição das deficiências por tipo em 1995 (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_5" style="display:none">
+<caption>Equivalente da figura 3.5: Distribuição das deficiências por tipo em 1995 (Secretariado Nacional de Reabilitação e Integração de
+Pessoas com Deficiência, 1996)</caption>
+<tr>
+<th>Deficiências</th>
+<th>% face ao número total de deficiências</th>
+</tr>
+<tr>
+<td>Psíquicas</td>
+<td>117,15%</td>
+</tr>
+<tr>
+<td>Sensoriais</td>
+<td>294,51%</td>
+</tr>
+<tr>
+<td>Físicas</td>
+<td>526,09%</td>
+</tr>
+<tr>
+<td>Mistas</td>
+<td>23,33%</td>
+</tr>
+<tr>
+<td>Nenhuma especial</td>
+<td>38,92%</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<span id="page26" epub:type="pagenumber">26</span>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_6">Ver tabela de dados</button></p>
+<figure class="grafico_6">
+    <img class="img-responsive" src="images/figura3_6.png" alt=""/>
+    <figcaption>
+		Figura 3.6: Distribuição das causas das deficiências registadas em 1995 (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_6" style="display:none">
+<caption>Equivalente da figura 3.6: Distribuição das causas das deficiências registadas em 1995 (Secretariado Nacional de Reabilitação e
+Integração de Pessoas com Deficiência, 1996)</caption>
+<tr>
+<th>Causas das Deficiências</th>
+<th>Percentagem face ao número total das causas das deficiências</th>
+</tr>
+<tr>
+<td>Doença comum</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Doença profissional</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>Acidente de trabalho</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>Acidente doméstico</td>
+<td>3%</td>
+</tr>
+<tr>
+<td>Acidente de trânsito</td>
+<td>3%</td>
+</tr>
+<tr>
+<td>Outros acidentes</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>Guerra</td>
+<td>1%</td>
+</tr>
+<tr>
+<td>Senilidade</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>Parto</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>Gravidez</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>Hereditariedade</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>Outras origens</td>
+<td>16%</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<p>Nos Censos 2001 recolheu-se também informação relativamente ao tipo de deficiência (Figura 3.7).
+Neste caso, as deficiências sensoriais (auditiva e visual) constituíam a maioria das deficiências
+reportadas (39,3%, face aos 24,6% das deficiências motoras). Note-se, no entanto, que nas
+deficiências físicas contabilizadas em 1995 estavam incluídas deficiências ao nível dos órgãos
+internos, deficiências músculo-esqueléticas e estéticas da região da cabeça e do tronco, bem como
+as deficiências dos membros superiores e inferiores. Era portanto uma categoria muito mais
+abrangente quando comparada com a categoria deficiência motora usada em 2001. Em 2011, a
+distribuição de pessoas comalguma dificuldade por tipo foi a representada na Figura 3.8.Agrupando
+as dificuldades em ver e ouvir em dificuldades sensoriais, e as dificuldades em andar ou subir
+degraus e em tomar banho ou vestir-se sozinho em dificuldades motoras, obtêm-se percentagens
+equivalentes para estas classes face ao total de dificuldades (aproximadamente 37%).</p>
+
+<span id="page27" epub:type="pagenumber">27</span>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_7">Ver tabela de dados</button></p>
+<figure class="grafico_7">
+    <img class="img-responsive" src="images/figura3_7.png" alt=""/>
+    <figcaption>
+ 		Figura 3.7: Distribuição das deficiências por tipo em 2001 (Instituto Nacional de Estatística, 2001)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_7" style="display:none">
+<caption>Equivalente da figura 3.7: Distribuição das deficiências por tipo em 2001 (Instituto Nacional de Estatística, 2001)</caption>
+<tr>
+<th>Deficiências</th>
+<th>Percentagem face ao total de pessoas com deficiência</th>
+</tr>
+<tr>
+<td>Auditiva</td>
+<td>13,1%</td>
+</tr>
+<tr>
+<td>Visual</td>
+<td>26,2%</td>
+</tr>
+<tr>
+<td>Motora</td>
+<td>24,6%</td>
+</tr>
+<tr>
+<td>Mental</td>
+<td>11,5%</td>
+</tr>
+<tr>
+<td>Paralisia Cerebral</td>
+<td>1,6%</td>
+</tr>
+<tr>
+<td>Outra deficiência</td>
+<td>23,0%</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_8">Ver tabela de dados</button></p>
+<figure class="grafico_8">
+    <img class="img-responsive" src="images/figura3_8.png" alt=""/>
+    <figcaption>
+		Figura 3.8: Distribuição das dificuldades por tipo em 2011 (Instituto Nacional de Estatística, 2011)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_8" style="display:none">
+<caption>Equivalente da figura 3.8: Distribuição das dificuldades por tipo em 2011 (Instituto Nacional de Estatística, 2011)</caption>
+<tr>
+<th>Dificuldades</th>
+<th>Percentagem face ao total de pessoas com dificuldades</th>
+</tr>
+<tr>
+<td>Ver</td>
+<td>23,2%</td>
+</tr>
+<tr>
+<td>Ouvir</td>
+<td>13,5%</td>
+</tr>
+<tr>
+<td>Andar ou subir degraus</td>
+<td>24,7%</td>
+</tr>
+<tr>
+<td>Memória ou concentração</td>
+<td>16,5%</td>
+</tr>
+<tr>
+<td>Tomar banho ou vestir-se sozinho</td>
+<td>11,9%</td>
+</tr>
+<tr>
+<td>Compreender os outros ou fazer-se compreender</td>
+<td>10,1%</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<p>A distribuição das desvantagens verificada na amostra de 1995, adotando a classificação da OMS
+(ver (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)), está
+representada na Figura 3.9, verificando-se que a capacidade de ocupação, a independência
+económica e a mobilidade foram as principais desvantagens identificadas pelos inquiridos. De
+acordo com os dados dos Censos 2001, a taxa de desemprego entre a população ativa (com mais
+de 15 anos) com deficiência era em 2001 de 9,6%, face aos 6,7% para a população em geral. Em
+2011, a taxa de desemprego entre a população ativa com pelo menos uma dificuldade foi de 19,9%,
+face aos 13,2% da população em geral (Instituto Nacional de Estatística, 2011).
+Outros estudos contêm também estimativas do número de pessoas com incapacidade em
+Portugal. É o caso do Inquérito Nacional de Saúde, 2005-06 (5% pessoas com incapacidade), do
+Painel Europeu dos Agregados Familiares, 1994-2001 (15,6% de pessoas com incapacidade) e
+
+<span id="page28" epub:type="pagenumber">28</span>
+
+do Inquérito às Condições de Vida e Rendimento, 2004-2007 (19,7% de pessoas com
+incapacidade). Mais uma vez, as diferentes definições operacionais de incapacidade usadas
+justificam as diferenças de quantificação.</p>
+
+<p>De referir finalmente dois fatores que têm contribuído para uma alteração do panorama das pessoas
+com deficiência em Portugal: i) o envelhecimento da população, com a inerente perda de capacidades
+funcionais; e ii) a evolução dos cuidados perinatais, em especial a assistência ao parto, que tem
+permitido uma crescente taxa de sobrevivência de crianças nascidas em condições de risco (<em>e.g.</em>,
+baixo peso, prematuros, dificuldades respiratórias), mas por vezes sem evitar a existência de
+sequelas, levando a um aumento de crianças com deficiência, em especial com múltiplas deficiências.</p>
+
+<div class="grafico">
+<p><button type="button" class="btn btn-primary toggle" id="grafico_9">Ver tabela de dados</button></p>
+<figure class="grafico_9">
+    <img class="img-responsive" src="images/figura3_9.png" alt=""/>
+    <figcaption>
+		Figura 3.9: Distribuição das desvantagens por tipo em 1995 (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped grafico_9" style="display:none">
+<caption>Equivalente da figura 3.9: Distribuição das desvantagens por tipo em 1995 (Secretariado Nacional de Reabilitação e Integração de
+Pessoas com Deficiência, 1996)</caption>
+<tr>
+<th>Desvantagens</th>
+<th>Percentagem face ao número total de desvantagens</th>
+</tr>
+<tr>
+<td>Orientação</td>
+<td>9,9%</td>
+</tr>
+<tr>
+<td>Independência física</td>
+<td>13,1%</td>
+</tr>
+<tr>
+<td>Mobilidade</td>
+<td>14,2%</td>
+</tr>
+<tr>
+<td>Capacidade de ocupação</td>
+<td>32,1%</td>
+</tr>
+<tr>
+<td>Integração social</td>
+<td>11,5%</td>
+</tr>
+<tr>
+<td>Independência económica</td>
+<td>19,3%</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<a name="n32" id="n32"></a><h2>3.2 A CIF <sup id="cite_ref-5" class="reference"><a epub:type="noteref" href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></h2>
+
+<p>A CIF – Classificação Internacional de Funcionalidade, Incapacidade e Saúde (Direcção-Geral da
+Saúde, 2004) é um novo sistema de classificação inserido na Família de Classificações Internacionais
+da Organização Mundial de Saúde. Tem como objetivos (Direcção-Geral da Saúde, 2004, p. 9):</p>
+
+<ul>
+<li><em>“Proporcionar uma base científica para a compreensão e o estudo dos determinantes da
+saúde, dos resultados e das condições relacionadas com a saúde;</em></li>
+<li><em>Estabelecer uma linguagem comum para a descrição da saúde e dos estados relacionados com
+a saúde, para melhorar a comunicação entre diferentes utilizadores, tais como, profissionais de
+saúde, investigadores, políticos e decisores e o público, incluindo pessoas com incapacidades;</em></li>
+
+<span id="page29" epub:type="pagenumber">29</span>
+
+<li><em>Permitir a comparação de dados entre países, entre disciplinas relacionadas com os
+cuidados de saúde, entre serviços, e em diferentes momentos ao longo do tempo;</em></li>
+<li><em>Proporcionar um esquema de codificação para sistemas de informação de saúde.”</em></li>
+</ul>
+
+<p>A CIF pretende integrar o modelo médico da deficiência com o modelo social que se lhe opunha,
+em que a incapacidade era vista principalmente como um problema criado pela sociedade,
+resultando de questões atitudinais e/ou ideológicas, que requeria uma mudança social, a nível
+político, para garantir a participação plena das pessoas com incapacidades em todas as áreas da
+vida social. Para conseguir essa integração a CIF considera diferentes perspetivas de saúde:
+biológica, individual e social. Tem duas <em>partes</em>, cada uma com dois <em>componentes</em>:</p>
+
+
+<ul style="list-style-type:none">
+<li>Parte 1. Funcionalidade e Incapacidade
+<ol type="a">
+<li>Funções do Corpo e Estruturas do Corpo</li>
+<li>Atividades e Participação</li>
+</ol></li>
+<li>Parte 2. Fatores Contextuais
+<ol type="a">
+<li>Fatores Ambientais</li>
+<li>Fatores Pessoais</li>
+</ol></li>
+</ul>
+
+
+<p>As definições adotadas são (Direcção-Geral da Saúde, 2004):</p>
+
+<p><strong>Funcionalidade</strong> é um termo que engloba todas as funções e estruturas do corpo, atividades e
+participação. Corresponde aos aspetos positivos da interação entre um indivíduo (com uma
+condição de saúde) e os seus fatores contextuais (ambientais e pessoais);</p>
+
+<p><strong>Incapacidade</strong> é um termo que engloba deficiências, limitações da atividade e restrições na
+participação. Corresponde aos aspetos negativos da interação entre um indivíduo (com uma
+condição de saúde) e seus fatores contextuais (ambientais e pessoais);</p>
+
+<p><strong>Funções do Corpo</strong> são as funções fisiológicas dos sistemas orgânicos (incluindo as funções
+psicológicas);</p>
+
+<p><strong>Estruturas do Corpo</strong> são as partes anatómicas do corpo, tais como órgãos, membros e seus
+componentes;</p>
+
+<p><strong>Deficiências</strong> são problemas nas funções ou na estrutura do corpo, tais como um desvio
+importante ou uma perda. Podem ser temporárias ou permanentes; progressivas, regressivas ou
+estáveis; intermitentes ou contínuas. As deficiências podem ser parte ou uma expressão de uma
+condição de saúde, mas não indicam, necessariamente, a presença de uma doença ou que o
+indivíduo deva ser considerado doente. Por exemplo, a perda de uma perna é uma deficiência de
+uma estrutura do corpo, mas não é uma perturbação ou uma doença;</p>
+
+<p><strong>Atividade</strong> é a execução de uma tarefa ou ação por um indivíduo;
+Participação é o envolvimento numa situação da vida;</p>
+
+<p><strong>Limitações da atividade</strong> são dificuldades que um indivíduo pode encontrar na execução de uma
+atividade;</p>
+
+<p><strong>Restrições na participação</strong> são problemas que um indivíduo pode experimentar no envolvimento
+em situações reais da vida;</p>
+
+<p><strong>Fatores Contextuais</strong> representam o histórico completo da vida e do estilo de vida de um
+indivíduo;</p>
+
+<p><strong>Fatores Ambientais</strong> constituem o ambiente físico, social e atitudinal no qual as pessoas vivem
+e conduzem sua vida. Esses fatores são externos aos indivíduos e podem ter uma influência
+<span id="page30" epub:type="pagenumber">30</span>
+positiva ou negativa sobre o seu desempenho, enquanto membros da sociedade, sobre a
+capacidade do indivíduo para executar ações ou tarefas, ou sobre a função ou estrutura do corpo
+do indivíduo;</p>
+<p><strong>Fatores Pessoais</strong> são o histórico particular da vida e do estilo de vida de um indivíduo e englobam
+as características do indivíduo que não são parte de uma condição de saúde ou de um estado de
+saúde. Esses fatores podem incluir género, raça, idade, outros estados de saúde, condição física,
+estilo de vida, hábitos, educação recebida, diferentes maneiras de enfrentar problemas,
+antecedentes sociais, nível de instrução, profissão, experiência passada e presente (eventos na
+vida passada e na atual), padrão geral de comportamento, carácter, características psicológicas
+individuais e outras características, todas ou algumas das quais podem desempenhar um papel
+na incapacidade em qualquer nível. Os fatores pessoais não são classificados na CIF. No entanto,
+são representados no diagrama de interação entre os seus componentes (Figura 3.10) para
+mostrar a sua contribuição, que pode influenciar os resultados das várias intervenções. A Tabela
+3.1 fornece uma visão geral da CIF.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura3_10.png" alt=""/>
+    <figcaption>
+        Figura 3.10: Interação entre os componentes da CIF (Direcção-Geral da Saúde, 2004)
+        <p style="text-align:left; color: #000;">Descrição da figura 3.10: o diagrama representa a interação dos fatores pessoais e ambientais na determinação da condição de saúde (perturbação ou doença). A condição de saúde apresenta-se no diagrama como resultante da interação das funções e estruturas do corpo, da atividade e da participação.</p>
+    </figcaption>
+</figure>
+
+<span id="page31" epub:type="pagenumber">31</span>
+
+<div class="table-responsive">
+<table class="table table-book">
+<caption>Tabela 3.1: Visão geral da CIF</caption>
+<tr>
+<th>&nbsp;</th>
+<th colspan="2">Parte 1: Funcionalidade e Incapacidade</th>
+<th colspan="2">Parte 2: Fatores Contextuais</th>
+</tr>
+<tr>
+<th>Componentes</th>
+<th>Funções e Estruturas do Corpo</th>
+<th>Atividades e Participação</th>
+<th>Fatores ambientais</th>
+<th>Fatores Pessoais</th>
+</tr>
+<tr>
+<th>Domínios</th>
+<td>Funções do Corpo, Estruturas do Corpo</td>
+<td>Áreas Vitais (tarefas, ações)</td>
+<td>Influências externas sobre a funcionalidade e a incapacidade</td>
+<td>Influências internas sobre a funcionalidade e a incapacidade</td>
+</tr>
+<tr>
+<th>Constructos</th>
+<td>Mudança nas funções do corpo (fisiológicas)<br />Mudança nas estruturas do corpo (anatómicas)</td>
+<td>Capacidade Execução de tarefas num ambiente padrão<br />Desempenho/execução de tarefas no ambiente habitual</td>
+<td>Impacto facilitador ou limitador das características do mundo físico, social e atitudinal</td>
+<td>Impacto dos atributos de uma pessoa</td>
+</tr>
+<tr>
+<th rowspan="2">Aspetos positivos</th>
+<td>Integridade funcional e estrutural</td>
+<td>Atividades<br />Participação</td>
+<td rowspan="2">Facilitadores</td>
+<td rowspan="2">Não aplicável</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">Funcionalidade</td>
+</tr>
+<tr>
+<th rowspan="2">Aspetos negativos</th>
+<td>Deficiência</td>
+<td>Limitação da atividade<br>Restrição da participação</td>
+<td rowspan="2">Barreiras</td>
+<td rowspan="2">Não aplicável</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">Incapacidade</td>
+</tr>
+</table>
+</div>
+
+<p>A CIF classifica a funcionalidade e a incapacidade do Homem (e não classifica pessoas). Permite
+descrever as características de cada pessoa em diferentes domínios e as características do seu
+meio físico e social. Não é um instrumento de avaliação ou de medida e não dispensa que os
+profissionais, dentro das suas áreas de especialidade, adotem procedimentos e utilizem
+instrumentos de avaliação normalizados e fidedignos que evidenciem de forma rigorosa os
+diferentes domínios em estudo, tomando como referência a CIF. A CIF utiliza um sistema
+alfanumérico no qual as letras <strong>b, s, d</strong> e <strong>e</strong> são utilizadas para 
+indicar Funções do Corpo (<em>body</em>),
+Estruturas do Corpo (<em>structures</em>), Atividades e Participação (<em>domains</em>) e Fatores Ambientais
+(<em>environment</em>). Por vezes são usadas as letras <strong>a</strong> ou <strong>p</strong> em substituição da letra d para mais
+claramente designar Atividade ou Participação. Essas letras são seguidas por um código numérico
+que começa com o número do capítulo (um dígito), seguido pelo segundo nível (dois dígitos) e o
+terceiro e quarto níveis (um dígito cada). A versão reduzida da CIF cobre dois níveis, enquanto a
+versão completa (detalhada) se estende por quatro níveis. Os códigos das versões completa e
+reduzida são correspondentes, podendo a versão resumida ser obtida da versão completa
+truncando os dígitos adicionais. Em geral, a versão mais detalhada, de quatro níveis, é utilizada
+para serviços especializados (<em>e.g.</em>, resultados da reabilitação, geriatria, etc.), e a classificação a
+dois níveis pode ser utilizada nos inquéritos e na avaliação de resultados clínicos.</p>
+
+<p>Após os códigos, que apenas designam a categoria e respetiva subcategoria da CIF, são
+colocados os qualificadores que indicam a extensão dos problemas no respetivo componente    
+<span id="page32" epub:type="pagenumber">32</span>
+(um, dois ou mais dígitos após um ponto). Para Funções do Corpo (código b) é usado apenas um
+qualificador da escala genérica (xxx representa o número de domínio do segundo nível):</p>
+
+<dl class="definicao">
+<dt>xxx.0</dt>
+<dd>NÃO há problema (nenhum, ausente, insignificante) 0-4%</dd>
+<dt>xxx.1</dt>
+<dd>Problema LIGEIRO (leve, pequeno, ...) 5-24%</dd>
+<dt>xxx.2</dt>
+<dd>Problema MODERADO (médio, regular, ...) 25-49%</dd>
+<dt>xxx.3</dt>
+<dd>Problema GRAVE (grande, extremo, ...) 50-95%</dd>
+<dt>xxx.4</dt>
+<dd>Problema COMPLETO (total, ....) 96-100%</dd>
+<dt>xxx.8</dt>
+<dd>não especificado</dd>
+<dt>xxx.9</dt>
+<dd>não aplicável</dd>
+</dl>
+
+<p>No caso de Estruturas do Corpo poderá ser adicionado um qualificador para indicar a natureza
+da mudança na estrutura do corpo em questão de acordo com:</p>
+
+<dl class="definicao">
+<dt>0</dt>
+<dd>nenhuma mudança na estrutura</dd>
+<dt>1</dt>
+<dd>ausência total</dd>
+<dt>2</dt>
+<dd>ausência parcial</dd>
+<dt>3</dt>
+<dd>parte suplementar</dd>
+<dt>4</dt>
+<dd>dimensões anormais</dd>
+<dt>5</dt>
+<dd>descontinuidade</dd>
+<dt>6</dt>
+<dd>desvio de posição</dd>
+<dt>7</dt>
+<dd>mudanças qualitativas na estrutura, incluindo retenção de líquidos</dd>
+<dt>8</dt>
+<dd>não especificada</dd>
+<dt>9</dt>
+<dd>não aplicável</dd>
+</dl>
+
+<p>A componente de Atividades e Participação (código <strong>d</strong>) tem dois qualificadores, na mesma
+escala genérica acima, para qualificar o desempenho do indivíduo no seu ambiente habitual,
+eventualmente com o auxílio de produtos de apoio, e a capacidade do indivíduo sem auxílio
+externo. Finalmente, a componente Fatores Ambientais recorre a um qualificador para indicar
+a extensão dos efeitos positivos do ambiente, <em>i.e.</em> facilitadores, ou a extensão dos efeitos
+negativos, <em>i.e.</em> barreiras. Ambos utilizam os níveis 0 a 4 da escala genérica acima, mas para
+os facilitadores o ponto é substituído por um sinal + (por exemplo, e110+2). Os Fatores
+Ambientais podem ser codificados em relação a cada constructo individualmente ou em geral,
+sem referência a qualquer constructo individual. A primeira opção é preferível, já que ela
+identifica mais claramente o impacto e a atribuição. Para diferentes utilizadores pode ser
+apropriado e útil acrescentar outros tipos de informações à codificação de cada item. Há uma
+variedade de qualificadores adicionais que podem ser úteis (por exemplo, um terceiro
+qualificador para indicar a localização da deficiência para uma estrutura do corpo; ver
+(Direcção-Geral da Saúde, 2004)). Na Tabela 3.2 sumaria-se a informação relativa aos
+qualificadores, apresentando-se exemplos.</p>
+
+<p>A CIF fornece uma fotografia instantânea da saúde e dos estados relacionados com a saúde de
+uma pessoa. Sentiu-se assim a necessidade de elaborar uma versão adaptada para os períodos
+da infância e adolescência, caracterizados pelo rápido crescimento e desenvolvimento com
+mudanças significativas no funcionamento físico, social e psicológico.A versão da CIF para crianças
+<span id="page33" epub:type="pagenumber">33</span>
+e jovens (CIF-CJ) não se encontra ainda traduzida para Português<sup id="cite_ref-6" class="reference"><a epub:type="noteref" href="#cite_note-6"><span>[</span>6<span>]</span></a></sup> . Engloba um total de 237 novos
+códigos que contemplam conteúdos específicos e detalhes adicionais relevantes na infância e na
+adolescência, dando especial relevo a questões chave no desenvolvimento e crescimento das
+crianças e jovens, nomeadamente: a criança no contexto da família; o atraso de desenvolvimento;
+a participação; e os contextos da criança. O atraso de desenvolvimento, atendendo ao carácter
+relevante, sobretudo nos períodos da infância, das variações no tempo da emergência de funções
+ou estruturas do corpo ou da aquisição de competências associadas com diferenças individuais no
+crescimento e desenvolvimento da criança, foi incluído na definição do qualificador genérico.</p>
+
+<div class="table-responsive">
+<table class="table table-striped">
+<caption>Tabela 3.2: Qualificadores da CIF (Direcção-Geral da Saúde, 2004)</caption>
+<tr>
+<th>Componentes</th>
+<th>Primeiro qualificador</th>
+<th>Segundo qualificador</th>
+</tr>
+<tr>
+<td>Funções do corpo(b)</td>
+<td><p>Qualificador genérico com a escala negativa,
+utilizado para indicar a extensão ou magnitude de uma deficiência</p>
+<p><em>Exemplo: b167.3 indica uma deficiência grave nas funções mentais específicas da linguagem</em></p></td>
+<td>Nenhum</td>
+</tr>
+<tr>
+<td>Estruturas do corpo(s)</td>
+<td><p>Qualificador genérico com a escala negativa, utilizado para indicar a extensão ou
+magnitude de uma deficiência.</p>
+<p><em>Exemplo: s730.3 indica uma deficiência grave do membro superior</em></p></td>
+<td>Utilizado para indicar a natureza da mudança na estrutura do corpo em questão:<br>
+<dl class="definicao">
+<dt>0</dt><dd>nenhuma mudança na estrutura</dd>
+<dt>1</dt><dd>ausência total</dd>
+<dt>2</dt><dd>ausência parcial</dd>
+<dt>3</dt><dd>parte suplementar</dd>
+<dt>4</dt><dd>dimensões anormais</dd>
+<dt>5</dt><dd>descontinuidade</dd>
+<dt>6</dt><dd>desvio de posição</dd>
+<dt>7</dt><dd>mudanças qualitativas na estrutura, incluindo retenção de líquidos</dd>
+<dt>8</dt><dd>não especificada</dd>
+<dt>9</dt><dd>não aplicável</dd>
+</dl>
+<p><em>Exemplo: s730.32 para indicar a ausência parcial do membro superior</em></p></td>
+</tr>
+<tr>
+<td>Atividades e Participação(d)</td>
+<td><p>DESEMPENHO</p>
+<p>Qualificador genérico</p>
+<p>Problema no ambiente habitual da pessoa</p>
+<p><em>Exemplo: d5101.1_ indica leve dificuldade para tomar banho se utilizar dispositivos de auxílio disponíveis no seu ambiente habitual</em></p></td>
+<td><p>CAPACIDADE</p>
+<p>Qualificador genérico</p>
+<p>Limitação, sem ajuda</p>
+<p><em>Exemplo: d5101._2 indica dificuldade moderada para tomar banho sem o recurso a dispositivos de auxílio ou a ajuda de outra pessoa</em></p></td>
+</tr>
+<tr>
+<td>Fatores Ambientais(e)</td>
+<td><p>Qualificador genérico, com escala negativa e positiva, para indicar, respetivamente, a
+extensão das barreiras e dos facilitadores</p>
+<p><em>Exemplo: e130.2 indica que os produtos para a educação são um obstáculo moderado. Inversamente, e130+2 indicaria
+que os produtos para a educação são um facilitador moderado</em></p></td>
+<td>Nenhum</td>
+</tr>
+</table>
+</div>
+
+<span id="page34" epub:type="pagenumber">34</span>
+
+<p>A CIF tem aplicação em diferentes áreas disciplinares e sectores tais como saúde, educação,
+segurança social, trabalho, economia e desenvolvimento, estatísticas e sistemas de informação,
+legislação ou seguros. Pode ser usada ao nível clínico individual (avaliação funcional do
+indivíduo, planeamento das intervenções, reabilitação, etc.); a nível institucional (planeamento
+e avaliação de serviços e recursos, formação dos profissionais, investigação, etc.); ou a nível
+social e político (planeamento, desenvolvimento e avaliação de políticas e medidas; sistemas de
+compensação e de atribuição de benefícios; critérios de elegibilidade; acessibilidade; indicadores
+e estatísticas, etc.).</p>
+
+<a name="n33" id="n33"></a><h2>3.3 Caracterização de algumas patologias</h2>
+<p>Neste subcapítulo são descritas várias patologias em que a utilização de TA em diversos âmbitos
+pode ser necessária. Não se pretende referir exaustivamente todas as patologias passíveis de
+beneficiar de TA, mas sim exemplificar potenciais utilizadores das TA para as diversas áreas de
+desempenho (mobilidade, manipulação, comunicação, orientação e cognição) referidas nos
+capítulos seguintes. Note-se que o foco do Engenheiro de Reabilitação não deve estar nas
+limitações da pessoa, mas sim nas atividades que esta pretende realizar e nas capacidades que
+possui e podem ser potenciadas para o desempenho dessas atividades. No entanto, aspetos das
+patologias como a sua origem (congénita ou adquirida) e as suas características dinâmicas
+(degenerativa, em recuperação ou definitiva) são fundamentais para o desenvolvimento, seleção
+e avaliação de TA (Glennen & DeCoste, 1996).</p>
+
+<a name="n331" id="n331"></a><h3>3.3.1 Lesões vértebro-medulares</h3>
+<p>As lesões vértebro-medulares (LVM) resultam de traumas na coluna vertebral devido a acidente
+ou doença. Estes traumatismos podem provocar esquimose<sup id="cite_ref-7" class="reference"><a epub:type="noteref" href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> , perturbações na irrigação sanguínea
+ou o corte de uma zona da medula espinhal. Os sintomas variam dependendo da localização e
+da gravidade da lesão (Programa Harvard Medical School Portugal, 2011).</p>
+
+<p>Estima-se que a incidência das LVM em Portugal é de 58 novos casos por ano e por milhão de
+habitantes (Direcção-Geral da Saúde, 2003). Admitindo que cerca de 370 dos novos casos por
+ano morre durante o transporte para uma unidade de saúde, prevêem-se 250 novos casos por ano
+em Portugal (Direcção-Geral da Saúde, 2003).</p>
+
+<p>As principais causas da ocorrência de LVM são acidentes de viação (principal causa na população
+jovem), quedas (principal causa na população idosa), atos de violência e algumas atividades
+desportivas. No entanto, as LVMpodemtambémser consequência de doenças neurodegenerativas,
+mielites, tumores na medula espinhal, entre outras causas (DeVivo, 2012).</p>
+
+<span id="page35" epub:type="pagenumber">35</span>
+
+<p>As taxas de incidência das LVM são baixas na idade da infância e máximas (com mais de 50%
+dos casos) entre os 16 e os 30 anos (Holtz & Levi, 2010). Atualmente, relacionado com o aumento
+da esperança média de vida, verifica-se também um aumento de casos de LVM em pessoas
+idosas. Verifica-se uma incidência das LVM tipicamente 3 a 4 vezes maior para o sexo masculino
+do que para o sexo feminino (DeVivo, 2012).</p>
+
+<p>As LVM podem ser completas ou incompletas. No primeiro caso (cerca de 40% das LVM
+(Rodrigues, et al., 2010)), a pessoa perde totalmente a sensibilidade e o controlo motor
+dependentes das enervações que derivam de zonas abaixo da lesão na medula espinhal. No
+segundo caso, existe enervação parcial das regiões abaixo da lesão, mantendo-se alguma
+sensibilidade e/ou controlo motor dependentes dessas regiões. Por exemplo, uma pessoa com
+uma lesão incompleta pode manter a sensibilidade em partes do corpo que não consegue mover,
+ou pode ter um lado do corpo mais funcional do que o outro.</p>
+
+<p>As LVM são normalmente designadas pela região da coluna vertebral em que se verifica o trauma.
+A coluna vertebral tem 33 vértebras (em alguns casos 32 ou 34) e encontra-se dividida em quatro
+regiões: <em>região cervical</em>, com 7 vértebras; <em>região torácica</em>, com 12 vértebras; <em>região lombar</em>, com
+5 vértebras; e região <em>sacrococcígea</em>, formada pelo sacro, com cinco vértebras soldadas, e pelo
+cóccix, com três, quatro ou cinco vértebras soldadas entre si (Figura 3.11). A referência à
+localização da LVM é dada pelas letras C1-C8, T1-T12, L1-L5 e S1-S5, referindo-se aos pares de
+nervos raquidianos (nervos que ligam a medula espinhal aos músculos esqueléticos do corpo
+humano). As letras C, T, L e S referem-se às regiões cervical, torácica, lombar e sacrococcígea,
+respetivamente. A numeração é efetuada da base do crânio até ao cóccix. Note-se que estas
+referências não coincidem sempre com a posição das vértebras (por exemplo, o par de nervos
+C8 está localizado na vértebra C7). Na Tabela 3.3 indicam-se, numa classificação de 7 grupos,
+as funções que podem ser afetadas aquando de uma lesão na medula espinhal (Oleson, Sie, &
+Waters, 2010).</p>
+
+<span id="page36" epub:type="pagenumber">36</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura3_11.png" alt=""/>
+    <figcaption>
+        Figura 3.11: Regiões da coluna vertebral (Cancer Research UK; commons.wikimedia.org)
+    </figcaption>
+</figure>
+
+<div class="table-responsive">
+<table class="table table-striped">
+<caption>Tabela 3.3: Consequências de LVM completas, categorizadas em 7 grupos. Adaptado de Oleson et al. (2010)</caption>
+<tr>
+<th align="center">Grupos</th>
+<th align="left">Consequências esperadas</th>
+</tr>
+<tr>
+<td>C1-C3</td>
+<td>Paralisia completa do tronco, membros superiores, membros
+inferiores. Dependência de ventilação assistida.</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>Paralisia completa do tronco, membros superiores, membros
+inferiores. Pode, eventualmente, respirar sem ventilação.</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>Sem extensão do cotovelo, pronação ou movimentos do pulso e
+mão; paralisia total do tronco e membros inferiores.</td>
+</tr>
+<td>C6</td>
+<td>Sem extensão do cotovelo ou movimentos do pulso e mão;
+paralisia total do tronco e membros inferiores.</td>
+<tr>
+<td>C7-C8</td>
+<td>Paralisia do tronco e membros inferiores; limitações na força e
+movimentos da mão.</td>
+</tr>
+<tr>
+<td>T1-T9</td>
+<td>Paralisia do tronco. Paralisia total dos membros inferiores.</td>
+</tr>
+<tr>
+<td>T10-L1</td>
+<td>Paralisia parcial dos membros inferiores.</td>
+</tr>
+<tr>
+<td>L2-S5</td>
+<td>Paralisia parcial dos membros</td>
+</tr>
+</table>
+</div>
+
+<p>Lesões na região cervical (cerca de 55% dos casos (Rodrigues, <em>et al.</em>, 2010)) resultam em
+tetraparésia<sup id="cite_ref-8" class="reference"><a epub:type="noteref" href="#cite_note-8"><span>[</span>8<span>]</span></a></sup> 
+ou mesmo tetraplegia<sup id="cite_ref-9" class="reference"><a epub:type="noteref" href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> . Além de afetar o controlo motor, este tipo de lesão afeta
+também (no que se refere às vias do sistema nervoso autónomo) a função de regulação da
+temperatura do corpo e da transpiração, o controlo vesical, intestinal e sexual. Além das lesões
+<span id="page37" epub:type="pagenumber">37</span>
+nervosas, a redução da circulação sanguínea na zona afetada dificulta ainda mais o controlo de
+temperatura e aumenta o perigo de formação de escaras. Lesões em C4 ou acima podem resultar
+numa grave incapacidade da função respiratória, sendo normalmente necessário o recurso à
+ventilação mecânica.</p>
+
+<p>Lesões nas regiões torácica, lombar ou sacrococcígea levam a parésias dos membros inferiores<sup id="cite_ref-10" class="reference"><a epub:type="noteref" href="#cite_note-10"><span>[</span>10<span>]</span></a></sup>
+ou paraplegias<sup id="cite_ref-11" class="reference"><a epub:type="noteref" href="#cite_note-11"><span>[</span>11<span>]</span></a></sup>.Alémdas limitaçõesmotoras, os traumas emT1-T2 podemocasionar incapacidade
+nas funções respiratórias, na regulação da temperatura do corpo e na transpiração. Indivíduos
+com paraplegias podem ter as funções motoras e/ou sensoriais completa ou parcialmente
+afetadas no tronco e membros inferiores, dependendo da localização e natureza das lesões.</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>As pessoas afetadas por lesões vertebro-medulares têm tipicamente dificuldades de
+manipulação e/ou de mobilidade, podendo beneficiar da utilização de interfaces de controlo
+(ver Capítulo 5) e de tecnologias de apoio à Mobilidade (ver Capítulo 6).</p>
+</div>
+
+<a name="n332" id="n332"></a><h3>3.3.2 Traumatismos cranioencefálicos</h3>
+
+<p>Os traumatismos cranioencefálicos (TCE) são consequência de uma lesão na cabeça por
+agressão externa. As agressões externas podem ser divididas em lesões primárias e lesões
+secundárias. As lesões primárias, resultantes do impacto inicial, podem ser difusas (por efeito de
+rotação, aceleração ou desaceleração abrupta) ou focais (por força de contacto direto). O tipo de
+lesão depende da zona, duração, magnitude e natureza da agressão. As lesões secundárias
+surgem como consequência das lesões primárias e resultam de hematomas intracranianos e
+hipertensão intracraniana (Oliveira, Lavrador, Santos, & Antunes, 2012).</p>
+
+<p>Na Europa, a incidência de TCE situa-se entre 150-300/100.000 habitantes por ano (Tagliaferri,
+Compagnone, Korsic, Servadei, & Kraus, 2006). Segundo Maria Emília Santos et al. (2003), em
+Portugal, a incidência de TCE é de 137/100.000 habitantes por ano, com taxa de mortalidade de
+17/100.000 habitantes<sup id="cite_ref-12" class="reference"><a epub:type="noteref" href="#cite_note-12"><span>[</span>12<span>]</span></a></sup>. Sendo que cerca de 1/3 dos casos de TCE resultam em incapacidade,
+há em Portugal mais de 3700 novos casos de pessoas com incapacidade resultante de TCE.
+A faixa etária de maior incidência é dos 15 aos 30 anos, afetando mais o sexo masculino (cerca
+de 65% dos casos) do que o feminino.</p>
+
+<p>De acordo com vários autores, a causa mais frequente são os acidentes de viação, seguida de
+quedas, acidentes domésticos e acidentes de trabalho, entre outros.</p>
+
+<p>Consoante a zona do cérebro afetada e a gravidade da lesão, pessoas que sofreram traumatismos
+cranioencefálicos podem apresentar incapacidades físicas, dependência na realização das
+<span id="page38" epub:type="pagenumber">38</span>
+atividades da vida diária, deficiências cognitivas, distúrbios comportamentais, problemas
+emocionais ou problemas psiquiátricos.</p>
+
+<p>Existem diversas classificações dos TCE, sendo a Escala de Coma de Glasgow (Teasdale &
+Jeneet, 1974) um exemplo das mais utilizadas. Esta escala avalia a abertura ocular, a resposta
+verbal e a resposta motora de um paciente, utilizando um a seis níveis em cada uma das áreas.
+A soma dos resultados obtidos nos três testes é um número a que correspondem quatro níveis
+de gravidade (TraumaticBrainInjury, 2006), descritas na Tabela 3.4.</p>
+
+<div class="table-responsive">
+<table class="table table-striped">
+<caption>Tabela 3.4: Níveis de gravidade da Escala de Coma de Glasgow, utilizada para classificar os TCE. Adaptado de
+(TraumaticBrainInjury, 2006)</caption>
+<tr>
+<th colspan="2" align="left">Escala de Coma de Glasgow</th>
+</tr>
+<tr>
+<td>Leve<br>
+(13-15)</td>
+<td>Perda de consciência e/ou confusão e desorientação inferior a 30
+minutos. Sequelas incluem dores de cabeça, dificuldades em
+raciocinar, problemas de memória, défices de atenção, alterações de
+humor e frustração.</td>
+</tr>
+<tr>
+<td>Incapacidade moderada<br>
+(9-12)</td>
+<td>Perda de consciência por um período superior a 30 minutos.
+Sequelas incluem incapacidades físicas e cognitivas que podem ou
+não ser reversíveis. Pode beneficiar de reabilitação.</td>
+</tr>
+<tr>
+<td>Incapacidade severa<br>
+(3-8)</td>
+<td>Coma. Sem resposta coerente, sem atividades voluntárias.</td>
+</tr>
+<tr>
+<td>Estado vegetativo<br>
+(menos que 3)</td>
+<td>Ciclos vigília/sono, acordado mas sem interação com o ambiente,
+sem resposta localizada à dor.</td>
+</tr>
+</table>
+</div>
+
+<div class="alert alert-warning" role="alert"> 
+<p>As pessoas que sofreram um TCE têm tipicamente défices cognitivos, dificuldades de
+manipulação e/ou de mobilidade e de comunicação, podendo beneficiar da utilização de
+dispositivos de controlo para acesso (ver Capítulo 5), e de tecnologias de apoio à Mobilidade
+(ver Capítulo 6), à Comunicação (ver Capítulo 8), e à Cognição (ver Capítulo 10).</p>
+</div>
+
+<a name="n333" id="n333"></a><h3>3.3.3 Acidentes vasculares cerebrais</h3>
+
+<p>Designa-se por Acidente Vascular Cerebral (AVC) um evento de fluxo sanguíneo irregular no
+cérebro causando uma interrupção do seu funcionamento. Pode ser originado por ausência de
+fluxo sanguíneo (AVC isquémico) ou por uma rutura dos vasos sanguíneos (AVC hemorrágico)
+(Associação Acidentes Vasculares Cerebrais, 2009).</p>
+<p>De acordo com dados da Organização para a Cooperação e Desenvolvimento Económico
+(OCDE), o AVC representa a terceira causa de morte nos países industrializados e representa
+10% da totalidade de mortes. A incidência varia nos diferentes países europeus, estimando-se
+entre 100 a 200 novos casos por 100.000 habitantes (Nogueira, Henriques, Gomes, & Leitão,
+2007). Segundo dados da <em>European Stroke Iniciative</em> (2003), oAVC representa a principal causa
+de morbilidade e incapacidade prolongada na Europa. Não se conhece com rigor a incidência de
+AVC em Portugal, sabendo-se no entanto que é o país da Europeu Ocidental com a maior taxa
+<span id="page39" epub:type="pagenumber">39</span>
+de mortalidade por AVC (Direcção-Geral da Saúde, 2006). Estudos realizados para a Europa
+Ocidental indicam maior incidência no grupo etário 75 a 84 anos (Correia, <em>et al.</em>, 2004).</p>
+
+<p>O AVC é uma das causas mais comuns de internamento e de incapacidade crónica. Em 2010,
+foram admitidos nos hospitais portugueses 1450,48 pessoas por milhão de habitantes com AVC
+agudo (Ministério da Saúde, 2011).</p>
+<p>Muitos dos doentes que sobrevivem a umAVC ficam incapacitados e dependentes de ajuda para
+o desempenho de atividades na sua vida diária. As consequências dos AVC estão diretamente
+ligadas ao local e extensão da lesão cerebral que ocorre na altura do acidente, pelo que variam
+significativamente de pessoa para pessoa. As sequelas de AVC mais comuns são hemiparésias<sup id="cite_ref-13" class="reference"><a epub:type="noteref" href="#cite_note-13"><span>[</span>13<span>]</span></a></sup> ,
+perturbações da linguagem e da fala (ver Secção 3.3.7) e alterações cognitivas, tais como perda
+de memória e de atenção. As limitações funcionais decorrentes do AVC impõem dificuldades na
+comunicação e no desempenho de várias atividades diárias, sendo frequente o isolamento,
+ansiedade e depressão. Os AVC na região do tronco cerebral podem provocar limitações muito
+graves, sendo esta uma das causas da síndrome de <em>locked-in</em><sup id="cite_ref-14" class="reference"><a epub:type="noteref" href="#cite_note-14"><span>[</span>14<span>]</span></a></sup> .</p>
+
+<p>É possível recuperar algumas capacidades funcionais afetadas pelo acidente através de diferentes
+terapias que tirampartido da neuroplasticidade, isto é, da capacidade do cérebro aprender e reorganizar
+recursos para compensar as áreas danificadas (Bruno-Petrina, 2010). Muitos estudos têm sido
+desenvolvidos na investigação de novas terapias para a reabilitação de pessoas que sofreram AVC.</p>
+
+<div class="alert alert-warning" role="alert">
+<p>Uma vez que os AVC podem afetar qualquer área de atividade da pessoa, dependendo da zona
+da lesão cerebral, as pessoas que sofreram AVC poderão beneficiar da utilização de tecnologias
+de apoio à Mobilidade (ver Capítulo 6), à Comunicação (ver Capítulo 8), à Orientação (ver
+Capítulo 9) e à Cognição (ver Capítulo 10).</p>
+</div>
+
+
+<a name="n334" id="n334"></a><h3>3.3.4 Esclerose lateral amiotrófica</h3>
+<p>A Esclerose Lateral Amiotrófica (ELA) é uma doença degenerativa caracterizada pela rápida e
+progressiva degeneração das células nervosas do córtex motor, tronco cerebral e medula
+espinhal. A perda de enervação dos músculos conduz a progressiva fraqueza e atrofia musculares,
+causando grave incapacidade motora e insuficiência respiratória. A ELA pode ter início <em>bulbar</em>,
+quando os primeiros sintomas se revelam nos músculos dependentes dos últimos pares
+cranianos, <em>medular</em>, quando os primeiros sintomas se revelam em qualquer dos membros
+inferiores ou superiores, ou <em>mista</em>, quando há desde o início uma manifestação generalizada da
+doença (Carvalho, Evangelista, & Conceição, 2006).</p>
+<span id="page40" epub:type="pagenumber">40</span>
+
+<p>Segundo Logroscino et al. (2010), a ELA é uma doença rara, sem cura, com uma incidência na
+Europa de 2,16/100.000 habitantes. A sua sobrevida é baixa: 2 a 5 anos após o início, para 70 a
+80% dos casos. A incidência aumenta após os 40 anos, com média de idade no diagnóstico de
+65-67 anos. Afeta mais os homens do que as mulheres, numa proporção de 1,4:1. A progressão
+desta doença é muito rápida, agravando-se continuamente (apenas existe atualmente um
+medicamento que retarda, em alguns meses, a progressão da ELA). A sua causa é ainda
+desconhecida. Apenas 5 a 10% dos casos de ELA são familiares.</p>
+
+<p>As pessoas com ELA de início bulbar podem experimentar como primeiros sintomas dificuldades
+na fala (disartria), na deglutição (disfagia) e na respiração. Nas pessoas com ELA de início
+medular, as limitações motoras dos membros superiores ou inferiores manifestam-se mais
+precocemente, com dificuldades na marcha e/ou na manipulação. Sendo uma doença de rápida
+progressão, 80 a 95% das pessoas com ELA perde a capacidade de comunicar sem recurso a
+tecnologias de apoio (Beukelman, Yorkston, & Reichle, 2000), consequência das limitações
+motoras generalizadas causadas pela doença. Apesar das graves limitações motoras, as pessoas
+com ELA mantêm, em geral, as suas capacidades cognitivas, a sensibilidade, o controlo dos
+movimentos musculares extraoculares e o controlo dos esfíncteres. Embora tenha sido sempre
+considerado que a ELA afetava apenas o sistema motor, atualmente há evidência de ser uma
+doença multissistémica (Strong, 2006). Um exemplo são os estudos recentes que relacionam
+esta doença com a demência frontotemporal (Phukan, Pender, & Hardiman, 2007).</p>
+
+<div class="alert alert-warning" role="alert">
+<p>Sendo a Esclerose Lateral Amiotrófica uma doença progressiva, ela é um exemplo do tipo de
+desafios que se podem colocar ao Engenheiro de Reabilitação: encontrar tecnologias de apoio
+que se adaptem às necessidades e capacidades da pessoa ao longo da rápida progressão da
+doença (Londral, Azevedo, & Encarnação, 2009).</p>
+</div>
+
+<div class="alert alert-warning" role="alert">
+<p>Dado que as principais áreas de atividade afetadas são a manipulação, a mobilidade e a
+comunicação, os doentes com ELA podem necessitar de tecnologias de apoio referidas nos
+capítulos 5, 6, 7 e 8.</p>
+</div>
+
+<a name="n335" id="n335"></a><h3>3.3.5 Demência</h3>
+<p>De acordo com a Classificação Estatística Internacional de Doenças e Problemas Relacionados
+com a Saúde (CID-10), da Organização Mundial de Saúde, a <em>“demência é uma síndrome devida
+a uma doença cerebral, geralmente de natureza crónica ou progressiva, na qual estão afetadas
+múltiplas funções corticais superiores, incluindo memória, pensamento, orientação, compreensão,
+cálculo, capacidade de aprendizagem, linguagem e julgamento. O comprometimento das funções
+cognitivas é comummente acompanhado, e ocasionalmente precedido, por deterioração no
+controlo emocional, comportamento social ou motivação. Esta síndrome ocorre na doença de
+Alzheimer, em doenças cérebro-vasculares e em outras condições que atingem primária ou
+secundariamente o cérebro”</em> (World Health Organization, 2010).</p>
+<span id="page41" epub:type="pagenumber">41</span>
+
+<p>Segundo estudos europeus, estima-se que, na Europa, surjam por ano 1,4 milhões de casos de
+demência (Alzheimer Portugal, 2009). De acordo com os mesmos estudos, sabe-se que existem
+atualmente cerca de 7,3 milhões de pessoas com demência na Europa e prevê-se que, até 2040,
+estes valores de prevalência dupliquem, devido ao envelhecimento da população.</p>
+
+<p>Em Portugal, há 153.000 pessoas com demência, entre as quais 90.000 têm a doença de
+Alzheimer (Alzheimer Portugal, 2009).</p>
+
+<p>Segundo dados da Comissão Europeia (European Commission, 2012), as causas mais comuns
+de demência, na Europa, são a doença neurodegenerativa de Alzheimer (50-70% dos casos) e
+os acidentes vasculares (cerca de 30%). Estando a incidência da demência associada ao
+envelhecimento da população e dado o seu forte impacto económico-social, a Comissão Europeia
+tem implementado programas de financiamento que visam o estudo da Demência e
+Envelhecimento, nomeadamente apoiando o estudo das doenças neurodegenerativas e o
+desenvolvimento de tecnologias de apoio que permitam prolongar a autonomia e aumentar a
+segurança e a qualidade de vida dos idosos e doentes crónicos<sup id="cite_ref-15" class="reference"><a epub:type="noteref" href="#cite_note-15"><span>[</span>15<span>]</span></a></sup>.</p>
+
+<div class="alert alert-warning" role="alert">
+<p>As pessoas com demência deparam-se com progressiva dependência nos diversos aspetos da
+sua vida, existindo diversas tecnologias que apoiam a pessoa nas suas funções cognitivas,
+contribuindo para a sua autonomia e segurança (ver capítulos 9 e 10).</p>
+</div>
+
+<a name="n336" id="n336"></a><h3>3.3.6 Paralisia cerebral</h3>
+
+<p>Adota-se aqui a definição de paralisia cerebral em (Andrada, et al., 2005, p. 1): <em>“... Paralisia
+Cerebral (PC) é um termo de âmbito alargado que engloba situações de deficiência com perda
+de aptidões e disfunções em múltiplas e diversificadas áreas do desenvolvimento da criança.”</em>
+É devida a lesão cerebral ocorrida num período precoce de desenvolvimento do cérebro (durante
+a gravidez, na altura do parto, logo após o nascimento, ou até aos 5 anos de idade). Caracteriza-se
+essencialmente por uma perturbação não progressiva do movimento e da postura. De acordo
+com a Sociedade Portuguesa de Neuropediatria (2011)</p>
+
+<blockquote>“Algumas crianças têm perturbações ligeiras, quase impercetíveis, que as tornam desajeitadas,
+parecendo pouco harmoniosas a andar, falar ou em tarefas manuais. Outras há que são
+gravemente afetadas com incapacidade motora grave, impossibilidade de andar e falar, sendo
+dependentes nas atividades da vida diária. Entre estes dois extremos, há vários graus de
+incapacidade e as manifestações dependem pois da localização das lesões e áreas do cérebro
+afetadas. A criança com PC pode ter inteligência normal ou até acima do normal, mas também
+pode ter atraso intelectual, não só devido às lesões cerebrais, mas também por falta de
+experiência resultante das suas deficiências.”</blockquote>
+
+<span id="page42" epub:type="pagenumber">42</span>
+
+<p>As taxas de incidência e prevalência de Paralisia Cerebral em Portugal para o ano de 2001 são
+estimadas em 1,65 por cada mil nados vivos e de 1,72 por cada mil crianças, respetivamente
+(Andrada, Folha, Gouveia, Calado, & Virella, 2009). O estudo publicado em (Andrada, et al., 2005),
+englobando 100 crianças nascidas entre 1996 e 1998 e com diagnóstico confirmado de PC,
+aponta para várias causas (etiologias) da Paralisia Cerebral, mas normalmente a causa é
+desconhecida. Complicações no parto e deficiente fornecimento de oxigénio (anóxia) ao cérebro
+antes, durante ou após o nascimento são as causas mais apontadas. Os bebés prematuros são
+particularmente vulneráveis. O mesmo estudo mostra que 57% das crianças analisadas não anda,
+62% não comunicam através da fala, e que 62% têm problemas visuais. São por isso tipicamente
+crianças muito condicionadas pelas suas limitações físicas, na maior parte dos casos com poucas
+interações com os contextos físicos e sociais em que se inserem, o que pode ter um grande
+impacto no seu desenvolvimento global. Os tipos mais comuns de PC são (Sociedade Portuguesa
+de Neuropediatria, 2011):</p>
+
+<ul>
+<li><strong>Espástica</strong>: caracterizado por paralisia e aumento de tonicidade dos músculos resultante de
+lesões no córtex motor ou no trato corticoespinal. Os músculos são tensos e os reflexos
+tendinosos exacerbados. Na PC espástica pode estar afetado um lado do corpo
+(hemiparésia ou paralisia espástica unilateral), os quatro membros e tronco (tetraparésia)
+ou predominantemente os membros inferiores (diplegia);</li>
+<li><strong>Atetóide/Discinética</strong>: caracterizada por movimentos involuntários e variações na tonicidade
+muscular resultantes de lesões dos núcleos situados no interior dos hemisférios cerebrais;</li>
+<li><strong>Atáxica</strong>: caracterizada por diminuição da tonicidade muscular, descoordenação dos
+movimentos e equilíbrio deficiente, devido a lesões no cerebelo ou das vias cerebelosas.</li>
+</ul>
+
+<p>A forma espástica é a mais frequente das PC, englobando 88% dos casos (González & Sepúlveda,
+2002; Young, 1994). Podem ainda aparecer formas mistas com diferentes sintomas, o que torna
+difícil a avaliação. Há várias classificações propostas para avaliação da PC. A Figura 3.12
+apresenta uma classificação da PC, consoante a localização e gravidade neurológica.</p>
+
+<p>Em (Andrada, <em>et al.</em>, 2009) propõe-se uma nova classificação em que a PC espástica bilateral já
+não é subdividida em predomínio dos membros superiores e inferiores por tetraparésia/diplegia,
+mas em que a PC é classificada em espástica unilateral ou bilateral, com dois, três ou quatro
+membros afetados. AAtetose/Distonia é designada em (Andrada, et al., 2009) por PC disquinética,
+sendo dividida em distónica, em que predominam posturas anormais, hipertonia, movimentos
+involuntários e voluntários com posturas anormais provocadas por contrações musculares
+mantidas, e em <em>coreoatetósica</em>, em que predomina a hipercinésia<sup id="cite_ref-16" class="reference"><a epub:type="noteref" href="#cite_note-16"><span>[</span>16<span>]</span></a></sup>  e a hipotonia (tónus variável
+mas principalmente diminuído).</p>
+
+<span id="page43" epub:type="pagenumber">43</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura3_12.png" alt=""/>
+    <figcaption>
+		Figura 3.12: Classificação da PC consoante a localização e gravidade neurológica (adaptado de (Sociedade Portuguesa de Neuropediatria, 2011))
+    </figcaption>
+</figure>
+
+<p>Um dos reflexos primitivos que muitas vezes estas crianças mantêm é o reflexo cervical tónico
+assimétrico (as crianças de desenvolvimento típico perdem-no entre os 4 e os 6 meses de idade).
+Este reflexo provoca uma rotação da cabeça para o lado contrário em que um membro é
+estendido, o que provoca dificuldades acrescidas no acesso a tecnologias de apoio (quando a
+criança estende o braço para acionar a tecnologia ela “sai” do seu campo de visão devido à
+rotação da cabeça). Na caracterização da PC atáxica em (Andrada, <em>et al.</em>, 2009) aponta-se
+também dismetria17 e tremor (sobretudo intencional lento).</p>
+
+<p>É usual caracterizar as capacidades motoras de uma criança com PC de acordo com uma escala
+mais simples que a CIF e desenvolvida tendo em conta esta patologia em particular – trata-se da
+Classificação da Função Motora Global18 (Palisano, et al., 1997; Palisano, Rosenbaum, Bartlett,
+& Livingston, 2008). Esta escala encontra-se traduzida para Português (Andrada, et al., 2007).
+Inspiradas nesta, outras escalas têm sido desenvolvidas de que são exemplo a Classificação das
+Capacidades de Manipulação da Criança com Paralisia Cerebral19 (Eliasson, et al., 2006; Andrada,
+<em>et al.</em>, 2005), a Classificação da Motricidade Fina Bimanual da Criança com Paralisia Cerebral20
+(Bekung & Hagberg, 2002), e a Classificação da Comunicação e Função Oromotora (Alimentação,
+Capacidade de Expressão e Controlo da Baba) (Andrada, et al., 2008).</p>
+
+<span id="page44" epub:type="pagenumber">44</span>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Crianças com tetraparésia espástica (PC espástica bilateral dos quatro membros) são mais
+dependentes da ajuda de outras pessoas para a alimentação, higiene e locomoção, podendo
+beneficiar da utilização das tecnologias de apoio referidas no Capítulo 6. Já a grande maioria
+das crianças com diplegia espástica (PC espástica bilateral com predomínio dos membros
+inferiores) adquire marcha independente. As crianças com hemiparésia espástica (PC espástica
+unilateral) normalmente adquirem marcha independente, tendo naturalmente mais dificuldades
+sensoriais e de destreza na mão afetada. Nos casos mais graves, a fala é também afetada
+podendo recorrer-se às tecnologias de apoio à Comunicação (Capítulo 8).</p>
+</div>
+
+<a name="n337" id="n337"></a><h3>3.3.7 Perturbações da linguagem e da fala</h3>
+
+<p><em>Linguagem</em> e <em>Fala</em> não têm a mesma definição. <em>Linguagem</em> é qualquer sistema de símbolos
+organizados de acordo com um conjunto de regras acordado entre o emissor e o recetor (Miller,
+1981). <em>Fala</em> é a expressão oral de uma linguagem.</p>
+
+<p>Designa-se por <em>Afasia</em> uma perturbação da compreensão ou produção da linguagem resultante
+de lesões neurológicas (Martins, 2006). As afasias são usualmente consequência de acidentes
+vasculares cerebrais ou traumatismos cranioencefálicos. Tumores, infeções cerebrais ou doenças
+neurodegenerativas podem também causar afasias.</p>
+
+<p>Com base em dados sobre os AVC, estima-se que a incidência das afasias no mundo
+desenvolvido seja entre 0,02 e 0,06% e a prevalência de 0,1 a 0,4% da população (Code &
+Petheram, 2011). Dependendo da região da lesão cerebral, a afasia pode afetar vários aspetos
+da comunicação, tanto na compreensão como na produção de linguagem verbal ou escrita, sem
+perturbar as capacidades intelectuais. Por exemplo, algumas pessoas têm dificuldades em
+nomear palavras, outras em compreender a linguagem falada, outras em organizar a linguagem
+em frases com sentido. A Tabela 3.5 indica os tipos de afasia e as áreas da linguagem afetadas
+ou preservadas, em cada um desses tipos (Castro Caldas, 2000).</p>
+
+<p>Algumas perturbações da fala, associados à afasia ou a outras origens neurológicas são:</p>
+
+<p><strong>Disartria</strong> é uma perturbação do controlo do sistema motor da fala em resultado de lesões no
+sistema nervoso central ou periférico que causam fraqueza, lentidão e uma deficiente coordenação
+dos músculos necessários para produzir fala (Anderson & Shames, 2006). Traduz-se em dificuldade
+na articulação e pronunciação das palavras, com perda de inteligibilidade.</p>
+<p><strong>Apraxia<sup id="cite_ref-21" class="reference"><a epub:type="noteref" href="#cite_note-21"><span>[</span>21<span>]</span></a></sup>  verbal</strong> designa uma perturbação da coordenação dos movimentos envolvidos na
+produção de fala causada por uma disfunção no sistema nervoso central. Na apraxia verbal, ao
+contrário de na disartria, não há qualquer problema nos músculos produtores da fala, mas apenas
+na coordenação dos movimentos. Tem por isso prognósticos mais favoráveis.</p>
+<span id="page45" epub:type="pagenumber">45</span>
+<p><strong>Anartria</strong> designa a incapacidade para articular palavras, como consequência de uma lesão
+cerebral que afeta o controlo dos músculos orofaciais. Não está relacionado com a compreensão,
+leitura ou escrita, mas apenas com a impossibilidade de articular palavras.</p>
+
+<div class="table-responsive">
+<table class="table table-striped">
+<caption>Tabela 3.5: Tipos de afasia (Castro Caldas, 2000). O símbolo <span title="áreas perturbadas">&#x2717;</span> indica áreas perturbadas e o símbolo <span title="áreas preservadas">&#x2713;</span> indica áreas preservadas</caption>
+<tr>
+<th>Tipo de Afasia</th>
+<th style="text-align:center">Fluência do discurso</th>
+<th style="text-align:center">Compreensão</th>
+<th style="text-align:center">Nomeação</th>
+<th style="text-align:center">Repetição</th>
+</tr>
+<tr>
+<td>Wernicke</td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+</tr>
+<tr>
+<td>Transcortical sensorial</td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+</tr>
+<tr>
+<td>Condução</td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+</tr>
+<tr>
+<td>Anómica</td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+</tr>
+<tr>
+<td>Global</td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+</tr>
+<tr>
+<td>Transcortical mista</td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+</tr>
+<tr>
+<td>Broca</td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+</tr>
+<tr>
+<td>Transcortical motora</td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+<td style="text-align:center"><span title="áreas perturbadas">&#x2717;</span></td>
+<td style="text-align:center"><span title="áreas preservadas">&#x2713;</span></td>
+</tr>
+</table>
+</div>
+
+<div class="alert alert-warning" role="alert">
+<p>A utilização de tecnologias de apoio a Necessidades Complexas de Comunicação (Capítulo 8)
+tem tido um desenvolvimento assinalável na última década, revelando-se os resultados da sua
+utilização em contextos terapêuticos e pedagógicos como cruciais para uma mais adequada
+reabilitação de utentes com as patologias anteriormente referidas.</p>
+</div>
+
+<a name="n338" id="n338"></a><h3>3.3.8 Perturbações do espectro do autismo</h3>
+
+<p>As perturbações do espectro do autismo englobam um grupo de doenças caracterizadas por
+alterações qualitativas das interações sociais recíprocas e em padrões de comunicação, e por um
+repertório restrito, estereotipado e repetitivo de interesses e atividades (World Health Organization,
+2010). Estas anomalias qualitativas constituem uma característica global do funcionamento do
+indivíduo e manifestam-se em todas as situações.</p>
+
+<p>A prevalência das perturbações do espetro do autismo nos países desenvolvidos é estimada em 6
+por mil habitantes (Newschaffer, <em>et al.</em>, 2007). Estudos epidemiológicos indicam que o autismo afeta
+o sexomasculino, em relação ao sexo feminino, numa proporção de 4,3:1 (Newschaffer, <em>et al.</em>, 2007).</p>
+
+<p>A criança com <em>autismo infantil</em> tem um desenvolvimento atípico, patente antes dos três anos de
+idade. Além das características específicas descritas para as perturbações do espectro do autismo,
+são comuns uma série de outras manifestações inespecíficas tais como fobias, distúrbios de sono
+e alimentação, crises de birra, e (auto) agressividade (World Health Organization, 2010).</p>
+
+<p>Quando os sintomas aparecem depois dos três anos de idade, ou quando não há evidência
+significativa em uma ou duas das três áreas de psicopatologia necessárias para o diagnóstico de
+<span id="page46" epub:type="pagenumber">46</span>
+autismo infantil (interações sociais recíprocas, comunicação e repertório restrito, estereotipado e
+repetitivo de interesses e atividades), a patologia é designada por autismo atípico. Este surge
+mais frequentemente em indivíduos com atrasos mentais profundos ou com perturbações graves
+no desenvolvimento da linguagem recetiva (World Health Organization, 2010).</p>
+
+<p>A <em>síndrome de Rett</em> é uma patologia que, até hoje, foi apenas detetada no sexo feminino,
+manifestando-se entre os sete e 24 meses de idade (World Health Organization, 2010). Após um
+desenvolvimento inicial aparentemente normal, a criança perde total ou parcialmente as
+capacidades de falar, de andar e de usar as mãos, acompanhado de uma torsão estereotipada
+das mãos, de uma desaceleração do crescimento do crânio e de hiperventilação. Há uma
+estagnação do desenvolvimento social e lúdico, mas os interesses sociais são normalmente
+mantidos. Aos quatro anos desenvolve-se ataxia<sup id="cite_ref-22" class="reference"><a epub:type="noteref" href="#cite_note-22"><span>[</span>22<span>]</span></a></sup> e apraxia do tronco, ao que se segue
+usualmente o surgimento de movimentos coreoatetósicos. Esta patologia tem como consequência
+frequente um atraso mental profundo (World Health Organization, 2010).</p>
+
+<p>A <em>demência infantil</em> ou síndrome de Hellermanifesta-se tambémapós umperíodo de desenvolvimento
+típico. Ao longo de alguns meses a criança perde as capacidades anteriormente adquiridas em
+vários domínios do desenvolvimento. Normalmente, isso é acompanhado de uma perda geral de
+interesse no ambiente, maneirismos motores estereotipados e repetitivos, e alterações na
+interação social e na comunicação do tipo autista (World Health Organization, 2010).</p>
+
+<p>A <em>síndrome de Asperger</em> diferencia-se do autismo essencialmente por não haver um atraso no
+desenvolvimento da linguagem ou no desenvolvimento cognitivo, manifestando-se apenas ao
+nível das interações sociais recíprocas e num repertório restrito, estereotipado e repetitivo de
+interesses e atividades. Está frequentemente associada a crianças desajeitadas. Os sintomas
+tipicamente persistem na adolescência e idade adulta (World Health Organization, 2010).</p>
+
+<p>Não são ainda conhecidas as causas das perturbações do espectro do autismo, mas é hoje
+consensual que as perturbações decorrem de um problema neurológico e não, como se pensava
+inicialmente, de fatores familiares (pais frios e pouco expressivos) que prejudicavam o
+desenvolvimento afetivo da criança (teoria da “mãe frigorífico”, atualmente ultrapassada). Não
+existe, ainda, cura para o autismo.</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>As tecnologias de apoio à Comunicação (Capítulo 8) podem ajudar as pessoas com
+perturbações do espectro do autismo a vencerem as dificuldades no domínio da comunicação.
+Estudos recentes têm demonstrado a eficácia da utilização de robôs sociais na reabilitação de
+crianças com estas perturbações (ver referência no Capítulo 10).</p>
+</div>
+
+<a name="n339" id="n339"></a><h3>3.3.9 Dificuldades específicas de aprendizagem</h3>
+
+<p>As perturbações específicas da aprendizagem englobam todas as dificuldades de aprendizagem
+que não podem ser atribuídas a ausência de oportunidades, atraso mental ou consequência de
+alguma doença ou traumatismo cranioencefálico (World Health Organization, 2010). Crianças
+com dificuldades de aprendizagem específicas apresentam normalmente défices de atenção,
+hiperatividade, impulsividade, entre outros sintomas.</p>
+
+<p>Em Portugal, 5 a 10% da população total de alunos tem dificuldades de aprendizagem específicas
+(Associação Portuguesa de Pessoas com Dificuldades de Aprendizagem Específicas, 2009).</p>
+
+<p>A <em>dislexia</em> é caracterizada por troca ou omissão de letras, inversão de sílabas, dificuldades de
+estruturação de frases, que afetam tanto a leitura como a escrita. Esta perturbação compromete
+a associação entre as letras impressas e o som respetivo, afetando a leitura e até a compreensão
+dos textos (Associação Portuguesa de Pessoas com Dificuldades de Aprendizagem Específicas,
+2009).</p>
+
+<p>A <em>disgrafia</em> é uma perturbação do tipo funcional, afetando a escrita. Os alunos com disgrafia
+normalmente apresentam uma caligrafia mal desenhada e ilegível, com letras muito próximas e
+desproporcionadas (Associação Portuguesa de Pessoas com Dificuldades de Aprendizagem
+Específicas, 2009).</p>
+
+<p>Na <em>disortografia</em> o traçado ou a grafia das palavras não está afetada, mas a criança comete de
+forma sistemática erros de escrita. Devido a uma incapacidade de estruturar gramaticalmente a
+linguagem, a disortografia pode manifestar-se no desconhecimento ou negligência das regras
+gramaticais, confusão nos artículos e pequenas palavras, e em formas mais banais como a troca
+de plurais, falta de acentos ou erros de ortografia em palavras correntes ou na correspondência
+incorreta entre o som e o símbolo escrito (Associação Portuguesa de Pessoas com Dificuldades
+de Aprendizagem Específicas, 2009).</p>
+
+<p>A <em>discalculia</em> é uma perturbação das capacidades aritméticas em que as crianças não são capazes
+de reconhecer e efetuar as quatro operações básicas. Têm também usualmente problemas em
+quantificar e comparar, em entender sequências lógicas e enunciados de problemas (Associação
+Portuguesa de Pessoas com Dificuldades de Aprendizagem Específicas, 2009).</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Produtos de apoio à Comunicação (Capítulo 8) e à Cognição (Capítulo 10) têm sido usados para
+ajudar a vencer as dificuldades de aprendizagem específicas.</p>
+</div>
+
+<a name="n3310" id="n3310"></a><h3>3.3.10 Deficiência visual</h3>
+<p>A deficiência visual engloba a cegueira e a baixa visão. É caracterizada por medidas subnormais
+de acuidade visual e/ou do campo de visão, não totalmente ultrapassáveis por meios de correção
+ótica (Moore, Graves, & Patterson, 1997).</p>
+
+<span id="page48" epub:type="pagenumber">48</span>
+
+<p>A <strong>acuidade visual</strong> é a medida da capacidade do olho para distinguir dois elementos distintos que
+estão próximos, em função da distância desses elementos ao olho. Corresponde à nitidez da
+visão e está relacionada com a distância entre fotorrecetores na retina e a precisão da refração
+(na Figura 3.13 apresenta-se uma imagem anatómica do olho humano). A acuidade visual é uma
+medida da resolução espacial da visão. O <strong>campo visual</strong> refere-se à área visível quando a cabeça
+e os olhos estão fixos num ponto, isto é, toda a área que a pessoa consegue ver quando fixa o
+olhar num ponto (visão central e periférica) (Agarwal & Jacob, 2009).</p>
+
+<p>De acordo com a Classificação Internacional de Doenças da OMS (World Health Organization,
+2012), há quatro níveis de deficiência visual: visão normal, défice visual moderado, défice visual
+grave e cegueira. Esta classificação é dada com base em valores de acuidade visual.</p>
+
+<p>Em Portugal, a definição legal de cegueira é (segundo o Decreto-Lei n.º 49331/69 de 28 de
+outubro):</p>
+
+<ol type="a">
+<li>A ausência total da visão;</li>
+<li>As situações irrecuperáveis em que:
+<ul style="list-style-type:none">
+<li>A acuidade visual seja inferior a 0,1 no melhor olho e após a correção apropriada;</li>
+<li>Ou a acuidade visual, embora superior a 0,1, seja acompanhada de limitação do campo
+visual igual ou inferior a 20º angulares.</li>
+</ul></li>
+</ol>
+
+<figure>
+    <img class="img-responsive" src="images/figura3_13.png" alt=""/>
+    <figcaption>
+        Figura 3.13: Imagem anatómica do olho humano (commons.wikimedia.org)
+    </figcaption>
+</figure>
+
+<p>A <em>Cegueira</em> pode ser de três tipos: congénita (surge no primeiro ano de idade); precoce (surge
+entre o 1.º e o 3.º ano de idade); ou adquirida (surge após os 3 anos de idade).</p>
+
+<p>A <em>Ambliopia</em>, ou baixa-visão, significa uma reduzida capacidade visual que não melhora através
+de correção ótica. Existem dois tipos de ambliopia: orgânica (com lesão do globo ocular ou das
+vias óticas) e funcional (sem danos orgânicos).</p>
+
+<p>Há, em todo o mundo, 285 milhões de pessoas com deficiências visuais: 39 milhões de cegos e
+246 milhões de pessoas com baixa visão (World Health Organization, 2012). Em Portugal, de
+acordo com dados de 1995, a deficiência visual tem incidência de 13,7/1000 habitantes, entre os
+quais 1,48/1000 com cegueira total e 12,22/1000 com redução grave de visão (Secretariado
+<span id="page49" epub:type="pagenumber">49</span>
+Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996). De acordo com dados
+do Censos 2011, 8,7% da população portuguesa tem muita dificuldade ou não consegue ver
+(Instituto Nacional de Estatística, 2011).</p>
+
+<p>Segundo a OMS (World Health Organization, 2012), as principais causas de deficiência visual
+são erros de refração (miopia<sup id="cite_ref-23" class="reference"><a epub:type="noteref" href="#cite_note-23"><span>[</span>23<span>]</span></a></sup>, 
+hipermetropia<sup id="cite_ref-24" class="reference"><a epub:type="noteref" href="#cite_note-24"><span>[</span>24<span>]</span></a></sup>  
+ou astigmatismo<sup id="cite_ref-25" class="reference"><a epub:type="noteref" href="#cite_note-25"><span>[</span>25<span>]</span></a></sup>) 
+– 43%, cataratas<sup id="cite_ref-26" class="reference"><a epub:type="noteref" href="#cite_note-26"><span>[</span>26<span>]</span></a></sup>  – 33% e
+glaucoma<sup id="cite_ref-27" class="reference"><a epub:type="noteref" href="#cite_note-27"><span>[</span>27<span>]</span></a></sup>  
+– 2%. Estas causas podem ser consequência de doenças infeciosas (tracoma, sífilis);
+doenças sistémicas (diabetes, arteriosclerose, nefrite, moléstias do sistema nervoso central,
+deficiências nutricionais graves); traumas oculares (pancadas, ação de ácidos); ou de problemas
+congénitos (paralisia cerebral e outros). As principais causas da cegueira são as cataratas, o
+glaucoma e a degeneração macular<sup id="cite_ref-28" class="reference"><a epub:type="noteref" href="#cite_note-28"><span>[</span>28<span>]</span></a></sup> . Nos últimos 20 anos, a incidência de cegueira por infeção
+foi drasticamente reduzida.</p>
+
+<p>Os défices visuais são também comuns em diversos tipos de deficiência, como por exemplo, na
+paralisia cerebral, na multideficiência ou nos traumatismos cranioencefálicos. Nestas situações,
+é fundamental uma correta avaliação da visão aquando da seleção de produtos de apoio. Por
+exemplo, uma criança com paralisia cerebral pode não revelar um bom desempenho na utilização
+de um sistema de controlo através do olhar apenas por não terem sido avaliadas corretamente
+as suas dificuldades em ver o ecrã do computador.</p>
+
+<div class="alert alert-warning" role="alert">
+<p>Tecnologias de apoio à Mobilidade (Secção 6.6) e à Orientação (Capítulo 10) são utilizadas
+para ajudar a vencer as dificuldades colocadas pela deficiência visual.</p>
+</div>
+
+<a name="n3311" id="n3311"></a><h3>3.3.11 Deficiência auditiva</h3>
+
+<p>A deficiência auditiva caracteriza-se pela perda total ou parcial da audição. A surdez refere-se à
+perda completa da audição em um ou nos dois ouvidos. A surdez pode ser adquirida antes ou após
+o desenvolvimento da fala. Quando surge antes da fala, pode comprometer totalmente o seu
+desenvolvimento (<em lang="en">World Health Organization</em>, 2012).</p>
+
+<p>A Figura 3.14 apresenta a estrutura do aparelho auditivo. A perda da audição pode ser causada por
+um problema no canal auditivo externo ou no ouvido médio que impede a condução do som ao
+ouvido interno (surdez de condução); por uma lesão no ouvido interno ou no nervo auditivo (<em>surdez
+de perceção</em>); ou pode estar localizada no ouvido médio e interno, comprometendo quer a condução
+quer a perceção dos sons (<em>surdez mista</em>) (Gonçalves & Santos, 2010). Apesar de rara, há casos de
+<span id="page50" epub:type="pagenumber">50</span>
+surdez central, quando o estímulo auditivo é transmitido corretamente até ao cérebro e a surdez é
+causada por problemas de processamento central no córtex cerebral (Musiek, <em>et al.</em>, 2007).</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura3_14.png" alt=""/>
+    <figcaption>
+        Figura 3.14: Imagem da estrutura do aparelho auditivo (commons.wikimedia.org)
+    </figcaption>
+</figure>
+
+<p>Segundo a OMS, em 2004 havia no mundo cerca de 245 milhões de habitantes com deficiência
+auditiva moderada ou profunda (World Health Organization, 2012). De entre estes habitantes,
+cerca de 80% são de países subdesenvolvidos ou em desenvolvimento. Cerca de metade dos
+casos de deficiência auditiva podem ser evitados ou tratados através de diagnóstico precoce e
+intervenção adequada. De acordo com a mesma fonte, nos países desenvolvidos, apenas 1 em
+40 pessoas com deficiência auditiva tem o produto de apoio para a audição que necessita. Os
+dados do (Secretariado Nacional de Reabilitação e Integração de Pessoas com Deficiência, 1996)
+apontam para uma prevalência em Portugal de 11,6/1000 de deficiência auditiva, 1,9/1000 dos
+quais referentes a surdez. O Censos 2011 revelou que 5,0% da população portuguesa tem muita
+dificuldade ou não consegue ouvir, sendo que a incidência aumenta significativamente com a
+idade (Instituto Nacional de Estatística, 2011).</p>
+
+<p>As principais causas da deficiência auditiva são (World Health Organization, 2012)</p>
+<ol type="i">
+<li><strong>de origem congénita</strong>: causas genéticas ou problemas durante a gravidez ou nascimento,
+como rubéola, toxoplasmose ou outras infeções na mulher; efeitos de alguns
+medicamentos ou drogas durante a gravidez; prematuridade; anoxia de parto ou icterícia
+grave no bebé (que pode causar danos no nervo auditivo);</li>
+<li><strong>de origem adquirida</strong>: doenças infeciosas (<em>e.g.</em>, meningite); infeções crónicas do ouvido;
+alguns medicamentos tóxicos que podem danificar o ouvido interno; traumas; exposição a
+barulho excessivo; ou o envelhecimento.</li>
+</ol>
+
+<p>A deficiência auditiva é medida pelas perdas em intensidade, quantificadas em decibéis<sup id="cite_ref-29" class="reference"><a epub:type="noteref" href="#cite_note-29"><span>[</span>29<span>]</span></a></sup> , para
+as diversas frequências dos sons audíveis. Há várias classificações para a deficiência auditiva.
+A Tabela 3.6 apresenta a classificação da OMS (Mathers, Smith, & Concha, 2000).</p>
+
+<div class="table-responsive">
+<table class="table table-striped">
+<caption>Tabela 3.6: Classificação da deficiência auditiva segundo a OMS (Mathers, Smith, & Concha, 2000)</caption>
+<tr>
+<th>Classificação da deficiência auditiva</th>
+<th>Audiometria (valores da perda auditiva)
+(Média para 500,1000, 2000 e 4000 Hz
+no ouvido melhor)</th>
+<th>Descrição</th>
+</tr>
+<tr>
+<td>0 (sem deficiência)</td>
+<td>25 dB HTL</td>
+<td>Sem (ou com ligeiros) problemas de audição.<br>
+Ouve sussurros.</td>
+</tr>
+<tr>
+<td>1 (ligeira)</td>
+<td>26-40 dB HTL</td>
+<td>Ouve e repete palavras emitidas em volume
+de voz normal a 1 m de distância</td>
+</tr>
+<tr>
+<td>2 (moderada)</td>
+<td>41-60 dB HTL</td>
+<td>Ouve e repete palavras emitidas em volume
+de voz aumentado, a 1 m de distância</td>
+</tr>
+<tr>
+<td>3 (grave)</td>
+<td>61-80 dB HTL</td>
+<td>Ouve algumas palavras gritadas ao melhor ouvido</td>
+</tr>
+<tr>
+<td>4 (profunda/surdez)</td>
+<td>81 dB HTL ou superior</td>
+<td>Não ouve ou entende palavras mesmo gritadas ao ouvido</td>
+</tr>
+</table>
+</div>
+
+
+<p>Para comunicar as pessoas com deficiência auditiva podem recorrer à Língua Gestual (frequentemente utilizada nos casos de surdez congénita),
+à oralidade (casos de deficiência auditiva moderada a severa ou surdez adquirida após o desenvolvimento da fala) ou ambas
+(diz-se neste caso que são <em>bilingues</em>). Para o segundo grupo há várias tecnologias de apoio que podem ajudar estas pessoas
+na comunicação. A legendagem (quer de texto ou símbolos, quer de língua gestual) é um dos meios para tornar a sociedade
+acessível às pessoas com deficiência auditiva.</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>Tecnologias de apoio à Comunicação (Secção 8.4.4) e à Orientação (Capítulo 9) são utilizadas
+para ajudar a vencer as dificuldades colocadas pela deficiência auditiva.</p>
+</div>
+<span id="page52" epub:type="pagenumber">52</span>
+
+<nav>        
+  <ul class="pager">
+    <li class="previous"><a href="/livros/tapd/html/2_enquadramento_e_definicoes.html"><span aria-hidden="true">&larr;</span> Capítulo anterior</a></li>
+	<li class="top"><a href="#top"><span aria-hidden="true">&uarr;</span> Início da página</a></li>
+	<li class="next"><a href="/livros/tapd/html/4_modelos_tecnologias_apoio.html">Próximo capítulo <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+  </nav>
+
+<aside epub:type="footnote">
+<h2>Notas do capítulo 3</h2>
+<ol start="2">
+<li id="cite_note-2"><span class="reference-text">TBI – Traumatic Brain Injury na literatura anglo-saxónica.</span><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span></li>
+<li id="cite_note-3"><span class="reference-text">CVA – Cerebral Vascular Accidents ou stroke na literatura anglo-saxónica.</span><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span></li>
+<li id="cite_note-4"><span class="reference-text">ALS – Amyotrophic Lateral Sclerosis na literatura anglo-saxónica.</span><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span></li>
+<li id="cite_note-5"><span class="reference-text">O texto desta secção segue de perto o texto da própria CIF (Direcção-Geral da Saúde, 2004) e replica muita da
+informação disponibilizada nas páginas do Instituto Nacional da Reabilitação, em particular em (Instituto Nacional de
+Reabilitação, I. P., 2010).</span><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span></li>
+<li id="cite_note-6"><span class="reference-text">Versão na língua inglesa disponível em <a href="http://apps.who.int/classifications/icfbrowser/Default.aspx">apps.who.int/...</a>.</span><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span></li>
+<li id="cite_note-7"><span class="reference-text"> Rompimento de vasos sanguíneos.</span><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span></li>
+<li id="cite_note-8"><span class="reference-text"> Paralisia parcial dos quatro membros e tronco, incluindo os músculos respiratórios.</span><span class="mw-cite-backlink"><a href="#cite_ref-8">↑</a></span></li>
+<li id="cite_note-9"><span class="reference-text"> Paralisia total dos quatro membros e tronco, incluindo os músculos respiratórios.</span><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span></li>
+<li id="cite_note-10"><span class="reference-text"> Paralisia parcial de parte ou ambos os membros inferiores e tronco.</span><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span></li>
+<li id="cite_note-11"><span class="reference-text"> Paralisia total dos membros inferiores e tronco.</span><span class="mw-cite-backlink"><a href="#cite_ref-11">↑</a></span></li>
+<li id="cite_note-12"><span class="reference-text"> Estes números correspondem a uma extrapolação dos dados de internamento hospitalar referentes a 1996 e 1997.</span><span class="mw-cite-backlink"><a href="#cite_ref-12">↑</a></span></li>
+<li id="cite_note-13"><span class="reference-text"> Paralisia parcial de um dos lados do corpo.</span><span class="mw-cite-backlink"><a href="#cite_ref-13">↑</a></span></li>
+<li id="cite_note-14"><span class="reference-text"> Síndrome de locked-in é um estado de diagnóstico neurológico que se refere a pessoas com impossibilidade total de
+falar ou executarmovimentos (normalmente comexceção domovimento ocular vertical), compreservação da consciência
+e das competências comunicativas. Este estado é causado por lesões graves do trato corticoespinal e corticobulbar
+(região inferior do cérebro) não afetando porém as regiões superiores do cérebro (Smith & Delargy, 2004).</span><span class="mw-cite-backlink"><a href="#cite_ref-14">↑</a></span></li>
+<li id="cite_note-15"><span class="reference-text"> Como é exemplo o Programa Europeu Ambient Assisted Living (<a href="http://www.aal-europe.eu">http://www.aal-europe.eu</a>).</span><span class="mw-cite-backlink"><a href="#cite_ref-15">↑</a></span></li>
+<li id="cite_note-16"><span class="reference-text"> Movimentos involuntários descontrolados, recorrentes e ocasionalmente estereotipados.</span><span class="mw-cite-backlink"><a href="#cite_ref-16">↑</a></span></li>
+<li id="cite_note-17"><span class="reference-text"> Perturbação da amplitude dos movimentos, visível sobretudo nos atos sob comando executados rapidamente
+(provas dedo-nariz e calcanhar-joelho) (Médicos de Portugal, 2010).</span><span class="mw-cite-backlink"><a href="#cite_ref-17">↑</a></span></li>
+<li id="cite_note-18"><span class="reference-text"> GMFCS – <i>Gross Motor Function Classification System</i>.</span><span class="mw-cite-backlink"><a href="#cite_ref-12">↑</a></span></li>
+<li id="cite_note-19"><span class="reference-text"> MACS – <i>Manual Ability Classification System</i>.</span><span class="mw-cite-backlink"><a href="#cite_ref-19">↑</a></span></li> 
+<li id="cite_note-20"><span class="reference-text"> BFMF – <i>Bimanual Fine Motor Function</i>.</span><span class="mw-cite-backlink"><a href="#cite_ref-20">↑</a></span></li> 
+<li id="cite_note-21"><span class="reference-text"> Apraxia é uma incapacidade para executar normalmente movimentos coordenados.</span><span class="mw-cite-backlink"><a href="#cite_ref-21">↑</a></span></li>
+<li id="cite_note-22"><span class="reference-text"> Ataxia é uma incoordenação patológica dos movimentos do corpo.</span><span class="mw-cite-backlink"><a href="#cite_ref-22">↑</a></span></li>
+<li id="cite_note-23"><span class="reference-text"> A imagem é focada antes da retina, afetando a visão ao longe.</span><span class="mw-cite-backlink"><a href="#cite_ref-23">↑</a></span></li>
+<li id="cite_note-24"><span class="reference-text"> A imagem é focada depois da retina, afetando a visão ao perto.</span><span class="mw-cite-backlink"><a href="#cite_ref-24">↑</a></span></li>
+<li id="cite_note-25"><span class="reference-text"> A imagem é focada em mais que um ponto na retina, afetando tanto a visão ao perto como ao longe.</span><span class="mw-cite-backlink"><a href="#cite_ref-25">↑</a></span></li>
+<li id="cite_note-26"><span class="reference-text"> Opacidade total ou parcial do cristalino.</span><span class="mw-cite-backlink"><a href="#cite_ref-26">↑</a></span></li>
+<li id="cite_note-27"><span class="reference-text"> Designação genérica de um grupo de doenças que atingem o nervo ótico.</span><span class="mw-cite-backlink"><a href="#cite_ref-27">↑</a></span></li>
+<li id="cite_note-28"><span class="reference-text"> Condição médica geral dos adultos mais velhos que resulta numa perda de visão no centro do campo visual (a
+mácula) devido a danos na retina. Por vezes é preservada alguma da visão periférica.</span><span class="mw-cite-backlink"><a href="#cite_ref-28">↑</a></span></li>
+<li id="cite_note-28"><span class="reference-text"> O decibel é uma unidade logarítmica que indica a proporção de uma quantidade física em relação a um nível de
+referência. Na audiologia mede a intensidade sonora em relação a uma curva de níveis sonoros mínimos em
+função da frequência que caracteriza a audição “normal”.</span><span class="mw-cite-backlink"><a href="#cite_ref-29">↑</a></span></li>
+</ol>
+</aside>
+</div>
+</body>
+</html>

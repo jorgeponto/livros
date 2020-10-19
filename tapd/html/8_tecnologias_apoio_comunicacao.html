@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tecnologias de Apoio para Pessoas com Deficiência">
+    <meta name="author" content="Unidade ACESSO da FCT">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Capítulo 8 - Tecnologias de apoio à comunicação</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="boot/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="boot/css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="boot/js/ie-emulation-modes-warning.js"></script>
+    
+<!--Script para controlar show/hide dos gráficos -->
+<script src="boot/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.toggle').each(function(){
+		$(this).click(function(e) {
+			var $clas = $(this).attr('id');
+			$('.'+$clas).toggle();
+			$(this).text(function(i,v){
+				return v === 'Ver tabela de dados' ? 'Ver gráfico' : 'Ver tabela de dados'
+			})
+		});
+	});
+});
+</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="container">
+<p id="top"></p>
+          
+  <ol class="breadcrumb">
+  <li><a href="http://www.acessibilidade.gov.pt/">ACESSO</a></li>
+  <li>Tecnologias de apoio para pessoas com deficiência</li>
+    <li><a href="/livros/tapd/html/indice.html">Indice</a></li>
+    <li class="active">8. Tecnologias de apoio à Comunicação</li>   
+	  </ol>
+
+
+
+<h1>8. Tecnologias de apoio à Comunicação</h1>
+
+<p>De acordo com o projeto HEART (Azevedo, Féria, Nunes da Ponte, Wann, & Recellado, 1994),
+<em>Comunicação</em> é a capacidade de gerar, emitir, receber e perceber mensagens, interagir com outros
+indivíduos face a face ou a distância, num contexto social particular.</p>
+
+<p>Usualmente, o ser humano utiliza a fala para comunicar. No entanto, a mensagem emitida não
+depende apenas da linguagem usada, mas também, entre outros, da entoação dada, do contexto
+e da expressão corporal, no caso de comunicação presencial. A comunicação é, assim, em regra,
+multimodal.</p>
+
+<p>As perturbações na comunicação têm origens muito diversas. Uma pessoa pode não conseguir
+comunicar por ter uma perturbação motora (ver Secção 3.3), da linguagem e/ou da fala (ver
+Secção 3.3.7), sensorial (ver secções 3.3.10 e 3.3.11) ou simplesmente, poderá não comunicar
+por não conhecer a linguagem do seu interlocutor ou não dominar o contexto em que se realiza
+a comunicação (<em>e.g.</em>, comunicação entre paciente e médico, quando o primeiro tem uma
+insuficiente literacia em saúde).</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>A impossibilidade de comunicar é muito incapacitante não podendo ser subvalorizada. As
+pessoas que não conseguem comunicar aprendem a depender totalmente de terceiros,
+desenvolvem um sentimento de impotência perante o meio, e um estado de <em>desistência
+aprendida</em>, em que deixam de reagir por interiorizarem que as suas ações são inúteis e que não
+têm controlo sobre as situações (Basil, 1992).</p>
+</div>
+
+
+<a name="n81" id="n81"></a><h2>8.1 Comunicação aumentativa e alternativa</h2>
+
+<p>A área do conhecimento que estuda soluções para as Necessidades Complexas de Comunicação
+é designada por <em>Comunicação Aumentativa e Alternativa</em> (CAA). De acordo com a American
+Speech-Language-Hearing Association (ASHA), a comunicação aumentativa e alternativa envolve
+o estudo e, quando necessário, a compensação de incapacidades temporárias ou permanentes,
+de limitações nas atividades e de restrições à participação de pessoas com perturbações severas
+na produção e/ou compreensão da linguagem, incluindo os modos falados e escritos da
+comunicação (American Speech-Language-Hearing Association, 2005). A comunicação diz-se
+aumentativa quando complementa (não substituindo) outros modos de comunicação, tais como
+fala, gestos, vocalizações, expressões faciais; designa-se por alternativa quando emprega
+métodos, modos e estratégias alternativos.</p>
+
+<div class="alert alert-warning" role="alert"> 
+<p>A CAA inclui quatro componentes primárias: símbolos, produtos de apoio, técnicas e estratégias
+(Beukelman & Mirenda, 2005).</p>
+</div>
+
+<span id="page83" epub:type="pagenumber">83</span>
+
+<p><strong>Símbolos</strong> podem ser gráficos, auditórios, gestuais ou tácteis. Podem ser usados pela pessoa apenas
+com recurso ao seu corpo (sinais, gestos, expressões faciais), em sistemas de comunicação sem
+ajuda, ou podem requerer o uso de objetos físicos, imagens, desenhos ou ortografia, em sistemas
+de comunicação com ajuda.</p>
+<p><strong>Produtos de apoio</strong>, neste contexto, referem-se aos produtos (eletrónicos ou não) usados para
+transmitir e/ou receber mensagens.</p>
+<p><strong>Técnicas</strong> de comunicação são a forma através da qual a mensagem pode ser transmitida (por
+exemplo, engloba as técnicas de seleção direta e indireta discutidas na Secção 5.1).
+Finalmente, <strong>Estratégias</strong> referem-se ao modo de transmitir as mensagens de forma mais eficaz
+e eficiente. As estratégias podem ter três objetivos: melhorar a sincronização das mensagens,
+auxiliar a formulação gramatical das mensagens ou aumentar a taxa de comunicação.</p>
+
+<a name="n82" id="n82"></a><h2>8.2 Símbolos</h2>
+
+<p>Vários sistemas de símbolos gráficos foram desenvolvidos, com diferentes objetivos e vocabulários,
+formando diferentes linguagens. A escolha de um sistema de símbolos particular depende das
+necessidades e preferências de cada um. Os símbolos gráficos são imagens que representam
+visualmente uma palavra ou conceito com o objetivo de clarificar e facilitar a sua compreensão
+(ver Figura 8.1). São usados por todas as pessoas no dia a dia (<em>e.g.</em>, sinais de trânsito) e podem
+ser particularmente úteis, por exemplo, para pessoas que estão a aprender uma segunda língua,
+pessoas com dificuldades de memória, demência ou outra lesão cerebral, pessoas com dislexia,
+disartria ou dificuldades espaciais/temporais/organizacionais, pessoas com deficiências auditivas,
+pessoas com perturbações do espectro do autismo ou pessoas que não saibam ler. Os sistemas
+de símbolos podem ajudar na comunicação, promover a independência e a participação,
+desenvolver a literacia e a aprendizagem, e permitir o acesso a informação.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_1.png" alt=""/>
+    <figcaption>
+        Figura 8.1: Símbolos gráficos (<a href="http://www.widgit.com">www.widgit.com</a>)
+    </figcaption>
+</figure>
+
+<p>Um dos primeiros sistemas de símbolos usados em comunicação aumentativa e alternativa foi o
+sistema Bliss<sup id="cite_ref-36" class="reference"><a epub:type="noteref" href="#cite_note-36"><span>[</span>36<span>]</span></a></sup>. 
+Este sistema foi proposto por Charles Bliss em 1949 com o objetivo de criar uma
+linguagem universal que permitisse às pessoas expressarem-se sem a complexidade gramatical
+e ortográfica das outras linguagens. Trata-se de uma linguagem simbólica gráfica composta,
+atualmente, por mais de 3.000 símbolos. Os caracteres Bliss podem ser recombinados de
+inúmeras formas para se obter novos símbolos. São usadas formas simples de modo a que os
+símbolos sejam fáceis e rápidos de desenhar. Em 1971, o Ontario Crippled Children’s Home
+começou a usar os símbolos Bliss para ensinar comunicação a crianças com paralisia cerebral.
+A Figura 8.2 contém exemplos de símbolos Bliss.</p>
+
+<span id="page84" epub:type="pagenumber">84</span>
+
+
+<figure>
+    <img class="img-responsive" src="images/figura8_2.png" alt=""/>
+    <figcaption>
+        Figura 8.2: Símbolos Bliss (<a href="http://www.blissymbolics.org">www.blissymbolics.org</a>)
+    </figcaption>
+</figure>
+
+<p>Este sistema com base semântica começou a ser utilizado em Portugal no início dos anos 80,
+depois de traduzido e adaptado ao Português, tendo sido sobretudo alguns Centros de
+Reabilitação de Paralisia Cerebral do país que iniciaram a sua implementação prática.</p>
+
+<p>Para fazer face às dificuldades de utilização do sistema Bliss por parte de pessoas sem o nível cognitivo
+adequado, foram traduzidos, adaptados e começaram a ser utilizados em Portugal os Pictogramas <sup id="cite_ref-37" class="reference"><a epub:type="noteref" href="#cite_note-37"><span>[</span>37<span>]</span></a></sup> 37.
+Os Pictogramas constituem um sistema de símbolos desenvolvido nos anos 80 que se distingue pela
+representação dos símbolos a branco sobre um fundo preto (ver Figura 8.3). Pretende-se assim
+maximizar o impacto do símbolo. As imagens usadas remetem para as representações do senso
+comum de objetos e ideias. A sua sobriedade poderá facilitar a aceitação por parte de adultos.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_3.png" alt=""/>
+    <figcaption>
+        Figura 8.3: Pictogramas (<a href="http://www.pictoworld.com">www.pictoworld.com</a>)
+    </figcaption>
+</figure>
+
+<p>No entanto, os Pictogramas fornecem um vocabulário algo limitado o que levou, em Portugal e no final
+dos anos 80, à utilização do sistema SPC <sup id="cite_ref-38" class="reference"><a epub:type="noteref" href="#cite_note-38"><span>[</span>38<span>]</span></a></sup> – Símbolos Pictográficos para a Comunicação (também
+<span id="page85" epub:type="pagenumber">85</span>
+após tradução e adequação ao Português). O sistema SPC foi desenvolvido pela 
+Mayer-Johnson<sup id="cite_ref-39" class="reference"><a epub:type="noteref" href="#cite_note-39"><span>[</span>39<span>]</span></a></sup> 
+e é constituído por um vocabulário básico que contém cerca de 5.000 símbolos, complementado
+por bibliotecas específicas para diversos assuntos e línguas, perfazendo um total de cerca de
+12.000 símbolos. Na Figura 8.4 são apresentados exemplos de símbolos SPC na sua versão a
+preto e branco. É atualmente o sistema mais utilizado em Portugal, com grande implementação
+também a nível internacional.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_4.png" alt=""/>
+    <figcaption>
+        Figura 8.4: Símbolos SPC (<a href="http://www.mayer-johnson.com">www.mayer-johnson.com</a>)
+    </figcaption>
+</figure>
+
+<p>Recentemente começaram também a ser usados no nosso país os símbolos Widgit<sup id="cite_ref-40" class="reference"><a epub:type="noteref" href="#cite_note-40"><span>[</span>40<span>]</span></a></sup>.
+Estes símbolos resultam de uma melhoria dos símbolos Rebus, que foram desenvolvidos nos anos 60
+para auxiliar o desenvolvimento da linguagem em alunos com dificuldades de aprendizagem. Foram
+desenhados para suportar informação escrita e proporcionam um modo efetivo de “traduzir” texto
+escrito para uma forma simples e fácil de perceber, com uma ligação imediata às representações
+visuais comuns de objetos e ideias. Englobam os tópicos curriculares comuns e o vocabulário
+usado por adultos. O sistema de símbolos Widgit tem uma estrutura esquemática e inclui
+marcadores gramaticais para expressão literária, sendo assim também apropriado para níveis de
+literacia mais elevados. Na Figura 8.5 estão representados alguns símbolos Widgit.</p>
+
+<span id="page86" epub:type="pagenumber">86</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_5.png" alt=""/>
+    <figcaption>
+        Figura 8.5: Símbolos Widgit Rebus (<a href="http://www.widgit.com">www.widgit.com</a>)
+    </figcaption>
+</figure>
+
+<p>Fitzgerald (1954) propôs uma organização dos símbolos por classes semânticas e sintáticas,
+codificadas por cores, por forma a facilitar a construção de frases. Essas classes de símbolos, hoje
+de uso generalizado, são: sociais – rosa, pessoas – amarelo, ações – verde, substantivos –
+laranja, adjetivos – azul e diversos – cinzento. A apresentação das diversas classes de símbolos
+da esquerda para a direita, com uma ordem próxima da estrutura gramatical da língua, é outra
+estratégia usada para promover o desenvolvimento da literacia.</p>
+
+<a name="n83" id="n83"></a><h2>8.3 Quadros de comunicação</h2>
+
+<p>Os símbolos, qualquer que seja o sistema escolhido, são utilizados em produtos de apoio à
+comunicação, eletrónicos ou não. São usualmente agrupados de acordo com diferentes contextos
+de utilização, constituindo quadros de comunicação como o da Figura 8.6 (A).</p>
+
+<p>Estes quadros podem ser estáticos, sendo todos os símbolos apresentados simultaneamente, ou
+podem ser <em>dinâmicos</em> (Figura 8.6 (A)), contendo símbolos que remetem para outros quadros de
+comunicação (Figura 8.6 (B)). Enquanto os primeiros são mais usados em sistemas de baixo
+desenvolvimento tecnológico (por exemplo, uma simples folha de papel comos símbolos impressos),
+os segundos são a regra em sistemas de comunicação baseados em computadores utilizando
+software de comunicação adequado. No entanto, qualquer que seja o grau de desenvolvimento
+tecnológico do produto de apoio, é possível utilizar ambos os tipos de quadros.</p>
+
+<p>A grande vantagem dos quadros de comunicação dinâmicos em relação aos estáticos é a
+possibilidade de incluir mais vocabulário. São, no entanto, mais exigentes do ponto de vista
+cognitivo, pois requerem o conhecimento da organização dos símbolos e a sua memorização.</p>
+
+<span id="page87" epub:type="pagenumber">87</span>
+
+<figure>
+<div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_6a.png" alt=""/><figcaption>(A)</figcaption></div>
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_6b.png" alt=""/><figcaption>(B)</figcaption></div>
+  </div>
+    <figcaption>
+        Figura 8.6: Quadro de comunicação.(A) Quadro inicial com os temas de cada quadro de comunicação específico
+(B) Quadro de comunicação relativo a “Sentimentos”
+    </figcaption>
+</figure>
+
+<p>Um outro tipo de quadros de comunicação é conhecido por <em>Visual Scene Displays</em> (VSD). Consiste
+numa fotografia, desenho ou ambiente virtual que representa uma situação, lugar ou experiência (ver
+Figura 8.7). Elementos da representação constituem o conjunto de seleção, acedendo a quadros de
+comunicação nos contextos correspondentes. As vantagens indicadas para este tipo de quadros
+incluem a possibilidade de usar representações de eventos e atividades familiares nas vidas dos
+utilizadores, maximizando o significado das representações; apresentar os conceitos de linguagem
+nos contextos próprios; organizar a linguagem de acordo com experiências vividas, o que é coerente
+com a forma como é organizada a linguagem no cérebro; preservar as relações conceptuais e
+visuais (<em>e.g.</em>, localização, proporcionalidade); e proporcionar aos parceiros de comunicação uma
+participação mais ativa no processo de comunicação (Light & Drager, 2007; Blackstone, 2005).
+Recentemente, os <em>Visual Scene Displays</em> têm recebido muita atenção no âmbito da comunicação
+aumentativa e alternativa por pessoas com afasia (Beukelman & Mirenda, 2005).</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_7.png" alt=""/>
+    <figcaption>
+        Figura 8.7: <i>Visual Scene Display</i> (<a href="http://www.attainment.com">www.attainment.com</a>)
+    </figcaption>
+</figure>
+
+<p>Existe no mercado um conjunto alargado de aplicações informáticas para o desenho de quadros
+de comunicação, usando sistemas de símbolos ou de cenários, desenvolvidos ou traduzidos para
+Português <sup id="cite_ref-41" class="reference"><a epub:type="noteref" href="#cite_note-41"><span>[</span>41<span>]</span></a></sup> 
+.</p>
+
+<span id="page88" epub:type="pagenumber">88</span>
+
+<p>Os quadros de comunicação podem ser usados com diversas técnicas de comunicação,
+consoante os produtos de apoio em que são implementados. Os utilizadores podem recorrer a
+técnicas de seleção direta ou indireta. Os quadros podem ser usados numa comunicação
+presencial, em que o recetor observa as seleções efetuadas pelo emissor, ou podem servir de
+suporte para a composição de uma mensagem a ser impressa, falada através de um sistema de
+síntese de fala ou mesmo enviada eletronicamente.</p>
+
+<a name="n84" id="n84"></a><h2>8.4 Produtos de apoio à comunicação</h2>
+<a name="n841" id="n841"></a><h3>8.4.1 Produtos de apoio de baixo desenvolvimento tecnológico</h3>
+
+<p>Os produtos de apoio à comunicação mais simples são constituídos por um suporte físico onde
+são colocados símbolos que o utilizador escolhe através de um método de seleção direta ou
+indireta com o auxílio do seu interlocutor. Na Figura 8.8 e na Figura 8.9 ilustram-se produtos de
+apoio à comunicação em que o utilizador usa seleção direta através do olhar ou seleção indireta
+por varrimento, respetivamente. Na Figura 8.10 exemplificam-se diferentes cadernos de
+comunicação.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_8.png" alt=""/>
+    <figcaption>
+        Figura 8.8: Produto de apoio à comunicação de baixo desenvolvimento tecnológico, com seleção direta através do
+olhar. (commons.wikimedia.org; Poule at en.wikipedia)
+    </figcaption>
+</figure>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_9.png" alt=""/>
+    <figcaption>
+        Figura 8.9: Produto de apoio à comunicação de baixo desenvolvimento tecnológico, com seleção indireta por
+varrimento. O interlocutor da mensagem faz o varrimento das diversas opções, visual e/ou auditivo, aguardando por um
+sinal previamente acordado com o recetor para confirmar a seleção.
+    </figcaption>
+</figure>
+
+<span id="page89" epub:type="pagenumber">89</span>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_10.png" alt=""/>
+    <figcaption>
+        Figura 8.10:  Cadernos de comunicação (imagem cedida por CRPCCG-UTAAC)
+    </figcaption>
+</figure>
+
+<a name="n842" id="n842"></a><h3>8.4.2 Produtos de apoio de elevado desenvolvimento tecnológico</h3>
+<p>Os produtos de apoio à comunicação eletrónicos envolvem normalmente a produção de fala.
+Podem ser divididos em <em>digitalizadores de fala</em> ou <em>comunicadores</em><sup id="cite_ref-42" class="reference"><a epub:type="noteref" href="#cite_note-42"><span>[</span>42<span>]</span></a></sup> , em que o dispositivo reproduz
+mensagens previamente gravadas, e em <em>sintetizadores de fala</em>, em que qualquer mensagem
+escrita é convertida para fala através de algoritmos de síntese de fala. Enquanto os primeiros
+são independentes da língua (os utilizadores podem gravar qualquer fala ou som), os segundos
+dependem de versões de <em>software</em> com vozes para um determinado idioma. Por outro lado, a
+síntese de fala tem a vantagem de não estar dependente de mensagens previamente
+programadas, podendo o utilizador “dizer” o que pretende em cada instante.</p>
+
+<p>A tecnologia da síntese de fala vulgarizou-se nos últimos anos, havendo versões de muito boa
+qualidade para o Português europeu. As vozes são adquiridas através da licença do <em>software</em> de
+comunicação. Além disso, alguns sistemas operativos já as incluem na versão original (<em>e.g.</em>,
+Microsoft Windows, Android, MacOs ou iOS), em particular para a funcionalidade de leitor de ecrã
+(ver Secção 8.4.3).</p>
+
+<p>Atualmente estão em desenvolvimento sistemas de síntese com voz personalizada (a voz
+personalizada simula a voz do seu utilizador, baseando-se na gravação antecipada da voz original)
+ou de voz expressiva<sup id="cite_ref-43" class="reference"><a epub:type="noteref" href="#cite_note-43"><span>[</span>43<span>]</span></a></sup>.</p>
+
+<p>Existem digitalizadores de fala portáteis com diferentes capacidades de armazenamento de
+mensagens (Figura 8.11). Tipicamente, os digitalizadores possuem diversos níveis permitindo
+assim aumentar o número de mensagens acessíveis a partir de cada botão. Para cada nível é
+usualmente criado um quadro de comunicação que pode ser fisicamente (uma folha impressa)
+guardado no próprio digitalizador. Por vezes é disponibilizado um conjunto de mensagens
+nucleares, comum a todos os níveis, para acesso rápido. Alguns digitalizadores de fala permitem
+a seleção de cada mensagem de forma indireta, por varrimento (Figura 8.12).</p>
+
+<span id="page90" epub:type="pagenumber">90</span>
+
+<figure>
+<div class="row">
+  <div class="col-md-4"><img class="img-responsive" src="images/figura8_11a.png" alt=""/></div>
+  <div class="col-md-4"><img class="img-responsive" src="images/figura8_11b.png" alt=""/></div>
+  <div class="col-md-4"><img class="img-responsive" src="images/figura8_11c.png" alt=""/></div>
+  </div>
+    <figcaption>
+        Figura 8.11:  Digitalizadores de fala (<a href="http://www.attainmentcompany.com">www.attainmentcompany.com</a>)
+    </figcaption>
+</figure>
+
+<figure>
+<div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_12a.png" alt=""/><figcaption>(A)</figcaption></div>
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_12b.png" alt=""/><figcaption>(B)</figcaption></div>
+  </div>
+    <figcaption>
+        Figura 8.12:  Exemplos de dois modelos de digitalizadores de fala com acesso por varrimento
+(A) <a href="http://www.tobii.com">www.tobii.com</a> (B) <a href="http://www.attainmentcompany.com">www.attainmentcompany.com</a>
+    </figcaption>
+</figure>
+
+<p>Os digitalizadores de fala incorporados em manípulos, como os representados na Figura 8.13, são
+particularmente úteis na intervenção com crianças, para treino de utilização de sistemas de
+comunicação aumentativa e alternativa. Associado ao acionamento de cada botão, pode ser
+facilmente gravada uma porção de uma história ou de uma cantiga, pedindo-se à criança que a
+reproduza na altura adequada. Este tipo de atividade contribui para o treino da atenção e da
+coordenação motora, em contextos lúdicos.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_13.png" alt=""/>
+    <figcaption>
+        Figura 8.13: Digitalizadores de fala incorporados em manípulos (<a href="http://www.ablenetinc.com">www.ablenetinc.com</a>)
+    </figcaption>
+</figure>
+
+<p>Os produtos de apoio à comunicação com síntese de fala são baseados em sistemas informáticos,
+sendo comercializadas como dispositivos dedicados à comunicação (Figura 8.14) ou como
+sistemas suportados num computador, <em>tablet</em> ou telefone (Figura 8.15). São muito versáteis,
+<span id="page91" epub:type="pagenumber">91</span>
+permitindo uma adaptação às necessidades do utilizador (diferentes métodos de acesso,
+diferentes conjuntos de símbolos, liberdade total para o desenho de quadros de comunicação,
+entre outros). Permitem normalmente o controlo do ambiente através de uma porta de
+infravermelhos ou Bluetooth®.</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_14.png" alt=""/>
+    <figcaption>
+        Figura 8.14: Sistema integrado para a comunicação aumentativa e alternativa. Inclui <em>software</em> para comunicação,
+acessibilidade e controlo do ambiente (<a href="http://www.sensorysoftware.com">www.sensorysoftware.com</a>)
+    </figcaption>
+</figure>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_15.png" alt=""/>
+    <figcaption>
+        Figura 8.15: Aplicação para comunicação aumentativa e alternativa desenvolvida para um iPad™ (<a href="http://www.attainment.com">www.attainment.com</a>) 
+    </figcaption>
+</figure>
+
+<p>Em regra, os sistemas de comunicação com síntese de fala incorporam estratégias de aceleração
+da escrita. Uma dessas estratégias é a <em>predição de texto</em>, em que o sistema sugere palavras com
+base nas letras introduzidas ou nas palavras anteriores da mensagem. Os sistemas de predição
+atuais têm a capacidade de se adaptar ao utilizador, aprendendo quais as palavras mais prováveis
+de ocorrer, com base em utilizações anteriores.</p>
+
+<p>Uma outra estratégia de aceleração da escrita é a <em>compactação semântica</em> (Beukelman & Mirenda,
+2005), em que um mesmo símbolo pode assumir significados diferentes consoante o contexto em
+que é usado (<em>e.g.</em>, o símbolo “maçã” poderá significar uma maçã se usado isoladamente, mas
+poderá significar a ação comer se usado a seguir a um verbo, como em “quero comer”).</p>
+
+<span id="page92" epub:type="pagenumber">92</span>
+
+<a name="n843" id="n843"></a><h3>8.4.3 Produtos de apoio para pessoas com deficiência visual</h3>
+
+<p>Nesta secção foca-se em particular o acesso à informação digital por parte de pessoas com
+deficiência visual. Para estes utilizadores os produtos de apoio à comunicação digital têm por
+objetivo a conversão da informação visual em informação táctil ou de áudio.</p>
+
+<p>Os <em>leitores de ecrã</em> são programas informáticos que recebem a informação que é transmitida
+visualmente através do ecrã do computador convertendo-a em informação auditiva ou táctil.
+Utilizando um leitor de ecrã uma pessoa cega pode aceder a todas as funções do sistema
+operativo, recebendo as informações visuais na forma auditiva (voz sintetizada) ou táctil (linha
+Braille ou impressão em Braille). Atualmente, a maioria dos sistemas operativos inclui leitores de
+ecrã, embora alguns destes sejam limitados nas funcionalidades. Os utilizadores de leitor de ecrã
+recorrem ao teclado do computador (ou a teclas de comando da linha Braille) para aceder aos
+comandos de leitura. Há também dispositivos para leitura de livros eletrónicos (eBooks) que
+incluem leitor de ecrã.</p>
+
+<p>As <em>linhas Braille</em><sup id="cite_ref-44" class="reference"><a epub:type="noteref" href="#cite_note-44"><span>[</span>44<span>]</span></a></sup>  são dispositivos eletromecânicos que exibem, dinamicamente, a informação
+do leitor de ecrã em carateres Braille. A tecnologia consiste num conjunto de pontos que
+sobressaem ou recolhem, permitindo que a informação do ecrã seja convertida em Braille. As
+linhas Braille são particularmente importantes para pessoas com surdocegueira que, desta forma,
+recebem toda a informação do computador através do tacto. Há linhas Braille de diversos
+tamanhos e com diferentes características técnicas (ver Figura 8.16).</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_16.png" alt=""/>
+    <figcaption>
+        Figura 8.16: Exemplo de linha Braille (<a href="http://www.handytech.de">www.handytech.de</a>) 
+    </figcaption>
+</figure>
+
+<p>As <em>impressoras Braille</em> convertem o texto (escrito no computador ou digitalizado e convertido por
+meio de programas de OCR<sup id="cite_ref-45" class="reference"><a epub:type="noteref" href="#cite_note-45"><span>[</span>45<span>]</span></a></sup>) 
+em carateres Braille impressos em papel.</p>
+
+<p>Os ampliadores são produtos de apoio que ampliam a informação visual de forma a poder ser
+acedida por pessoas com baixa visão. Há uma grande variedade de ampliadores nos mercados
+nacional e internacional dos produtos de apoio.</p>
+
+<span id="page93" epub:type="pagenumber">93</span>
+
+<p>As lupas são ampliadores óticos que têm a vantagem de ser portáteis, leves, simples de utilizar
+e de baixo custo. Algumas lupas incluem iluminação para aumentar o contraste, outras podem ter
+lentes com diferentes graduações.</p>
+
+<p>Apesar de práticos e simples, os ampliadores óticos são limitados no grau de ampliação e de
+contraste. Por seu lado, os ampliadores eletrónicos têm maior capacidade de ampliação e
+permitem grande flexibilidade e ajuste a diferentes características visuais dos utilizadores. Podem
+ser portáteis ou de mesa, ampliar livros e outros objetos (ampliadores baseados em câmaras de
+vídeo), como ilustrado na Figura 8.17.</p>
+
+<figure>
+<div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_17a.png" alt=""/><figcaption>(A)</figcaption></div>
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_17b.png" alt=""/><figcaption>(B)</figcaption></div>
+  </div>
+    <figcaption>
+        Figura 8.17: Sistemas de auxílio à leitura (A) Ampliador vídeo (B) Sistema de leitura (<a href="http://www.optelec.com">www.optelec.com</a>) 
+    </figcaption>
+</figure>
+
+<p>Os sistemas operativos mais comuns incluem <em>software</em> de ampliação de ecrã nas suas opções de
+acessibilidade. No entanto, existem vários programas específicos de ampliação de ecrã que
+oferecem uma maior flexibilidade na configuração do contraste e graus de ampliação, bem como
+em opções de navegação (ver Figura 8.18).</p>
+
+<figure>
+    <img class="img-responsive" src="images/figura8_18.png" alt=""/>
+    <figcaption>
+        Figura 8.18: Exemplo da ferramenta Lupa, disponível nas opções de Acessibilidade dos sistemas operativos
+Microsoft Windows 
+    </figcaption>
+</figure>
+
+<span id="page94" epub:type="pagenumber">94</span>
+
+<a name="n844" id="n844"></a><h3>8.4.4 Produtos de apoio para pessoas com deficiência auditiva</h3>
+
+<p>Os produtos de apoio à comunicação mais utilizados por pessoas com deficiência auditiva são as
+próteses auditivas, que amplificam e modulam o som para o utilizador. Existe grande variedade de
+marcas e modelos, variando em tamanho, tipo de colocação e especificações técnicas. Os aparelhos
+auditivos são dispositivos eletroacústicos, tipicamente compostos por quatro partes: microfone,
+amplificador, recetor e fonte de energia, de acordo com o esquema da Figura 8.19 (A).</p>
+
+<p>Atualmente, estes aparelhos são digitais e programáveis, o que possibilita a modulação do sinal
+de forma a ajustar a amplificação às características específicas do utilizador, no que se refere aos
+diferentes níveis de audição em diferentes gamas de frequência. Com o processamento digital de
+sinal, os fabricantes procuram otimizar o aparelho auditivo para o reconhecimento de fala e redução
+de ruído. Estes aparelhos podem ser de diferentes tamanhos e distinguem-se pela forma de
+colocação (Heckendorf, 2009): atrás da orelha (BTE<sup id="cite_ref-46" class="reference"><a epub:type="noteref" href="#cite_note-46"><span>[</span>46<span>]</span></a></sup> ), 
+dentro do ouvido (ITE<sup id="cite_ref-47" class="reference"><a epub:type="noteref" href="#cite_note-47"><span>[</span>47<span>]</span></a></sup> ), 
+dentro do canal auditivo (CIC<sup id="cite_ref-48" class="reference"><a epub:type="noteref" href="#cite_note-48"><span>[</span>48<span>]</span></a></sup> ), 
+auscultador dentro do canal (RIC<sup id="cite_ref-49" class="reference"><a epub:type="noteref" href="#cite_note-49"><span>[</span>49<span>]</span></a></sup> ) 
+e auscultador dentro do ouvido (RITE<sup id="cite_ref-50" class="reference"><a epub:type="noteref" href="#cite_note-50"><span>[</span>50<span>]</span></a></sup> ).</p>
+
+<figure>
+<div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_19a.png" alt=""/><figcaption>(A)</figcaption></div>
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_19b.png" alt=""/><figcaption>(B)</figcaption></div>
+  </div>
+    <figcaption>
+Figura 8.19: Aparelho auditivo (A) Esquema simplificado (Cook & Polgar, 2008) (B) Aparelho auditivo que permite uma
+ligação sem fios a diversos dispositivos (<a href="http://www.beltone.com">www.beltone.com</a>)
+</figcaption>
+</figure>
+
+<p>Alguns aparelhos permitem uma ligação sem fios para receber som diretamente de determinadas
+fontes de áudio, por exemplo para receber o som de um telefone ou televisão (Figura 8.19 (B)).
+Um outro exemplo de aplicação destes sistemas é o contexto de sala de aula. O sinal áudio do
+professor é captado por um microfone, seguidamente transmitido por frequência modelada (FM),
+e recebido no aparelho auditivo do aluno, por indução magnética através de uma <em>telecoil</em>. A <em>telecoil</em>
+é uma bobina muito pequena, inserida no aparelho auditivo, que serve como uma antena e pode
+ser ativada pelo interrutor do aparelho.</p>
+
+<p>Para pessoas com deficiência auditiva profunda ou surdez tem sido possível restaurar a perceção
+do som através de um dispositivo denominado implante coclear. O implante coclear estimula
+diretamente o nervo auditivo ultrapassando a zona lesionada do ouvido. O som deixa de passar
+no ouvido médio e canal auditivo – é recebido por um microfone e transmitido por impulsos
+elétricos enviados diretamente para o nervo auditivo. Estes implantes dividem-se em duas partes
+<span id="page95" epub:type="pagenumber">95</span>
+(ver Figura 8.20): externa ao corpo, composta por um microfone, um circuito de processamento
+eletrónico de fala, e um transmissor; e interna ao corpo (colocada por cirurgia), composta por um
+recetor/estimulador (recebe por indução eletromagnética o sinal do transmissor e converte-o em
+impulsos elétricos) e um conjunto de elétrodos colocado no interior da cóclea (área do ouvido
+interno que recebe os impulsos e envia estímulos elétricos para o nervo auditivo).</p>
+
+<p>Um implante coclear não reabilita a audição normal. Dando uma via alternativa para a audição,
+permite ao utilizador entender a fala e percecionar alguns sons no seu ambiente. As pessoas com
+implante coclear demoram algum tempo a (re)aprender a “ouvir”.</p>
+
+
+<figure>
+    <img class="img-responsive" src="images/figura8_20.png" alt=""/>
+    <figcaption> Figura 8.20: Esquema de um implante coclear (<a href="http://www.medel.com">www.medel.com</a>)
+</figcaption>
+</figure>
+
+<p>Outros produtos de apoio para a comunicação de pessoas com deficiência auditiva são telefones
+de texto (em que a comunicação é feita por texto) ou telefones com ampliação sonora.</p>
+
+<p>Uma das maiores dificuldades das pessoas com deficiência auditiva é a perceção do meio
+ambiente. O toque da campainha da porta, um sinal de alarme de incêndio, um bebé a chorar, são
+apenas alguns exemplos (Cook & Polgar, 2008). Existem sistemas de alerta que convertem os
+sinais auditivos em sinais vibratórios ou luminosos, dando maior segurança à pessoa com
+deficiência auditiva. Por exemplo, há sistemas que convertem o sinal sonoro da campainha da
+porta ou do toque do telefone num sinal luminoso (a informação do sinal sonoro é recebida por
+um ou mais recetores luminosos, que podem estar em diferentes zonas da casa). Outro exemplo
+são os relógios despertadores com vibração debaixo da almofada.</p>
+
+<p>No que se refere ao acesso ao computador, os sistemas operativos mais comuns incluem
+configurações de acessibilidade para a sinalização dos alertas sonoros com informação visual.
+Atualmente, a utilização da Internet com uma câmara de vídeo permite a comunicação remota
+entre duas pessoas que usem língua gestual. O reconhecimento de fala é também um produto
+de apoio útil a pessoas com deficiência auditiva, nomeadamente na conversão de informação
+áudio em informação visual (texto). Um exemplo da utilização do reconhecimento de fala para
+pessoas surdas é a legendagem automática, que permite uma legendagem em tempo real do
+que é falado, por exemplo, num programa televisivo que é emitido<sup id="cite_ref-51" class="reference"><a epub:type="noteref" href="#cite_note-51"><span>[</span>51<span>]</span></a></sup> .</p>
+
+<span id="page96" epub:type="pagenumber">96</span>
+
+<a name="n85" id="n85"></a><h2>8.5 Barreiras à utilização de sistemas de comunicação aumentativa
+e alternativa</h2>
+
+<p>São muitas as barreiras à utilização de sistemas de comunicação aumentativa e alternativa. Enumeram-
+-se aqui algumas delas, evidenciadas em diversos estudos, querendo chamar a atenção para diferentes
+atitudes e contextos que geram o problema frequente do abandono de sistemas de CAA.</p>
+
+<p>Um receio muito frequente dos pais e cuidadores, ou dos próprios utilizadores, é que o uso de
+sistemas de comunicação aumentativa e alternativa prejudique ou impeça a recuperação ou a
+aprendizagem da fala natural. Não existe, no entanto, qualquer evidência científica desse efeito
+(Light & Drager, 2007). Pelo contrário, há situações em que o sistema de comunicação
+aumentativa e alternativa pode estimular a vocalização, como é o caso de adultos afásicos que
+usam um sistema de CAA para treinar a sua própria fala (Beukelman & Mirenda, 2005).</p>
+
+<p>A lentidão com que é mantida a comunicação é uma das maiores barreiras à utilização destes
+sistemas. Para comparação, refira-se que um discurso normal é efetuado a 150 a 200 palavras
+por minuto, um estenógrafo treinado é capaz de escrever 60 a 65 palavras por minuto, enquanto
+que um utilizador de CAA experiente não produz mais que 15 palavras por minuto, na maioria das
+situações (Beukelman & Mirenda, 2005).</p>
+
+<p>Também, por vezes, existe alguma desconfiança sobre a autoria das mensagens, principalmente
+com o uso de sistemas com síntese de fala (Beukelman, Fager, Ball, & Dietz, 2007).</p>
+
+<p>Em determinados contextos, por exemplo numa sala de aula, a voz sintetizada pode ser
+considerada disruptiva, perturbando o normal funcionamento da turma (Cook & Polgar, 2008).</p>
+
+<p>Existe também o preconceito generalizado de que quem não é capaz de falar possui um défice
+cognitivo. Estudos mostram que fatores como o género, o tipo de deficiência, a idade, a experiência
+e familiaridade do utilizador com sistemas de CAA e o contexto social afetam as atitudes das
+pessoas face a utilizadores de CAA (Cook & Polgar, 2008; Beukelman & Mirenda, 2005).</p>
+
+<p>Do lado de quem necessita dos sistemas de comunicação aumentativa e alternativa, a não
+adequação do produto ao contexto<sup id="cite_ref-52" class="reference"><a epub:type="noteref" href="#cite_note-52"><span>[</span>52<span>]</span></a></sup>, as dificuldades de parametrização e utilização, e a não
+identificação com a voz emitida pelo dispositivo estão entre as razões para não aderir à sua
+utilização (Beukelman & Mirenda, 2005).</p>
+
+<span id="page97" epub:type="pagenumber">97</span>
+
+<a name="n86" id="n86"></a><h2>8.6 Avaliação para a prescrição de sistemas de comunicação
+aumentativa e alternativa</h2>
+
+<p>Tal como para todos os outros produtos de apoio, a avaliação para a prescrição de sistemas de
+comunicação aumentativa e alternativa deve ser efetuada por uma equipa multidisciplinar. Esta
+deve envolver:</p>
+
+<ol type="a">
+<li>A pessoa com necessidades complexas de comunicação e respetiva família, que têm o
+conhecimento profundo das necessidades;</li>
+
+<li>Um terapeuta da fala, que tem um conhecimento profundo de comunicação aumentativa e
+alternativa, é capaz de avaliar as capacidades cognitivas, de linguagem e as necessidades
+de comunicação da pessoa, seleciona os materiais e treina a família e os cuidadores na
+utilização dos sistemas de CAA;</li>
+
+<li>O educador ou professor (no caso de o utilizador ser criança/jovem), que estabelece os
+objetivos educativos e supervisiona a intervenção em contexto educativo;</li>
+
+<li>Um fisioterapeuta e um terapeuta ocupacional, que fazem a avaliação motora, do
+posicionamento, dos contextos em que será usado o sistema de CAA e estabelecem o
+método de acesso ao produto de apoio;</li>
+
+<li>O auxiliar de educação/formador profissional, essencial para o sucesso da intervenção,
+uma vez que é quem melhor conhece as necessidades do utilizador no contexto educativo
+ou de trabalho; e</li>
+
+<li>O engenheiro de reabilitação, para dar apoio na montagem dos sistemas, projetar sistemas
+à medida ou parametrizar sistemas comerciais para melhor se adaptarem ao utilizador;
+para a manutenção dos sistemas; para auxiliar na medição dos resultados das intervenções
+e para dar formação aos outros profissionais envolvidos; e para a investigação e
+desenvolvimento de novas tecnologias de apoio.</li>
+</ol>
+
+<p>Existem várias ferramentas de apoio à avaliação de pessoas para sistemas de comunicação
+aumentativa e alternativa, de que são exemplo o Modelo de Participação (Beukelman & Mirenda,
+2005) e as Redes Sociais<sup id="cite_ref-53" class="reference"><a epub:type="noteref" href="#cite_note-53"><span>[</span>53<span>]</span></a></sup>  (Blackstone & Berg, 2002). No inventário que faz parte do método das
+Redes Sociais, é reconhecido que as necessidades de comunicação dependem dos parceiros e
+contextos de comunicação. São, por isso, avaliadas as necessidades em cinco círculos de
+comunicação, incluindo diferentes parceiros. Do mais chegado para o mais afastado, esses
+círculos de comunicação incluem i) a família, ii) os amigos, iii) os conhecidos, iv) os cuidadores
+e v) os parceiros não familiares (<em>e.g.</em>, funcionário de uma loja). O indivíduo com necessidades
+complexas de comunicação é o centro de todo o processo, mas são também avaliadas as relações
+existentes entre os diversos círculos de comunicação.</p>
+
+<p>As pessoas com doenças neurodegenerativas, como a Esclerose Lateral Amiotrófica (ver Secção
+3.3.4), constituem um desafio acrescido para a escolha de um sistema de comunicação aumentativo
+e alternativo adequado. Nestas situações, o produto de apoio deve ser capaz de acompanhar a
+<span id="page98" epub:type="pagenumber">98</span>
+evolução das condições do utilizador, sem o obrigar a constantes adaptações a novos produtos. Por
+outro lado, antecipando a inevitabilidade da necessidade de utilização destes produtos de apoio no
+futuro, o doente deve ser orientado para iniciar, antecipadamente, o treino na utilização dos sistemas,
+quando ainda conserva as capacidades que podem facilitar a aprendizagem. A avaliação destas
+pessoas deve assim ter em conta não só a sua situação atual, mas também a evolução esperada.
+Por exemplo, um doente com ELA do tipo bulbar que já manifeste baixa inteligibilidade da fala mas
+que ainda se consiga deslocar de forma independente, poderá começar a usar um pequeno <em>tablet</em>
+ou <em>smartphone</em> com uma aplicação para a CAA que possa ser utilizada também num computador.
+A experiência adquirida facilitará a transição para a utilização de um sistema de CAA baseado num
+computador com a mesma aplicação, quando já não tiver possibilidade de deslocar-se e, por isso, o
+sistema portátil deixar de ser adequado (Londral, Azevedo, & Encarnação, 2008).</p>
+
+<a name="n87" id="n87"></a><h2>8.7 Comunicação aumentativa e alternativa em meio hospitalar</h2>
+<p>Diversos estudos (ver referências em (Pressman & Blackstone, 2010)) têm revelado que
+pessoas com:</p>
+<ol type="a">
+<li>Deficiências auditivas, de fala e cognitivas com (ou sem) acesso a ferramentas de
+comunicação;</li>
+<li>Diferenças linguísticas e/ou culturais;</li>
+<li>Literacia em saúde limitada;</li>
+<li>Capacidade limitada de leitura/escrita;</li>
+<li>Dificuldades de comunicação recentes em resultado da sua doença/acidente/evento; e</li>
+<li>Dificuldades de comunicação em resultado de tratamento médico (<em>e.g.</em>, entubação,
+sedação),</li>
+</ol>
+
+<p>estão mais propensas a:</p>
+<ol type="i">
+<li>Serem hospitalizadas;</li>
+<li>Sofrerem danos médicos/físicos (<em>e.g.</em>, efeitos secundários de medicamentos);</li>
+<li>Abandonar o hospital contra o conselho médico;</li>
+<li>Serem entubadas, se asmáticas;</li>
+<li>Terem custos acrescidos;</li>
+<li>Sofrerem demora no tratamento; e</li>
+<li>Serem diagnosticadas de uma psicopatologia.</li>
+</ol>
+
+<p>Por outro lado, estas mesmas populações estão menos propensas a:</p>
+<ol type="i">
+<li>Aderirem ao regime medicamentoso recomendado;</li>
+<li>Reportarem abusos;</li>
+<li>Acederem a e utilizarem cuidados médicos;</li>
+<li>Regressar para consultas de acompanhamento; e</li>
+<li>Estarem satisfeitas com cuidados prestados.</li>
+</ol>
+
+<span id="page99" epub:type="pagenumber">99</span>
+
+<p>Com base nestas evidências, a Joint Commission<sup id="cite_ref-54" class="reference"><a epub:type="noteref" href="#cite_note-54"><span>[</span>54<span>]</span></a></sup>, 
+a agência americana de acreditação e
+certificação de unidades de saúde, emitiu normas que as unidades de saúde acreditadas devem
+respeitar com vista à garantia dos direitos das pessoas com necessidades complexas de
+comunicação em contexto hospitalar. Essas normas, em vigor desde janeiro de 2011, incluem: a
+obrigatoriedade da existência de pessoal treinado em sensibilidade cultural e no uso de
+ferramentas de comunicação; a identificação das necessidades de comunicação dos pacientes;
+a satisfação das necessidades de comunicação em todo o processo de prestação de cuidados de
+saúde; e a disponibilização de serviços de tradução e meios auxiliares de comunicação (The Joint
+Commission, 2010). Por exemplo, as Unidades de Cuidados Intensivos são agora obrigadas a
+providenciar aos seus utentes meios alternativos de comunicação para que estes consigam
+comunicar quando não conseguem fazê-lo através da fala (<em>e.g.</em>, quando estão entubados).</p>
+
+<p>Em consequência do anúncio destas normas foram avaliadas as necessidades comunicativas
+dos utentes de unidades de saúde e foram desenvolvidas estratégias de comunicação
+aumentativa e alternativa para as suprir. Por exemplo, em (Hemsley, Balandin, & Worrall, 2011),
+desmistifica-se a ideia de que as pessoas com deficiência mental ou necessidades complexas de
+comunicação estarão sempre acompanhadas por alguém que comunique por elas e, por isso,
+não têm necessidades de comunicação. São identificados cinco temas principais de comunicação
+em contexto hospitalar: dor, conforto (calor/frio, posição, etc.), fome/sede, higiene e ansiedade.
+Mas, para lá das necessidades básicas, os pacientes querem também comunicar acerca do seu
+estado de saúde, sobre quando terão alta médica, e têm necessidade de manifestar a sua
+capacidade de tomar decisões. O mesmo estudo conclui que dificuldades em comunicar as
+necessidades básicas podem prejudicar e/ou tornar mais complicado o trabalho de enfermagem,
+aumentar o sentimento de desconforto do paciente, ou mesmo colocar o paciente em risco.
+Conclui ainda que a impossibilidade de comunicação direta com o paciente leva a que este se
+sinta impotente sobre as decisões acerca do seu estado de saúde e tem um impacto negativo
+sobre o seu estado emocional.</p>
+
+<p>Têm sido criados diversos produtos de apoio para a comunicação em contexto hospitalar, de que
+são exemplo quadros de comunicação específicos e escalas de dor (Figura 8.21) ou o Passaporte
+de Comunicação<sup id="cite_ref-55" class="reference"><a epub:type="noteref" href="#cite_note-55"><span>[</span>55<span>]</span></a></sup>,
+que inclui informação de como a pessoa comunica, instruções de utilização
+do seu sistema de CAA, contactos úteis e outras informações relevantes. Deste passaporte
+destacam-se aqui duas instruções que tentam combater dois erros usuais de quem não está
+habituado a lidar com pessoas com necessidades complexas de comunicação: o interlocutor deve
+dar tempo ao doente para responder, uma vez que a comunicação com recurso a sistemas de
+CAA é mais lenta, e o interlocutor deve dirigir-se ao doente como um adulto na plena posse das
+suas capacidades mentais, já que frequentemente estas pessoas são tratadas como tendo um
+défice cognitivo.</p>
+
+<span id="page100" epub:type="pagenumber">100</span>
+
+<figure>
+<div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_21a.png" alt=""/></div>
+  <div class="col-md-6"><img class="img-responsive" src="images/figura8_21b.png" alt=""/></div>
+  </div>
+    <figcaption>
+        Figura 8.21: Quadro de comunicação (em inglês) para contexto hospitalar e escala de dor (<a href="http://www.vidatak.com">www.vidatak.com</a>)
+    </figcaption>
+</figure>
+
+<span id="page101" epub:type="pagenumber">101</span>
+
+<nav>        
+  <ul class="pager">
+    <li class="previous"><a href="/livros/tapd/html/7_tecnologias_apoio_manipulacao.html"><span aria-hidden="true">&larr;</span> Capítulo anterior</a></li>
+	<li class="top"><a href="#top"><span aria-hidden="true">&uarr;</span> Início da página</a></li>
+	<li class="next"><a href="/livros/tapd/html/9_tecnologias_apoio_orientacao.html">Próximo capítulo <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+  </nav>
+
+<aside epub:type="footnote">
+<h2>Notas do capítulo 8</h2>
+<ol start="36">
+<li id="cite_note-36"><span class="reference-text"> <a href="http://www.blissymbolics.org">www.blissymbolics.org</a>
+</span><span class="mw-cite-backlink"><a href="#cite_ref-36">↑</a></span></li>
+<li id="cite_note-37"><span class="reference-text"> PIC - <i>Pictogram Ideogram Communication</i> na literatura anglo-saxónica;<a href="http://www.pictoworld.com">www.pictoworld.com</a>
+</span><span class="mw-cite-backlink"><a href="#cite_ref-37">↑</a></span></li>
+<li id="cite_note-38"><span class="reference-text"> PCS – <i>Picture Communication Symbols</i> na literatura anglo-saxónica.
+</span><span class="mw-cite-backlink"><a href="#cite_ref-38">↑</a></span></li>
+<li id="cite_note-39"><span class="reference-text"> <a href="http://www.mayer-johnson.com">www.mayer-johnson.com</a>
+</span><span class="mw-cite-backlink"><a href="#cite_ref-39">↑</a></span></li>
+<li id="cite_note-40"><span class="reference-text"> <a href="http://www.widgit.com">www.widgit.com</a>
+</span><span class="mw-cite-backlink"><a href="#cite_ref-40">↑</a></span></li>
+<li id="cite_note-41"><span class="reference-text"> De que são exemplos os programas Speaking Dynamically ou The Grid 2 (<a href="http://www.anditec.pt">www.anditec.pt</a>) 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-41">↑</a></span></li>
+<li id="cite_note-42"><span class="reference-text"> <i>Communicators</i> na literatura anglo-saxónica. 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-42">↑</a></span></li>
+<li id="cite_note-43"><span class="reference-text"> Pode uvir-se a demonstração de uma voz expressiva em português europeu em (<a href="http://www.nuance.com">www.nuance.com</a>) 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-43">↑</a></span></li>
+<li id="cite_note-44"><span class="reference-text"> <i>Braille displays</i> na literatura anglo-saxónica. 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-44">↑</a></span></li>
+<li id="cite_note-45"><span class="reference-text"> Acrónimo para <i>Optical Character Recognition</i>. Embora tenha tradução como Reconhecimento Ótico de Carateres,
+mantém-se a sigla OCR, termo que se refere à tecnologia de reconhecimento de caracteres que permite transformar
+uma imagem de texto em formato editável no computador. 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-45">↑</a></span></li>
+<li id="cite_note-46"><span class="reference-text"> <i>Behind-The-Ear</i>.  
+</span><span class="mw-cite-backlink"><a href="#cite_ref-46">↑</a></span></li>
+<li id="cite_note-47"><span class="reference-text"> <i>In-The-Ear</i>.  
+</span><span class="mw-cite-backlink"><a href="#cite_ref-47">↑</a></span></li>
+<li id="cite_note-48"><span class="reference-text"> <i>Completely-In-The-Canal</i>.  
+</span><span class="mw-cite-backlink"><a href="#cite_ref-48">↑</a></span></li>
+<li id="cite_note-49"><span class="reference-text"> <i>Receiver-In-Canal</i>. 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-49">↑</a></span></li>
+<li id="cite_note-50"><span class="reference-text"> <i>Receiver-In-The-Ear</i>.  
+</span><span class="mw-cite-backlink"><a href="#cite_ref-50">↑</a></span></li>
+<li id="cite_note-51"><span class="reference-text"> Um exemplo desta legendagem automática é o Audimus.Media, que funciona atualmente no teletexto da RTP1 para
+diversos programas de informação. Mais informação pode ser encontrada em <a href="http://www.voiceinteraction.pt">www.voiceinteraction.pt</a>.  
+</span><span class="mw-cite-backlink"><a href="#cite_ref-51">↑</a></span></li>
+<li id="cite_note-52"><span class="reference-text"> Dificilmente um sistema de comunicação aumentativo e alternativo pode ser usado em todos os contextos. Enquanto
+um digitalizador de fala com uma mensagem pode ser suficiente para efetuar uma simples compra, não o será
+certamente para manter uma conversa. Por outro lado, um sistema integrado de comunicação poderá não ser prático
+num restaurante em que o espaço à mesa é limitado, sendo mais adequado um sistema de média dimensão.  
+</span><span class="mw-cite-backlink"><a href="#cite_ref-52">↑</a></span></li>
+<li id="cite_note-53"><span class="reference-text"> <i>Social networks</i> na literatura anglo-saxónica. 
+</span><span class="mw-cite-backlink"><a href="#cite_ref-53">↑</a></span></li>
+<li id="cite_note-54"><span class="reference-text"> <a href="http://www.jointcommission.org">www.jointcommission.org</a>
+</span><span class="mw-cite-backlink"><a href="#cite_ref-54">↑</a></span></li>
+<li id="cite_note-55"><span class="reference-text"> <a href="http://www.accpc.ca/rtr-resources-commpassports.htm">www.accpc.ca/rtr-resources-commpassports.htm</a>
+</span><span class="mw-cite-backlink"><a href="#cite_ref-55">↑</a></span></li>
+</ol>
+</aside>
+</div>
+
+</body>
+</html>
